@@ -2433,4 +2433,15 @@ function scrollToId(id){var e=document.getElementById(id);if(e){e.scrollIntoView
 function openArt(id){var e=document.getElementById("art-"+id);if(e){e.scrollIntoView({behavior:smooth,block:start});}}
 window.addEventListener("scroll",function(){var t=document.getElementById("totop");if(window.scrollY>600)t.classList.add("show");else t.classList.remove("show");});
 </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="goMath()"></script>
+<script>
+function goMath(){
+  if(!window.renderMathInElement){return}
+  document.querySelectorAll('.article .md').forEach(function(root){
+    renderMathInElement(root,{delimiters:[{left:'$$',right:'$$',display:true}],throwOnError:false});
+  });
+}
+</script>
 </body></html>
