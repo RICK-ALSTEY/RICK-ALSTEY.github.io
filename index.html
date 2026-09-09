@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BFFLS-OSR &middot; 北京市丰台区外国语学校开源项目</title>
+<title>BFFLS-OSR-NEXT &middot; 北京市丰台区外国语学校开源项目</title>
 <style>
 :root{
   --bg:#0a0c10; --bg-deep:#050608; --bg-mid:#10131a;
@@ -46,6 +46,12 @@ nav.top a.lnk.sel{color:#fff;border-color:var(--blue);background:var(--blue-glow
 .hero h1{font-size:clamp(30px,5vw,62px);line-height:1.05;font-weight:800;letter-spacing:-1px;margin:22px 0 8px;font-family:var(--mono)}
 .hero h1 .hl{color:var(--blue-2)}
 .hero .sub{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--gold-2);text-transform:uppercase}
+.hero-visual{display:flex;justify-content:center;margin:30px 0 10px}
+.emblem-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 26px;background:var(--panel);border:1px solid var(--line-dd);border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.emblem-card img{width:150px;height:150px;object-fit:contain;border-radius:50%;filter:drop-shadow(0 4px 18px rgba(59,130,246,.25))}
+.emblem-card .emblem-cap{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--blue-2);text-transform:uppercase;border-top:1px solid var(--line);padding-top:8px;width:100%;text-align:center}
+.motto-banner{margin:26px auto 6px;max-width:820px;padding:18px 26px;background:linear-gradient(180deg,rgba(59,130,246,.08),rgba(245,185,66,.05));border:1px solid var(--line-dd);border-radius:8px;text-align:center}
+.motto-banner img{max-width:100%;max-height:300px;object-fit:contain;border-radius:6px;filter:drop-shadow(0 6px 18px rgba(0,0,0,.3))}
 .hero .desc{max-width:840px;color:var(--text-dim);margin-top:26px;font-size:17px}
 .hero .desc b{color:var(--text)}
 .hero .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
@@ -104,6 +110,7 @@ section{padding:54px var(--pad);max-width:1280px;margin:0 auto}
 .article .imgslot .img-tag{font-size:11px;letter-spacing:3px;color:var(--acc);border:1px solid var(--acc);padding:4px 10px;border-radius:2px;
 text-transform:uppercase;}
 .article .imgslot .img-alt{color:var(--text-mute);max-width:80%;font-size:12px;word-break:break-all;}
+.article .fig{margin:16px 0;text-align:center}.article .fig img{max-width:100%;max-height:520px;object-fit:contain;border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 34px rgba(0,0,0,.35)}
 .article .md img{max-width:100%;border:1px solid var(--line);border-radius:4px;margin:12px 0}
 .article .md hr{border:none;border-top:1px dashed var(--line);margin:20px 0}
 .article{--acc:var(--blue-2)}
@@ -126,12 +133,21 @@ footer .motto{font-family:var(--mono);color:var(--blue-2);margin:14px 0 6px;font
 </style>
 </head>
 <body>
-<nav class="top"><div class="brand"><span class="sq"></span><span class="nm">BFFLS<b>-OSR</b></span></div><div class="navlnk"><a class="lnk sel" href="#">HOME</a><a class="lnk" href="#cat-home">HOMEPAGE</a><a class="lnk" href="#cat-person">PERSON</a><a class="lnk" href="#cat-memorial">MEMORIAL</a><a class="lnk" href="#cat-legal">LEGAL</a><a class="lnk" href="#cat-paper">PAPER</a><a class="lnk" href="#cat-lang">LANG</a><a class="lnk" href="#cat-food">FOOD</a><a class="lnk" href="#cat-philo">PHILO</a><a class="lnk" href="#cat-tech">TECH</a><a class="lnk" href="#cat-chem">CHEM</a><a class="lnk" href="#cat-game">GAME</a><a class="lnk" href="#cat-horror">HORROR</a><a class="lnk" href="#cat-phys">PHYS</a><a class="lnk" href="#cat-bw">BW</a></div></nav>
+<nav class="top"><div class="brand"><span class="sq"></span><span class="nm">BFFLS<b>-OSR-NEXT</b></span></div><div class="navlnk"><a class="lnk sel" href="#">HOME</a><a class="lnk" href="#cat-home">HOMEPAGE</a><a class="lnk" href="#cat-person">PERSON</a><a class="lnk" href="#cat-memorial">MEMORIAL</a><a class="lnk" href="#cat-legal">LEGAL</a><a class="lnk" href="#cat-paper">PAPER</a><a class="lnk" href="#cat-lang">LANG</a><a class="lnk" href="#cat-food">FOOD</a><a class="lnk" href="#cat-philo">PHILO</a><a class="lnk" href="#cat-tech">TECH</a><a class="lnk" href="#cat-chem">CHEM</a><a class="lnk" href="#cat-game">GAME</a><a class="lnk" href="#cat-horror">HORROR</a><a class="lnk" href="#cat-phys">PHYS</a><a class="lnk" href="#cat-bw">BW</a></div></nav>
 <header class="hero">
-<div class="kicker">OPEN SOURCE REPOSITORY // BFFLS</div>
+<div class="kicker">OPEN SOURCE REPOSITORY // BFFLS-OSR-NEXT</div>
 <h1>丰台区外国语学校<br/><span class="hl">开源项目仓储</span></h1>
 <div class="sub">BEIJING FENGTAI FOREIGN LANGUAGE SCHOOL &middot; OPEN SOURCE REPOSITORY</div>
+<div class="hero-visual">
+  <div class="emblem-card" title="北京市丰台区外国语学校校徽">
+    <img src="assets/emblem.png" alt="北京市丰台区外国语学校校徽" loading="lazy"/>
+    <span class="emblem-cap">校徽</span>
+  </div>
+</div>
 <p class="desc">本仓库以<b>开放共享 &middot; 协同创新 &middot; 学术交流 &middot; 社会责任</b>为宗旨，由学生发起、<b>OSR 管理委员会</b>托管维护。它汇集了校园师生在<strong>教学科研、外语教育、科技创新、校园文化</strong>等方面的原创内容——包括一条条由代码仙人、爬树仙人、红警仙人、鸡丁仙人、BW 等人物线延伸出的戏仿趣味页面，以及校长办学、抗战英烈纪念与法律声明。</p>
+<div class="motto-banner">
+  <img src="assets/motto.png" alt="忠诚于党 热爱人民 报效国家 献身使命 崇尚荣誉 —— 胡锦涛" loading="lazy"/>
+</div>
 <div class="chips"><span class="chip">16 PAGES</span><span class="chip gold">OSR-MANAGED</span><span class="chip">MIT LICENSE</span><span class="chip gold">EDU &middot; CAMPUS</span></div>
 <div class="stats">
 <div class="stat"><div class="v">16</div><div class="k">分支 &middot; 页面</div></div>
@@ -141,8 +157,8 @@ footer .motto{font-family:var(--mono);color:var(--blue-2);margin:14px 0 6px;font
 </div>
 </header>
 <section id="intro"><div class="sec-head"><div class="tt">页面索引 <em>// INDEX</em></div><div class="en">ALL PAGES</div></div><div class="grid"><a class="card acc-gold" href="#cat-home"><div class="tag">HOMEPAGE</div><h3>总览 · 主页</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-person"><div class="tag">PERSON</div><h3>人物 · 校长</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-memorial"><div class="tag">MEMORIAL</div><h3>纪念 · 英烈</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-legal"><div class="tag">LEGAL</div><h3>法律 · 声明</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-paper"><div class="tag">PAPER</div><h3>归档 · 论文</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-lang"><div class="tag">LANG</div><h3>语言 · 戏仿</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-food"><div class="tag">FOOD</div><h3>美食 · 评鉴</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-philo"><div class="tag">PHILO</div><h3>哲学 · 戏仿</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-tech"><div class="tag">TECH</div><h3>数学 · 建模</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-chem"><div class="tag">CHEM</div><h3>化学 · 戏仿</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-game"><div class="tag">GAME</div><h3>游戏 · 档案</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-red" href="#cat-horror"><div class="tag">HORROR</div><h3>怪谈 · 红警</h3><p>共 2 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-phys"><div class="tag">PHYS</div><h3>物理 · 戏仿</h3><p>共 2 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-bw"><div class="tag">BW</div><h3>量化 · 建模</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a></div></section>
-<section id="cat-home"><div class="sec-head"><div class="tt">总览 · 主页 <em>&middot; HOMEPAGE</em></div><div class="en">HOMEPAGE // 总览 · 主页</div></div><div class="grid"><a class="card acc-gold" href="#art-16"><div class="tag">HOMEPAGE</div><h3>BFFLS-OSR · 开源项目主页</h3><p>HOME</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-person"><div class="sec-head"><div class="tt">人物 · 校长 <em>&middot; PERSON</em></div><div class="en">PERSON // 人物 · 校长</div></div><div class="grid"><a class="card acc-gray" href="#art-2"><div class="tag">PERSON</div><h3>刘忠毅 · 爬树校长</h3><p>PRINCIPAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-memorial"><div class="sec-head"><div class="tt">纪念 · 英烈 <em>&middot; MEMORIAL</em></div><div class="en">MEMORIAL // 纪念 · 英烈</div></div><div class="grid"><a class="card acc-gold" href="#art-15"><div class="tag">MEMORIAL</div><h3>缅怀 · 佟麟阁将军</h3><p>MEMORIAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-legal"><div class="sec-head"><div class="tt">法律 · 声明 <em>&middot; LEGAL</em></div><div class="en">LEGAL // 法律 · 声明</div></div><div class="grid"><a class="card acc-gray" href="#art-14"><div class="tag">LEGAL</div><h3>开源项目 · 免责声明</h3><p>DISCLAIMER</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-paper"><div class="sec-head"><div class="tt">归档 · 论文 <em>&middot; PAPER</em></div><div class="en">PAPER // 归档 · 论文</div></div><div class="grid"><a class="card acc-blue" href="#art-13"><div class="tag">PAPER</div><h3>《RUBBISH》论文归档</h3><p>PAPER</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-lang"><div class="sec-head"><div class="tt">语言 · 戏仿 <em>&middot; LANG</em></div><div class="en">LANG // 语言 · 戏仿</div></div><div class="grid"><a class="card acc-gray" href="#art-1"><div class="tag">LANG</div><h3>FW-Lang · 丰外自研语法</h3><p>FW-LANG</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-food"><div class="sec-head"><div class="tt">美食 · 评鉴 <em>&middot; FOOD</em></div><div class="en">FOOD // 美食 · 评鉴</div></div><div class="grid"><a class="card acc-gold" href="#art-4"><div class="tag">FOOD</div><h3>宫保鸡丁品质鉴评委员会</h3><p>KPC-QEC</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-philo"><div class="sec-head"><div class="tt">哲学 · 戏仿 <em>&middot; PHILO</em></div><div class="en">PHILO // 哲学 · 戏仿</div></div><div class="grid"><a class="card acc-gold" href="#art-7"><div class="tag">PHILO</div><h3>个体评价偏移 · 哲学与数学分析</h3><p>EVALUATION</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-tech"><div class="sec-head"><div class="tt">数学 · 建模 <em>&middot; TECH</em></div><div class="en">TECH // 数学 · 建模</div></div><div class="grid"><a class="card acc-blue" href="#art-6"><div class="tag">TECH</div><h3>宫保鸡丁 · 花生均匀摆放研究</h3><p>PEANUTS</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-chem"><div class="sec-head"><div class="tt">化学 · 戏仿 <em>&middot; CHEM</em></div><div class="en">CHEM // 化学 · 戏仿</div></div><div class="grid"><a class="card acc-gray" href="#art-8"><div class="tag">CHEM</div><h3>鸡丁仙人 · 非守恒反应定理</h3><p>NON-CONSERVATION</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-game"><div class="sec-head"><div class="tt">游戏 · 档案 <em>&middot; GAME</em></div><div class="en">GAME // 游戏 · 档案</div></div><div class="grid"><a class="card acc-blue" href="#art-5"><div class="tag">GAME</div><h3>鸡丁仙人线 · 游戏档案</h3><p>GAMES</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-horror"><div class="sec-head"><div class="tt">怪谈 · 红警 <em>&middot; HORROR</em></div><div class="en">HORROR // 怪谈 · 红警</div></div><div class="grid"><a class="card acc-red" href="#art-3"><div class="tag">HORROR</div><h3>红警怪谈</h3><p>RED ALERT</p><div class="go">OPEN &rarr;</div></a><a class="card acc-red" href="#art-9"><div class="tag">HORROR</div><h3>鸡丁怪谈</h3><p>CHICKEN-HORROR</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-phys"><div class="sec-head"><div class="tt">物理 · 戏仿 <em>&middot; PHYS</em></div><div class="en">PHYS // 物理 · 戏仿</div></div><div class="grid"><a class="card acc-blue" href="#art-11"><div class="tag">PHYS</div><h3>BW · 超高速统计力学</h3><p>BW-STAT-MECH</p><div class="go">OPEN &rarr;</div></a><a class="card acc-blue" href="#art-12"><div class="tag">PHYS</div><h3>BW · 超高速非经典力学</h3><p>BW-NON-CLASSICAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-bw"><div class="sec-head"><div class="tt">量化 · 建模 <em>&middot; BW</em></div><div class="en">BW // 量化 · 建模</div></div><div class="grid"><a class="card acc-blue" href="#art-10"><div class="tag">BW</div><h3>BW · 生物意志指数</h3><p>BW-INDEX</p><div class="go">OPEN &rarr;</div></a></div></section>
-<section id="article-root"><div class="sec-head"><div class="tt">全文阅读 <em>// READ</em></div><div class="en">FULL DOCUMENT</div></div><article class="article acc-gold" id="art-16"><div class="crumb"><span>总览 · 主页</span><span class="dot">&#9670;</span><span>HOMEPAGE</span><span class="dot">&#9670;</span><span>PAGE 16</span></div><h2>BFFLS-OSR · 开源项目主页</h2><div class="md"><div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+<section id="cat-home"><div class="sec-head"><div class="tt">总览 · 主页 <em>&middot; HOMEPAGE</em></div><div class="en">HOMEPAGE // 总览 · 主页</div></div><div class="grid"><a class="card acc-gold" href="#art-16"><div class="tag">HOMEPAGE</div><h3>BFFLS-OSR-NEXT · 开源项目主页</h3><p>HOME</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-person"><div class="sec-head"><div class="tt">人物 · 校长 <em>&middot; PERSON</em></div><div class="en">PERSON // 人物 · 校长</div></div><div class="grid"><a class="card acc-gray" href="#art-2"><div class="tag">PERSON</div><h3>刘忠毅 · 爬树校长</h3><p>PRINCIPAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-memorial"><div class="sec-head"><div class="tt">纪念 · 英烈 <em>&middot; MEMORIAL</em></div><div class="en">MEMORIAL // 纪念 · 英烈</div></div><div class="grid"><a class="card acc-gold" href="#art-15"><div class="tag">MEMORIAL</div><h3>缅怀 · 佟麟阁将军</h3><p>MEMORIAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-legal"><div class="sec-head"><div class="tt">法律 · 声明 <em>&middot; LEGAL</em></div><div class="en">LEGAL // 法律 · 声明</div></div><div class="grid"><a class="card acc-gray" href="#art-14"><div class="tag">LEGAL</div><h3>开源项目 · 免责声明</h3><p>DISCLAIMER</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-paper"><div class="sec-head"><div class="tt">归档 · 论文 <em>&middot; PAPER</em></div><div class="en">PAPER // 归档 · 论文</div></div><div class="grid"><a class="card acc-blue" href="#art-13"><div class="tag">PAPER</div><h3>《RUBBISH》论文归档</h3><p>PAPER</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-lang"><div class="sec-head"><div class="tt">语言 · 戏仿 <em>&middot; LANG</em></div><div class="en">LANG // 语言 · 戏仿</div></div><div class="grid"><a class="card acc-gray" href="#art-1"><div class="tag">LANG</div><h3>FW-Lang · 丰外自研语法</h3><p>FW-LANG</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-food"><div class="sec-head"><div class="tt">美食 · 评鉴 <em>&middot; FOOD</em></div><div class="en">FOOD // 美食 · 评鉴</div></div><div class="grid"><a class="card acc-gold" href="#art-4"><div class="tag">FOOD</div><h3>宫保鸡丁品质鉴评委员会</h3><p>KPC-QEC</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-philo"><div class="sec-head"><div class="tt">哲学 · 戏仿 <em>&middot; PHILO</em></div><div class="en">PHILO // 哲学 · 戏仿</div></div><div class="grid"><a class="card acc-gold" href="#art-7"><div class="tag">PHILO</div><h3>个体评价偏移 · 哲学与数学分析</h3><p>EVALUATION</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-tech"><div class="sec-head"><div class="tt">数学 · 建模 <em>&middot; TECH</em></div><div class="en">TECH // 数学 · 建模</div></div><div class="grid"><a class="card acc-blue" href="#art-6"><div class="tag">TECH</div><h3>宫保鸡丁 · 花生均匀摆放研究</h3><p>PEANUTS</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-chem"><div class="sec-head"><div class="tt">化学 · 戏仿 <em>&middot; CHEM</em></div><div class="en">CHEM // 化学 · 戏仿</div></div><div class="grid"><a class="card acc-gray" href="#art-8"><div class="tag">CHEM</div><h3>鸡丁仙人 · 非守恒反应定理</h3><p>NON-CONSERVATION</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-game"><div class="sec-head"><div class="tt">游戏 · 档案 <em>&middot; GAME</em></div><div class="en">GAME // 游戏 · 档案</div></div><div class="grid"><a class="card acc-blue" href="#art-5"><div class="tag">GAME</div><h3>鸡丁仙人线 · 游戏档案</h3><p>GAMES</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-horror"><div class="sec-head"><div class="tt">怪谈 · 红警 <em>&middot; HORROR</em></div><div class="en">HORROR // 怪谈 · 红警</div></div><div class="grid"><a class="card acc-red" href="#art-3"><div class="tag">HORROR</div><h3>红警怪谈</h3><p>RED ALERT</p><div class="go">OPEN &rarr;</div></a><a class="card acc-red" href="#art-9"><div class="tag">HORROR</div><h3>鸡丁怪谈</h3><p>CHICKEN-HORROR</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-phys"><div class="sec-head"><div class="tt">物理 · 戏仿 <em>&middot; PHYS</em></div><div class="en">PHYS // 物理 · 戏仿</div></div><div class="grid"><a class="card acc-blue" href="#art-11"><div class="tag">PHYS</div><h3>BW · 超高速统计力学</h3><p>BW-STAT-MECH</p><div class="go">OPEN &rarr;</div></a><a class="card acc-blue" href="#art-12"><div class="tag">PHYS</div><h3>BW · 超高速非经典力学</h3><p>BW-NON-CLASSICAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-bw"><div class="sec-head"><div class="tt">量化 · 建模 <em>&middot; BW</em></div><div class="en">BW // 量化 · 建模</div></div><div class="grid"><a class="card acc-blue" href="#art-10"><div class="tag">BW</div><h3>BW · 生物意志指数</h3><p>BW-INDEX</p><div class="go">OPEN &rarr;</div></a></div></section>
+<section id="article-root"><div class="sec-head"><div class="tt">全文阅读 <em>// READ</em></div><div class="en">FULL DOCUMENT</div></div><article class="article acc-gold" id="art-16"><div class="crumb"><span>总览 · 主页</span><span class="dot">&#9670;</span><span>HOMEPAGE</span><span class="dot">&#9670;</span><span>PAGE 16</span></div><h2>BFFLS-OSR-NEXT · 开源项目主页</h2><div class="md"><div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
 
   <div style="flex:1 1 auto; min-width:280px;">
 
@@ -152,7 +168,7 @@ footer .motto{font-family:var(--mono);color:var(--blue-2);margin:14px 0 6px;font
 
   </div>
 
-  <div class="imgslot"><span class="img-tag">[ FIG ]</span><span class="img-alt">北京市丰台区外国语学校校徽</span></div>
+  <figure class="fig"><img src="assets/emblem.png" alt="北京市丰台区外国语学校校徽" loading="lazy"></figure>
 
 </div>
 
@@ -1612,17 +1628,23 @@ $$</p>
 <h2 id="_1">🎮 原神</h2>
 <p>《原神》是由米哈游开发的动作角色扮演游戏，于2020年9月登陆Microsoft Windows、Android、iOS、PlayStation 4，2021年4月在PlayStation 5上线。</p>
 <p>游戏具有动漫风格的开放世界环境，采用免费游玩和内购制抽卡的游戏模式。游戏剧情于虚构世界的提瓦特大陆上展开，该世界分成七个国家，每个国家分别以一种元素为主题，并由对应元素的神明所分管。游戏剧情的主角为"旅行者"，是一对在无数个世界中旅行的兄妹，因遭遇陌生神明阻拦在提瓦特被迫分离。玩家将扮演旅行者，为了寻找自己失散的唯一血亲，并与派蒙一同游历七国。</p>
-<p><div cla<figure class="fig"><img src="assets/img5_sq.png" alt="Genshin_Impact" loading="lazy"></figure> id="_2">🌟 艾尔登法环</h2>
+<p><figure class="fig"><img src="assets/img5_sq.png" alt="Genshin_Impact" loading="lazy"></figure></p>
+<h2 id="_2">🌟 艾尔登法环</h2>
 <p>《艾尔登法环》（日语：エルデンリング，英语：Elden Ring）是一款由FromSoftware开发，万代南梦宫娱乐发行的魂系动作角色扮演游戏。本作是由游戏制作人宫崎英高与奇幻小说家乔治·R·R·马丁共同创作。游戏于2022年2月25日发行，有PS4、PS5、Windows、Xbox One、Xbox Series X/S等版本，并计划于2025年发售Nintendo Switch 2版本。而DLC《艾尔登法环 黄金树幽影》（Elden Ring Shadow of the Erdtree)则在2024 年 6 月 21 日正式推出，登上 PC、PS4、PS5、Xbox One、Xbox Series X/S 等平台。</p>
 <p>本作拥有魂类游戏固有的高难度关卡、开放世界、无指引探索、多重结局、多种职业等游戏特点。截至2025年4月29日，本作全球销量已突破3000万套。</p>
-<p><div class="imgslot<figure class="fig"><img src="assets/img2_game.png" alt="Latest" loading="lazy"></figure>使命召唤手游</h2>
+<p><figure class="fig"><img src="assets/img2_game.png" alt="Latest" loading="lazy"></figure></p>
+<h2 id="_3">🔫 使命召唤手游</h2>
 <p>《使命召唤手游》是一款由动视和腾讯联合推出的大型多人在线第一人称射击类手游。游戏将以最高质量的视觉效果呈现游戏品质，高度还原使命召唤系列的经典玩法地图角色，并针对手机端的操作特点进行了适配与优化，让玩家们能更好地沉浸在爽快的射击体验中！</p>
-<p><div class="imgslot"><span c<figure class="fig"><img src="assets/img4_sq.png" alt="image" loading="lazy"></figure>
+<p><figure class="fig"><img src="assets/img4_sq.png" alt="image" loading="lazy"></figure></p>
+<h2 id="_4">🪖 暗区突围</h2>
 <p>《暗区突围》是由腾讯魔方工作室群开发的第一人称射击类手游。该游戏于2021年8月17日在进行了先锋测试，于2022年7月13日正式公测。</p>
 <p>游戏以从暗区撤离并收集物资满载而归作为最终目的，带出的战利品可以存储在仓库中，又可以出售用以换取游戏金钱。</p>
 <h2 id="6">💥 战地风云6</h2>
 <p>《战地风云6》（英语：Battlefield 6，又译作"战地6"）是由战地风云工作室开发，艺电发行的第一人称射击游戏，是战地风云系列第16款作品，游戏设定在2027年，涉及北约以及一家私人军事公司。该作品于2025年7月24日发布了首部预告片, 发售日期为2025年10月10日，并在当天登陆PlayStation 5、Windows和Xbox Series X/S。2025年7月24日，战地6公布首支预告片，揭开了此前提到的前北约国家资助的私人军事公司和平军团的面纱。2025年8月9日到10日，以及该月14日至17日，战地6开启大规模Beta公开测试，获得邀请码的玩家在8月7日即可开启测试。</p>
-<p><div class="imgslot"><span class="img-t<figure class="fig"><img src="assets/img3_banner.png" alt="image" loading="lazy"></figure>/p>
+<p><figure class="fig"><img src="assets/img3_banner.png" alt="image" loading="lazy"></figure></p>
+<hr />
+<blockquote>
+<p>[!WARNING]</p>
 <p>不要问为什么没有暗区突围的图片</p>
 <p>[!CAUTION]</p>
 <p>根据鸡丁怪谈第8条，千万不要试图在任何地方诋毁暗区突围或艾尔登法环，否则你会付出惨痛的代价！！！</p>
@@ -2396,7 +2418,7 @@ BW 指数属于社会科学与行为数学模型，仅供自我了解与科研�
 <hr />
 <p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW 生物意志指数<br />
 本分支内容由 OSR 管理委员会托管。</p></div></article></section>
-<footer><div class="motto">让学习无界 &middot; 让知识共享 &middot; 让创新照亮未来</div><div class="mono">&copy; 2025&ndash;2026 北京市丰台区外国语学校 &middot; BFFLS Open Source Repository</div><div class="mono" style="margin-top:8px">本分支内容由 OSR 管理委员会托管 &middot; 默认采用 MIT License</div></footer>
+<footer><div class="motto">让学习无界 &middot; 让知识共享 &middot; 让创新照亮未来</div><div class="mono">&copy; 2025&ndash;2026 北京市丰台区外国语学校 &middot; BFFLS-OSR-NEXT</div><div class="mono" style="margin-top:8px">本分支内容由 OSR 管理委员会托管 &middot; 默认采用 MIT License</div></footer>
 <button class="totop" id="totop" onclick="window.scrollTo({top:0,behavior:smooth})"><span>&uarr;</span></button>
 <script>
 function scrollToId(id){var e=document.getElementById(id);if(e){e.scrollIntoView({behavior:smooth});}}
@@ -2414,8 +2436,8 @@ function renderMathLaTeX(){
     renderMathInElement(root,{
       delimiters:[
         {left:'$$',right:'$$',display:true},
-        {left:'\\(',right:'\\)',display:false},
-        {left:'\\[',right:'\\]',display:true},
+        {left:'\(',right:'\)',display:false},
+        {left:'\[',right:'\]',display:true},
         {left:'$',right:'$',display:false}
       ],
       ignoredTags:['script','noscript','style','textarea','pre','code'],
