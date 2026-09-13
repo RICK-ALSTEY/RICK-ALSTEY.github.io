@@ -70,6 +70,8 @@ section{padding:54px var(--pad);max-width:1280px;margin:0 auto}
 .sec-head .en{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--text-mute);text-transform:uppercase}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.empty-note{grid-column:1/-1;padding:34px 20px;text-align:center;font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--text-mute);border:1px dashed var(--line-dd);border-radius:var(--r);background:repeating-linear-gradient(45deg,#0e1117 0 12px,#0c0f15 12px 24px)}
+
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;cursor:pointer;transition:.2s;position:relative;overflow:hidden;min-height:150px}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--acc)}
 .card::after{content:"";position:absolute;right:-30px;top:-30px;width:96px;height:96px;border:1px solid var(--line);transform:rotate(45deg);opacity:.5}
@@ -133,7 +135,7 @@ footer .motto{font-family:var(--mono);color:var(--blue-2);margin:14px 0 6px;font
 </style>
 </head>
 <body>
-<nav class="top"><div class="brand"><span class="sq"></span><span class="nm">BFFLS<b>-OSR-NEXT</b></span></div><div class="navlnk"><a class="lnk sel" href="#">HOME</a><a class="lnk" href="#cat-home">HOMEPAGE</a><a class="lnk" href="#cat-person">PERSON</a><a class="lnk" href="#cat-memorial">MEMORIAL</a><a class="lnk" href="#cat-legal">LEGAL</a><a class="lnk" href="#cat-paper">PAPER</a><a class="lnk" href="#cat-lang">LANG</a><a class="lnk" href="#cat-food">FOOD</a><a class="lnk" href="#cat-philo">PHILO</a><a class="lnk" href="#cat-tech">TECH</a><a class="lnk" href="#cat-chem">CHEM</a><a class="lnk" href="#cat-game">GAME</a><a class="lnk" href="#cat-horror">HORROR</a><a class="lnk" href="#cat-phys">PHYS</a><a class="lnk" href="#cat-bw">BW</a></div></nav>
+<nav class="top"><div class="brand"><span class="sq"></span><span class="nm">BFFLS<b>-OSR-NEXT</b></span></div><div class="navlnk"><a class="lnk sel" href="#">HOME</a><a class="lnk" href="#cat-intro">INTRO</a><a class="lnk" href="#cat-xianren">XIANREN</a><a class="lnk" href="#cat-bw">BW</a><a class="lnk" href="#cat-kpc">KPC</a><a class="lnk" href="#cat-misc">MISC</a></div></nav>
 <header class="hero">
 <div class="kicker">OPEN SOURCE REPOSITORY // BFFLS-OSR-NEXT</div>
 <h1>丰台区外国语学校<br/><span class="hl">开源项目仓储</span></h1>
@@ -152,13 +154,247 @@ footer .motto{font-family:var(--mono);color:var(--blue-2);margin:14px 0 6px;font
 <div class="stats">
 <div class="stat"><div class="v">16</div><div class="k">分支 &middot; 页面</div></div>
 <div class="stat"><div class="v">6</div><div class="k">人物线</div></div>
-<div class="stat"><div class="v">14</div><div class="k">主题分类</div></div>
+<div class="stat"><div class="v">5</div><div class="k">板块分类</div></div>
 <div class="stat"><div class="v">MIT</div><div class="k">开源许可</div></div>
 </div>
 </header>
-<section id="intro"><div class="sec-head"><div class="tt">页面索引 <em>// INDEX</em></div><div class="en">ALL PAGES</div></div><div class="grid"><a class="card acc-gold" href="#cat-home"><div class="tag">HOMEPAGE</div><h3>总览 · 主页</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-person"><div class="tag">PERSON</div><h3>人物 · 校长</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-memorial"><div class="tag">MEMORIAL</div><h3>纪念 · 英烈</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-legal"><div class="tag">LEGAL</div><h3>法律 · 声明</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-paper"><div class="tag">PAPER</div><h3>归档 · 论文</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-lang"><div class="tag">LANG</div><h3>语言 · 戏仿</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-food"><div class="tag">FOOD</div><h3>美食 · 评鉴</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-philo"><div class="tag">PHILO</div><h3>哲学 · 戏仿</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-tech"><div class="tag">TECH</div><h3>数学 · 建模</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-chem"><div class="tag">CHEM</div><h3>化学 · 戏仿</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-game"><div class="tag">GAME</div><h3>游戏 · 档案</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-red" href="#cat-horror"><div class="tag">HORROR</div><h3>怪谈 · 红警</h3><p>共 2 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-phys"><div class="tag">PHYS</div><h3>物理 · 戏仿</h3><p>共 2 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-bw"><div class="tag">BW</div><h3>量化 · 建模</h3><p>共 1 个页面</p><div class="go">EXPLORE &rarr;</div></a></div></section>
-<section id="cat-home"><div class="sec-head"><div class="tt">总览 · 主页 <em>&middot; HOMEPAGE</em></div><div class="en">HOMEPAGE // 总览 · 主页</div></div><div class="grid"><a class="card acc-gold" href="#art-16"><div class="tag">HOMEPAGE</div><h3>BFFLS-OSR-NEXT · 开源项目主页</h3><p>HOME</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-person"><div class="sec-head"><div class="tt">人物 · 校长 <em>&middot; PERSON</em></div><div class="en">PERSON // 人物 · 校长</div></div><div class="grid"><a class="card acc-gray" href="#art-2"><div class="tag">PERSON</div><h3>刘忠毅 · 爬树校长</h3><p>PRINCIPAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-memorial"><div class="sec-head"><div class="tt">纪念 · 英烈 <em>&middot; MEMORIAL</em></div><div class="en">MEMORIAL // 纪念 · 英烈</div></div><div class="grid"><a class="card acc-gold" href="#art-15"><div class="tag">MEMORIAL</div><h3>缅怀 · 佟麟阁将军</h3><p>MEMORIAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-legal"><div class="sec-head"><div class="tt">法律 · 声明 <em>&middot; LEGAL</em></div><div class="en">LEGAL // 法律 · 声明</div></div><div class="grid"><a class="card acc-gray" href="#art-14"><div class="tag">LEGAL</div><h3>开源项目 · 免责声明</h3><p>DISCLAIMER</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-paper"><div class="sec-head"><div class="tt">归档 · 论文 <em>&middot; PAPER</em></div><div class="en">PAPER // 归档 · 论文</div></div><div class="grid"><a class="card acc-blue" href="#art-13"><div class="tag">PAPER</div><h3>《RUBBISH》论文归档</h3><p>PAPER</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-lang"><div class="sec-head"><div class="tt">语言 · 戏仿 <em>&middot; LANG</em></div><div class="en">LANG // 语言 · 戏仿</div></div><div class="grid"><a class="card acc-gray" href="#art-1"><div class="tag">LANG</div><h3>FW-Lang · 丰外自研语法</h3><p>FW-LANG</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-food"><div class="sec-head"><div class="tt">美食 · 评鉴 <em>&middot; FOOD</em></div><div class="en">FOOD // 美食 · 评鉴</div></div><div class="grid"><a class="card acc-gold" href="#art-4"><div class="tag">FOOD</div><h3>宫保鸡丁品质鉴评委员会</h3><p>KPC-QEC</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-philo"><div class="sec-head"><div class="tt">哲学 · 戏仿 <em>&middot; PHILO</em></div><div class="en">PHILO // 哲学 · 戏仿</div></div><div class="grid"><a class="card acc-gold" href="#art-7"><div class="tag">PHILO</div><h3>个体评价偏移 · 哲学与数学分析</h3><p>EVALUATION</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-tech"><div class="sec-head"><div class="tt">数学 · 建模 <em>&middot; TECH</em></div><div class="en">TECH // 数学 · 建模</div></div><div class="grid"><a class="card acc-blue" href="#art-6"><div class="tag">TECH</div><h3>宫保鸡丁 · 花生均匀摆放研究</h3><p>PEANUTS</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-chem"><div class="sec-head"><div class="tt">化学 · 戏仿 <em>&middot; CHEM</em></div><div class="en">CHEM // 化学 · 戏仿</div></div><div class="grid"><a class="card acc-gray" href="#art-8"><div class="tag">CHEM</div><h3>鸡丁仙人 · 非守恒反应定理</h3><p>NON-CONSERVATION</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-game"><div class="sec-head"><div class="tt">游戏 · 档案 <em>&middot; GAME</em></div><div class="en">GAME // 游戏 · 档案</div></div><div class="grid"><a class="card acc-blue" href="#art-5"><div class="tag">GAME</div><h3>鸡丁仙人线 · 游戏档案</h3><p>GAMES</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-horror"><div class="sec-head"><div class="tt">怪谈 · 红警 <em>&middot; HORROR</em></div><div class="en">HORROR // 怪谈 · 红警</div></div><div class="grid"><a class="card acc-red" href="#art-3"><div class="tag">HORROR</div><h3>红警怪谈</h3><p>RED ALERT</p><div class="go">OPEN &rarr;</div></a><a class="card acc-red" href="#art-9"><div class="tag">HORROR</div><h3>鸡丁怪谈</h3><p>CHICKEN-HORROR</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-phys"><div class="sec-head"><div class="tt">物理 · 戏仿 <em>&middot; PHYS</em></div><div class="en">PHYS // 物理 · 戏仿</div></div><div class="grid"><a class="card acc-blue" href="#art-11"><div class="tag">PHYS</div><h3>BW · 超高速统计力学</h3><p>BW-STAT-MECH</p><div class="go">OPEN &rarr;</div></a><a class="card acc-blue" href="#art-12"><div class="tag">PHYS</div><h3>BW · 超高速非经典力学</h3><p>BW-NON-CLASSICAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-bw"><div class="sec-head"><div class="tt">量化 · 建模 <em>&middot; BW</em></div><div class="en">BW // 量化 · 建模</div></div><div class="grid"><a class="card acc-blue" href="#art-10"><div class="tag">BW</div><h3>BW · 生物意志指数</h3><p>BW-INDEX</p><div class="go">OPEN &rarr;</div></a></div></section>
-<section id="article-root"><div class="sec-head"><div class="tt">全文阅读 <em>// READ</em></div><div class="en">FULL DOCUMENT</div></div><article class="article acc-gold" id="art-16"><div class="crumb"><span>总览 · 主页</span><span class="dot">&#9670;</span><span>HOMEPAGE</span><span class="dot">&#9670;</span><span>PAGE 16</span></div><h2>BFFLS-OSR-NEXT · 开源项目主页</h2><div class="md"><div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+<section id="intro"><div class="sec-head"><div class="tt">页面索引 <em>// INDEX</em></div><div class="en">ALL PAGES</div></div><div class="grid"><a class="card acc-gold" href="#cat-intro"><div class="tag">INTRO</div><h3>介绍</h3><p>共 4 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-xianren"><div class="tag">XIANREN</div><h3>仙人系列</h3><p>共 3 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-blue" href="#cat-bw"><div class="tag">BW</div><h3>BW系列</h3><p>共 3 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gold" href="#cat-kpc"><div class="tag">KPC</div><h3>宫保鸡丁系列</h3><p>共 6 个页面</p><div class="go">EXPLORE &rarr;</div></a><a class="card acc-gray" href="#cat-misc"><div class="tag">MISC</div><h3>其他 / 杂项</h3><p>共 0 个页面</p><div class="go">EXPLORE &rarr;</div></a></div></section>
+<section id="cat-intro"><div class="sec-head"><div class="tt">介绍 <em>&middot; INTRO</em></div><div class="en">INTRO // 介绍</div></div><div class="grid"><a class="card acc-gold" href="#art-13"><div class="tag">INTRO</div><h3>《RUBBISH》论文归档</h3><p>PAPER</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-14"><div class="tag">INTRO</div><h3>开源项目 · 免责声明</h3><p>DISCLAIMER</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-15"><div class="tag">INTRO</div><h3>缅怀 · 佟麟阁将军</h3><p>MEMORIAL</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-16"><div class="tag">INTRO</div><h3>BFFLS-OSR-NEXT · 开源项目主页</h3><p>HOME</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-xianren"><div class="sec-head"><div class="tt">仙人系列 <em>&middot; XIANREN</em></div><div class="en">XIANREN // 仙人系列</div></div><div class="grid"><a class="card acc-gray" href="#art-1"><div class="tag">XIANREN</div><h3>FW-Lang · 丰外自研语法</h3><p>FW-LANG</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gray" href="#art-2"><div class="tag">XIANREN</div><h3>刘忠毅 · 爬树校长</h3><p>PRINCIPAL</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gray" href="#art-3"><div class="tag">XIANREN</div><h3>红警怪谈</h3><p>RED ALERT</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-bw"><div class="sec-head"><div class="tt">BW系列 <em>&middot; BW</em></div><div class="en">BW // BW系列</div></div><div class="grid"><a class="card acc-blue" href="#art-10"><div class="tag">BW</div><h3>BW · 生物意志指数</h3><p>BW-INDEX</p><div class="go">OPEN &rarr;</div></a><a class="card acc-blue" href="#art-11"><div class="tag">BW</div><h3>BW · 超高速统计力学</h3><p>BW-STAT-MECH</p><div class="go">OPEN &rarr;</div></a><a class="card acc-blue" href="#art-12"><div class="tag">BW</div><h3>BW · 超高速非经典力学</h3><p>BW-NON-CLASSICAL</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-kpc"><div class="sec-head"><div class="tt">宫保鸡丁系列 <em>&middot; KPC</em></div><div class="en">KPC // 宫保鸡丁系列</div></div><div class="grid"><a class="card acc-gold" href="#art-4"><div class="tag">KPC</div><h3>宫保鸡丁品质鉴评委员会</h3><p>KPC-QEC</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-5"><div class="tag">KPC</div><h3>鸡丁仙人线 · 游戏档案</h3><p>GAMES</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-6"><div class="tag">KPC</div><h3>宫保鸡丁 · 花生均匀摆放研究</h3><p>PEANUTS</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-7"><div class="tag">KPC</div><h3>个体评价偏移 · 哲学与数学分析</h3><p>EVALUATION</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-8"><div class="tag">KPC</div><h3>鸡丁仙人 · 非守恒反应定理</h3><p>NON-CONSERVATION</p><div class="go">OPEN &rarr;</div></a><a class="card acc-gold" href="#art-9"><div class="tag">KPC</div><h3>鸡丁怪谈</h3><p>CHICKEN-HORROR</p><div class="go">OPEN &rarr;</div></a></div></section><section id="cat-misc"><div class="sec-head"><div class="tt">其他 / 杂项 <em>&middot; MISC</em></div><div class="en">MISC // 其他 / 杂项</div></div><div class="grid"><div class="empty-note">暂无页面 &middot; NO ENTRY IN THIS SECTION</div></div></section>
+<section id="article-root"><div class="sec-head"><div class="tt">全文阅读 <em>// READ</em></div><div class="en">FULL DOCUMENT</div></div><article class="article acc-gold" id="art-13"><div class="crumb"><span>介绍</span><span class="dot">&#9670;</span><span>INTRO</span><span class="dot">&#9670;</span><span>PAGE 13</span></div><h2>《RUBBISH》论文归档</h2><div class="md"><p><strong>BFFLS-OSR · Academic Paper Archive</strong></p>
+<hr />
+<blockquote>
+<p>本分支用于集中归档由北京市丰台区外国语学校师生在《RUBBISH》平台发布的创意作品与公开链接，便于检索、交流与留存。归档内容以戏仿与幽默表达为主，属非正式发表，请理性看待。</p>
+</blockquote>
+<hr />
+<h2 id="_1">📖 目录</h2>
+<ul>
+<li>
+<p><a href="#-一归档说明">一、归档说明</a></p>
+</li>
+<li>
+<p><a href="#-二论文列表">二、论文列表</a></p>
+</li>
+<li>
+<p><a href="#-三投稿与说明">三、投稿与说明</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="_2">🗂️ 一、归档说明</h2>
+<p>《RUBBISH》为本项目关联的线上发表平台之一，内容以幽默、戏仿与创意表达为主。凡在本仓库各专题分支中形成的作品，经登记并以公开链接形式发布后，将在此集中记录、附链与归档。</p>
+<hr />
+<h2 id="_3">📄 二、论文列表</h2>
+<h3 id="1">1. 圆内均匀随机点生成原理及其在宫保鸡丁花生摆放中的应用</h3>
+<ul>
+<li>
+<p><strong>语言</strong>：中文</p>
+</li>
+<li>
+<p><strong>链接</strong>：<a href="https://rubbish-journal.org/zh/articles/2ef4feb2-b091-4b3b-8d7c-f026ca23c4ef">rubbish-journal.org/zh/articles/2ef4feb2-…</a></p>
+</li>
+</ul>
+<h3 id="2">2. 九号电动自行车改装与骑行生存率及交警查处率关系研究</h3>
+<ul>
+<li>
+<p><strong>语言</strong>：中文</p>
+</li>
+<li>
+<p><strong>链接</strong>：<a href="https://rubbish-journal.org/en/articles/5cc4f03d-918b-4386-8f97-40e77b85298e">rubbish-journal.org/en/articles/5cc4f03d-…</a></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>说明</strong>：以上论文的作者、发表时间与卷期号待登记，建议后续在登记入库时一并补齐。</p>
+<p><strong>内容提示</strong>：《RUBBISH》为带有学术戏仿与幽默色彩的非正式发表平台，本页归档内容不构成正式学术文献，请注意甄别、勿作严肃引用依据。</p>
+</blockquote>
+<hr />
+<h2 id="_4">✍️ 三、投稿与说明</h2>
+<p>如你希望在《RUBBISH》期刊发表论文并登记入本归档，请联系 OSR 管理委员会或通过仓库 <strong>Issue / Pull Request</strong> 提交材料。OSR 管理委员会将协助完成登记与链接更新。</p>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 《RUBBISH》论文归档</p></div></article><article class="article acc-gold" id="art-14"><div class="crumb"><span>介绍</span><span class="dot">&#9670;</span><span>INTRO</span><span class="dot">&#9670;</span><span>PAGE 14</span></div><h2>开源项目 · 免责声明</h2><div class="md"><p><strong>Fengtai Foreign Language School Open Source Repository — Disclaimer</strong></p>
+<hr />
+<blockquote>
+<p><strong>版本号</strong>：1.0　·　<strong>生效日期</strong>：2026年3月11日　·　<strong>发布方</strong>：BFFLS-OSR · OSR 管理委员会（OSR Management Committee）</p>
+<p>本声明旨在明确 BFFLS-OSR 仓库各类内容的使用边界、责任归属与法律依据，请在使用、浏览或贡献前仔细阅读。</p>
+</blockquote>
+<hr />
+<h2 id="_1">📖 目录</h2>
+<ul>
+<li>
+<p><a href="#-一适用范围">一、适用范围</a></p>
+</li>
+<li>
+<p><a href="#-二前言与定位">二、前言与定位</a></p>
+</li>
+<li>
+<p><a href="#-三无保证声明">三、无保证声明</a></p>
+</li>
+<li>
+<p><a href="#-四责任限制">四、责任限制</a></p>
+</li>
+<li>
+<p><a href="#-五知识产权声明">五、知识产权声明</a></p>
+</li>
+<li>
+<p><a href="#-六适用法律与争议解决">六、适用法律与争议解决</a></p>
+</li>
+<li>
+<p><a href="#-七隐私与数据保护">七、隐私与数据保护</a></p>
+</li>
+<li>
+<p><a href="#-八教育开源特别声明">八、教育开源特别声明</a></p>
+</li>
+<li>
+<p><a href="#-九一般条款">九、一般条款</a></p>
+</li>
+<li>
+<p><a href="#-十结语">十、结语</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="_2">📍 一、适用范围</h2>
+<p>BFFLS-OSR仓库（GitHub地址：https://github.com/Kardashev999/BFFLS-OSR ）及其所有相关内容，包括但不限于代码、文档、资源文件、讨论区、Issues、Pull Requests、Wiki页面以及任何衍生作品或使用该仓库的活动。本免责声明适用于所有访问者、贡献者、用户和第三方（以下简称“用户”），无论其是否为学校师生、合作机构或公众。</p>
+<p><strong>法律参考</strong>：本免责声明参考《中华人民共和国民法典》、《中华人民共和国网络安全法》、《中华人民共和国个人信息保护法》（PIPL）以及开源社区通用惯例制定，不构成任何形式的法律意见或合同承诺。如有争议，适用中华人民共和国法律，并以北京市丰台区人民法院为第一审管辖法院。</p>
+<hr />
+<h2 id="_3">📄 二、前言与定位</h2>
+<p><strong>特别强调</strong>：BFFLS-OSR仓库由学生发起创建，现由 <strong>OSR 管理委员会</strong> 托管与维护。该仓库系学生自主发起的开源教育项目平台，不代表学校官方立场或机构行为。学校不参与仓库的具体内容创作、审核或运营。所有内容、决策及责任均由 OSR 管理委员会独立承担。</p>
+<p>BFFLS-OSR仓库旨在通过开源方式促进教育资源共享、科技创新与学术交流。该仓库汇集学校师生在教学辅助、科研合作、外语教育创新、校园文化建设等方面的原创成果，包括但不限于教学脚本、互动课件、学术论文草稿、学生项目原型以及信息化工具开发示例。仓库的宗旨在于践行教育公益理念，推动优质教育资源公平获取，鼓励跨学科协同创新，并搭建师生与社会间的学术交流桥梁。</p>
+<p>学校作为一所注重国际化人才培养的十二年一贯制学校（小学至高中），致力于以习近平新时代中国特色社会主义思想为指导，坚持正确政治方向，支持中国共产党的领导，拥护中国特色社会主义制度，积极响应国家教育现代化2035规划。</p>
+<p>本声明不创建任何代理、合伙、合资、雇佣或代理商关系，也不构成任何形式的要约、合同或法律承诺。<strong>OSR 管理委员会保留随时更新本声明的权利</strong>，更新版本将通过仓库 README.md 或独立文件公布，继续使用视为接受更新。</p>
+<hr />
+<h2 id="_4">⚠️ 三、无保证声明</h2>
+<p><strong>特别强调</strong>：鉴于仓库由学生发起创建，内容可能反映学生视角或实验性探索，不具备专业或官方认证。OSR 管理委员会对 BFFLS-OSR 仓库的所有内容（以下简称“内容”）<strong>不提供任何明示、默示或法定保证</strong>，包括但不限于：</p>
+<h3 id="_5">适销性与特定用途适用性</h3>
+<p>内容不保证适合任何特定目的、环境或用户需求。例如，教学工具可能不兼容所有设备或软件版本；学术资源可能基于特定教育场景，不适用于其他地区或学科。</p>
+<h3 id="_6">非侵权</h3>
+<p>OSR 管理委员会不保证内容不侵犯第三方知识产权（如专利、商标、著作权）。用户自行承担因内容使用引发的侵权风险。</p>
+<h3 id="_7">准确性与完整性</h3>
+<p>内容可能包含错误、遗漏、不准确信息或过时数据。例如，教育示例基于当前教育政策，可能随国家法规变化而失效；学生项目原型为实验性，可能未经验证。</p>
+<h3 id="_8">安全性与可靠性</h3>
+<p>内容不保证无病毒、恶意代码或其他有害元素。用户应自行进行安全扫描与验证。</p>
+<h3 id="_9">持续可用性</h3>
+<p>仓库可能因维护、迁移或政策调整而中断访问；内容可能被修改、删除或归档，无需事先通知。</p>
+<p>在教育开源语境下，内容主要用于学习、研究和非商业实验目的。仓库并非官方教材、认证课程或专业咨询服务，用户不得将其作为唯一依据进行决策。</p>
+<hr />
+<h2 id="_10">⚖️ 四、责任限制</h2>
+<p><strong>特别强调</strong>：BFFLS-OSR 仓库由学生发起创建并由 OSR 管理委员会托管，因此所有责任限于 OSR 管理委员会能力范围。</p>
+<p>OSR 管理委员会<strong>不对任何直接、间接、附带、特殊、惩戒性或后果性损害承担责任</strong>，包括但不限于：</p>
+<h3 id="_11">经济损失</h3>
+<p>数据丢失、业务中断、利润减少、机会成本或预期收益损失。</p>
+<h3 id="_12">非经济损失</h3>
+<p>声誉损害、精神痛苦、隐私泄露或知识产权纠纷。</p>
+<h3 id="_13">技术损害</h3>
+<p>设备故障、软件崩溃或网络安全事件。</p>
+<h3 id="_14">教育相关风险</h3>
+<p>不当使用内容导致的学生学习偏差、教学事故或合规违规。</p>
+<p>责任限制适用于所有法律理论，包括合同、侵权（包括过失）、严格责任等。</p>
+<p><strong>在法律允许的最大范围内，OSR 管理委员会不对上述任何类别的责任承担赔偿义务；就本仓库内容的使用所引发的全部主张，OSR 管理委员会累计应承担的责任，以不超过用户为本仓库内容实际支付的任何费用（如有）为上限。</strong> 若该限制因适用法律强制规定而无效，则责任范围应依法调整至法律允许的最小程度。</p>
+<p>OSR 管理委员会不对用户之间的互动（例如 Issues、Pull Requests 或 Discussions）承担责任。用户贡献内容仅代表其个人观点，不代表学校立场。</p>
+<hr />
+<h2 id="_15">©️ 五、知识产权声明</h2>
+<p>BFFLS-OSR 仓库内容受中国及国际知识产权法律保护。</p>
+<p><strong>特别强调：所有核心内容由学生原创创建和管理，知识产权归贡献者所有。</strong></p>
+<h3 id="_16">许可</h3>
+<p>除非另有说明，仓库内容默认采用 <strong>MIT License</strong> 开源（详见仓库根目录 LICENSE 文件）。该许可允许：使用、复制、修改、分发、创建衍生作品；但必须：保留版权声明与许可声明。如后续更换许可协议，将以根目录 LICENSE 文件的最新内容为准。</p>
+<h3 id="_17">用户贡献</h3>
+<p>通过 Pull Request 或其他方式提交内容，贡献者即授予 OSR 管理委员会<strong>永久、不可撤销、全球范围的非独占许可</strong>，用于：使用、修改、再分发、创建衍生作品。贡献者需保证：内容为原创、不侵犯第三方权利，否则需自行承担责任。</p>
+<h3 id="_18">第三方内容</h3>
+<p>仓库可能包含第三方开源组件或引用资料，用户需遵守其对应许可协议。</p>
+<h3 id="_19">学校品牌</h3>
+<p>学校名称、徽标及 “BFFLS” 标识<strong>未经授权不得用于商业宣传或误导性用途</strong>。</p>
+<hr />
+<h2 id="_20">🌐 六、适用法律与争议解决</h2>
+<p>本免责声明受<strong>中华人民共和国法律</strong>管辖。任何争议应：</p>
+<ol>
+<li>
+<p>首先通过友好协商解决</p>
+</li>
+<li>
+<p>协商不成的，提交<strong>北京市丰台区人民法院</strong>管辖</p>
+</li>
+</ol>
+<p>国际用户使用仓库即表示同意遵守中国法律。</p>
+<hr />
+<h2 id="_21">🔒 七、隐私与数据保护</h2>
+<p>仓库遵守：《中华人民共和国个人信息保护法》（PIPL）、《中华人民共和国网络安全法》。仅收集必要信息，例如：GitHub 用户名、GitHub 公开邮箱，用于：项目贡献通知、协作沟通。</p>
+<p><strong>特别说明：隐私管理由 OSR 管理委员会负责，学校不参与具体运营。</strong></p>
+<p>未成年人（14岁以下）参与贡献需监护人同意。</p>
+<hr />
+<h2 id="_22">🎓 八、教育开源特别声明</h2>
+<p>BFFLS-OSR 为<strong>教育性质开源项目</strong>。因此：内容具有实验性、不构成官方教材、不构成教学指导、不构成学术认证。用户在教学、研究或商业环境使用前应自行评估风险。</p>
+<p>OSR 管理委员会鼓励：学术诚信、原创贡献、跨校合作；但不对合作方行为负责。</p>
+<hr />
+<h2 id="_23">📜 九、一般条款</h2>
+<ul>
+<li>
+<p><strong>可分性</strong>：若某条款无效，其余条款仍有效</p>
+</li>
+<li>
+<p><strong>通知方式</strong>：通过 GitHub 仓库发布</p>
+</li>
+<li>
+<p><strong>标题说明</strong>：标题仅用于阅读方便，不具有法律效力</p>
+</li>
+</ul>
+<hr />
+<h2 id="_24">🕊️ 十、结语</h2>
+<p>BFFLS-OSR 仓库体现了学生“开放共享、协同创新”的理念。该项目由学生发起创建并由 OSR 管理委员会托管，不代表学校官方行为。欢迎全球开发者、教育工作者和学生参与贡献，共同推动教育开源发展。</p>
+<p><strong>本声明自发布之日起生效。如有疑问，请通过 GitHub Issues 反馈。OSR 管理委员会保留最终解释权。</strong></p>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 免责声明  </p></div></article><article class="article acc-gold" id="art-15"><div class="crumb"><span>介绍</span><span class="dot">&#9670;</span><span>INTRO</span><span class="dot">&#9670;</span><span>PAGE 15</span></div><h2>缅怀 · 佟麟阁将军</h2><div class="md"><p><strong>In Memory of General Tong Linge</strong></p>
+<hr />
+<blockquote>
+<p>“国破山河在，城春草木深。”——这句诗，亦是对无数抗日英烈的挽歌与敬礼。</p>
+<p>佟麟阁将军，这位以血肉之躯捍卫民族尊严的铁血将领，永远活在中华民族的记忆之中。</p>
+</blockquote>
+<hr />
+<h2 id="_1">📖 目录</h2>
+<ul>
+<li>
+<p><a href="#-一生平简述">一、生平简述</a></p>
+</li>
+<li>
+<p><a href="#-二卢沟桥事变中的壮举">二、卢沟桥事变中的壮举</a></p>
+</li>
+<li>
+<p><a href="#-三精神永存">三、精神永存</a></p>
+</li>
+<li>
+<p><a href="#-四后世纪念">四、后世纪念</a></p>
+</li>
+<li>
+<p><a href="#-五结语">五、结语</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="_2">📜 一、生平简述</h2>
+<p>佟麟阁（1892年10月－1937年7月28日），字捷三，河北省高阳县人。</p>
+<p>早年慕冯玉祥将军爱国之名投笔从戎，由行伍逐级擢升，历任北洋政府、国民政府时期多个军事职务，作战勇猛，治军严谨，以忠勇著称。</p>
+<p>“九一八”事变后，他痛感民族危机，誓以身报国。彼时他已任<strong>国民革命军第29军副军长</strong>，辅佐军长宋哲元共守华北；全面抗战爆发前又兼任军事训练团团长、驻节南苑主持军务，为捍卫民族尊严作出了不可磨灭的贡献。</p>
+<hr />
+<h2 id="_3">⚔️ 二、卢沟桥事变中的壮举</h2>
+<p>1937年7月7日，日军挑起卢沟桥事变。佟麟阁将军在南苑军部力主坚决抵抗，向全军官兵严令：凡有日军进犯，坚决抵抗，誓与卢沟桥共存亡，不得后退一步。面对装备精良的日军，他指挥守军以血肉之躯筑起中华民族的抗战防线。</p>
+<p>在随后的北平保卫战中，他亲临前线指挥，激励将士奋勇杀敌。7月28日，佟麟阁将军与赵登禹将军并肩作战，于激战中壮烈殉国，时年仅45岁。</p>
+<blockquote>
+<p>“生为中华人，死为中华魂。”</p>
+<p>佟将军以生命践行了军人的誓言。</p>
+</blockquote>
+<hr />
+<h2 id="_4">🌟 三、精神永存</h2>
+<p>佟麟阁将军虽已离世，但他的精神长存。他的忠勇、他的担当、他的民族气节，成为一代又一代中国人心中的丰碑。</p>
+<p>他不只是抗日战争的英雄，更是<strong>民族尊严的象征</strong>。在民族危亡之际，他用鲜血告诉世界：中国人可以被打倒，但绝不屈服。</p>
+<hr />
+<h2 id="_5">🗿 四、后世纪念</h2>
+<p>中华人民共和国成立后，佟麟阁将军被追认为<strong>革命烈士</strong>，并被评为“100位为新中国成立作出突出贡献的英雄模范人物”之一。为铭记英烈，其家乡河北省高阳县建有佟麟阁小学（内设佟麟阁纪念馆）；北京海淀香山脚下建有佟麟阁将军墓与佟麟阁将军纪念馆；北京西城、河北等地亦设有以将军命名的道路与纪念设施，供世人永远铭记这位以身殉国的抗日名将。</p>
+<hr />
+<h2 id="_6">🕊️ 五、结语</h2>
+<blockquote>
+<p>“青山处处埋忠骨，何须马革裹尸还。”</p>
+</blockquote>
+<p>佟麟阁将军以生命捍卫了国家与民族的尊严。他用血染的忠诚告诉我们：<strong>有信仰的军人，才有不灭的国家。</strong></p>
+<p>今天，当我们在和平年代缅怀他时，更应铭记历史，珍惜来之不易的和平。将军之魂，长照山河。</p>
+<hr />
+<p><strong>佟麟阁将军千古！</strong></p>
+<p><em>内容整理：OSR 管理委员会　·　时间：2025年11月7日</em></p>
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 纪念佟麟阁将军  </p></div></article><article class="article acc-gold" id="art-16"><div class="crumb"><span>介绍</span><span class="dot">&#9670;</span><span>INTRO</span><span class="dot">&#9670;</span><span>PAGE 16</span></div><h2>BFFLS-OSR-NEXT · 开源项目主页</h2><div class="md"><div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
 
   <div style="flex:1 1 auto; min-width:280px;">
 
@@ -296,285 +532,7 @@ footer .motto{font-family:var(--mono);color:var(--blue-2);margin:14px 0 6px;font
 </blockquote>
 <hr />
 <p><strong>开源许可</strong>：本仓库内容默认采用 <a href="LICENSE">MIT License</a>（详见根目录 LICENSE 文件）。</p>
-<p>© 2025–2026 北京市丰台区外国语学校 · BFFLS Open Source Repository  </p></div></article><article class="article acc-gray" id="art-2"><div class="crumb"><span>人物 · 校长</span><span class="dot">&#9670;</span><span>PERSON</span><span class="dot">&#9670;</span><span>PAGE 02</span></div><h2>刘忠毅 · 爬树校长</h2><div class="md"><blockquote>
-<p><strong>内容性质</strong>：本分支为学校特色活动与校长的公开报道资料整理归档（含“爬树课”校园新闻素材），信息来源于公开渠道，仅供存档与了解。</p>
-<p>[!NOTE]</p>
-<p>他就是爬树仙人</p>
-</blockquote>
-<h2 id="_1">别名：爬树仙人</h2>
-<h1 id="_2">人物介绍：</h1>
-<h2 id="_3">丰台区外国语学校~~爬树学校~~校长刘忠毅简介</h2>
-<p><strong>刘忠毅</strong>，现任北京市丰台区外国语学校校长，是教育界备受尊重的领军人物。他以卓越的教育理念和创新实践，致力于打造一所注重学生全面发展的国际化学校。作为学校的核心领导者，刘忠毅带领丰外（北京市丰台区外国语学校）从2021年建校至今，迅速成长为十八中教育集团的骨干成员校，推动学校从小学到高中十二年一贯制办学模式。</p>
-<h3 id="_4">教育背景与专业成就</h3>
-<p>刘忠毅校长拥有深厚的教育背景，曾获多项国家级荣誉，包括：</p>
-<ul>
-<li>
-<p><strong>全国知名特级教师</strong>  </p>
-</li>
-<li>
-<p><strong>全国十佳优秀科技教师</strong>  </p>
-</li>
-<li>
-<p><strong>全国优秀创新型校长</strong>  </p>
-</li>
-<li>
-<p><strong>英特尔国际科学与工程学大奖赛全球优秀教师</strong>（中国唯一一位）  </p>
-</li>
-</ul>
-<p>他还兼具北京市特级教师和广东省特级教师双重称号。在教学一线，刘忠毅培养了100多位考入清华、北大、斯坦福等顶尖名校的学生，尤其在学科竞赛和拔尖创新人才培养方面积累了丰富经验。他的教育哲学强调“健康第一、素养为先”，将科技与外语教育深度融合，助力学生在“一带一路”时代背景下成长为国际化人才。</p>
-<h3 id="_5">办学创新与贡献</h3>
-<p>在刘忠毅校长的领导下，丰台外国语学校形成了独具特色的“九个一”校园文化体系，并率先在全国推行课间改革：将每节课间延长至15分钟，确保学生每天8次户外活动、2小时以上运动时间。通过“阳光午间”项目，每两周轮换教授一项体育技能，学校成功构建“无心理问题班级”和“无心理问题学校”，有效提升学生身心健康，解决视力与心理问题。 此外，学校作为多语种教学实践特色校，从小学一年级起持续开展小语种实验，是全国唯一一所此类学校。2023年9月，学校开设高中部，面向丰台区全区招生120名优秀初中毕业生，进一步扩展“强基工程”，为学生“定制”多样化发展路径，包括小语种升学通道。</p>
-<h3 id="_6">领导风采</h3>
-<p>刘忠毅校长亲切随和，与学生互动频繁，常被孩子们亲昵地围住“抱大腿”，这体现了他对儿童天性的包容与尊重。他曾表示：“孩子的天性就是玩，我们要让他们学得踏实、玩得痛快。” 在2024年春季开学典礼上，他以“乘风而起，丰外师生龙行龘龘”为题，激励师生拥抱新学期，播撒希望种子。 2024年3月，他主导成立丰外教育集团，整合西罗园系列学校资源，实现优质教育互通互鉴。</p>
-<p>刘忠毅校长的教育实践，不仅提升了丰台区教育品质，还为北京国际化大都市建设贡献力量。他的故事激励着无数教育工作者，证明了创新与关爱相结合的教育之路。</p>
-<h1 id="_7">别名由来：</h1>
-<h2 id="_8">“爬树校长”刘忠毅：把体育课种进自然里</h2>
-<p>午间走进丰台外国语学校，正看到刘忠毅校长站在云梯下组织同学们攀爬云梯，脚上的足球鞋沾满灰尘，脸上洋溢着笑容，和学生们打成一片。因为该校在全国率先开设“爬树课”，刘校长被媒体朋友风趣的称为“爬树校长”，这位“爬树校长”可不简单，多年的采访经历告诉我，这是一位务实创新、科学施教、勇于实践的陶行知式的好校长。</p>
-<p>对于我们这个年纪的人来说，爬树很简单，上树掏鸟窝、捅马蜂窝、摘果子，这是最基本的技能，不仅男孩子可以，女孩子也是赛猴子。但对于当下的儿童来讲，这确实是个困难，没有几个孩子会爬树，上肢力量匮乏，四肢不协调，很难爬到树上去。其实不仅爬树，跳高、跳远、单杠、鞍马等众多活动都已经成为孩子们无法逾越的困难。教育部早就关注到了学生体质健康的问题，也一直在努力破题，这其实是当前社会面临的一个难题。</p>
-<p>刘忠毅校长对于开设爬树课已经酝酿很久，也采取了步步为营的措施。他首先是把学生们从教室解放出来，吸引到操场上。因此在4年前，他率先在全国开始了课间时长改革的探索，他力排众议，把每节课间都从10分钟延长到15分钟， 学生每节课间都可以到户外运动，奔跑、跳跃、追逐，几年下来，眼睛明亮了、身体强壮了、心理问题都缓解了。这短短的五分钟变化，其实是教育理念和育人观念的变革，是真正以儿童为中心的教育理念的践行。</p>
-<p>有了课外活动时间还不够，还要教会孩子们玩，这才是让课间灵动起来的核心。每天中午正副班主任要教学生一项运动技能，两周换一样，每学期可以学会5、6项运动，每个孩子都能找到自己的热爱：单杠倒挂、双杠支撑、云梯猴子爬、鞍马腾跃…… ，“孩子不是不爱运动，是没找到自己喜欢的‘打开方式’。”刘忠毅说。如今下课铃一响，运动器材区就成了“欢乐场”，有学生能在云梯上“横向飞移”，也有孩子抱着双杠练“支撑倒立”。</p>
-<p>学生爬云梯的方式多样，有的学生自创“螃蟹爬”，双脚支撑两边立棍，交替上升可以爬上去；有的学生自创“猴子爬”，双手抓住铁棍，双脚夹住铁棍往上爬，发现爬不上去，把裤子卷到膝盖处，用腿部肌肉的摩擦力帮助爬升。在这些活动中，学生的智力和能力都得到提升，这是自身体验的获得，是任何课堂都无法教会学生的。正是这些运动，学生们的四肢力量得到了提升，协调性得到了锻炼，才让刘校长有了到公园里开爬树课的念头。</p>
-<p>2024年暑假，刘忠毅带着老师们在校园周边踩点时，河畔公园的一片矮树林让他停住了脚：“树不高、枝杈稳，这不就是天然的体育器材？”彼时，他正为“如何让体育走进生活，成为孩子们随时可以参与的运动”犯愁，这片树林成了破题的钥匙。“把体育课搬进公园”的提案，最初在教职工会上引发过争议：“安全怎么保障？教学目标怎么定？”刘忠毅的回应很直接：“先试一节，让孩子说了算。”9月的第一堂爬树课上，原本拘谨的学生们抱着树干笑作一团，有孩子攥着粗糙的树皮喊“比单杠好玩一百倍”——这让刘忠毅笃定：“自然里的运动，才是孩子愿意‘扑进去’的课堂。”当然，开设课程也是艰难的，刘校长是学校里第一个爬树的“学生”。以前刘校长经常爬树，但随着环境和年龄的增长，已经几十年没爬过树了，特别是要想教孩子爬树，就要知道爬树会出现哪些问题，刘校长就成了学校里的第一个爬树学生。刘校长双手抱住树干、双腿夹着树干往上攀爬，怕了1米多就气喘吁吁了，特别是下来后，他发现双腿都皮肤擦破了。于是，刘校长意识到，要想爬好树，安全是第一位的。为了这堂“野课”，刘忠毅带着团队磨出了一套“安全手册”：爬树前必须戴头盔、穿长袖，老师要提前“手测树干结实度”“踩验树杈支撑力”；校内先练云梯“悬挂抓握”“横向位移”，用单杠、双杠打牢上肢力量基础。“不是让孩子瞎爬，是让他们在自然里学技能、练体能。”</p>
-<p>丰台外国语学校的学生能爬树，丰外被称为“爬树学校”。现在，每个年级都有几十个孩子能安全、迅速地爬上3米高的大树，孩子们课间在校园内吊单杠、撑双杠、爬云梯，为爬树做准备。每到爬树课，都捋胳膊卷袖子，跃跃欲试。刘忠毅校长说，如今爬树课成了“抢手课”，常有学生追着老师问“下周能爬更高的树吗？”</p>
-<p>在刘忠毅看来，爬树课的意义，不止于“学会爬树”。“当孩子抱着树干感受树皮的粗糙，看着叶影在湖面晃成一团，他摸到的是自然，释放的是天性。”这种“校园+公园”的模式，让教育跳出了围墙——学校与公园共建“乐学基地”，除了爬树课，还开发了“自然定向越野”“湖畔平衡木”等课程，把运动、自然、生存技能揉进了日常。刘忠毅说：“教育部要求‘每天两小时体育’，不是让孩子在操场耗够时间，是让他们在喜欢的运动里‘活’起来。”刘忠毅指着公园里追着落叶跑的学生笑，“你看，这才是童年该有的样子——爬过树，踩过叶，把自然的气息揣进兜里，把健康的底子打在年少。要感谢丰台区委王少峰书记，正是因为他推动的自然体育课、乐学公园项目，才让孩子们能走出校园、走进自然，教育理念的变革真的很重要！”</p>
-<p>如今，“爬树校长”的名号越传越远，常有其他学校的老师来取经。刘忠毅总说：“改革不用多复杂，只要站在孩子的角度想——他们喜欢跑、喜欢爬、喜欢在自然里撒野，我们就把课堂搬到他们喜欢的地方去。”而那片河畔公园里，又一批孩子正抱着树干，往树杈上攀，阳光穿过叶隙，落在他们笑红的脸上，像极了教育最生动的模样。</p>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 爬树仙人-刘忠毅  </p>
-<p>本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-gold" id="art-15"><div class="crumb"><span>纪念 · 英烈</span><span class="dot">&#9670;</span><span>MEMORIAL</span><span class="dot">&#9670;</span><span>PAGE 15</span></div><h2>缅怀 · 佟麟阁将军</h2><div class="md"><p><strong>In Memory of General Tong Linge</strong></p>
-<hr />
-<blockquote>
-<p>“国破山河在，城春草木深。”——这句诗，亦是对无数抗日英烈的挽歌与敬礼。</p>
-<p>佟麟阁将军，这位以血肉之躯捍卫民族尊严的铁血将领，永远活在中华民族的记忆之中。</p>
-</blockquote>
-<hr />
-<h2 id="_1">📖 目录</h2>
-<ul>
-<li>
-<p><a href="#-一生平简述">一、生平简述</a></p>
-</li>
-<li>
-<p><a href="#-二卢沟桥事变中的壮举">二、卢沟桥事变中的壮举</a></p>
-</li>
-<li>
-<p><a href="#-三精神永存">三、精神永存</a></p>
-</li>
-<li>
-<p><a href="#-四后世纪念">四、后世纪念</a></p>
-</li>
-<li>
-<p><a href="#-五结语">五、结语</a></p>
-</li>
-</ul>
-<hr />
-<h2 id="_2">📜 一、生平简述</h2>
-<p>佟麟阁（1892年10月－1937年7月28日），字捷三，河北省高阳县人。</p>
-<p>早年慕冯玉祥将军爱国之名投笔从戎，由行伍逐级擢升，历任北洋政府、国民政府时期多个军事职务，作战勇猛，治军严谨，以忠勇著称。</p>
-<p>“九一八”事变后，他痛感民族危机，誓以身报国。彼时他已任<strong>国民革命军第29军副军长</strong>，辅佐军长宋哲元共守华北；全面抗战爆发前又兼任军事训练团团长、驻节南苑主持军务，为捍卫民族尊严作出了不可磨灭的贡献。</p>
-<hr />
-<h2 id="_3">⚔️ 二、卢沟桥事变中的壮举</h2>
-<p>1937年7月7日，日军挑起卢沟桥事变。佟麟阁将军在南苑军部力主坚决抵抗，向全军官兵严令：凡有日军进犯，坚决抵抗，誓与卢沟桥共存亡，不得后退一步。面对装备精良的日军，他指挥守军以血肉之躯筑起中华民族的抗战防线。</p>
-<p>在随后的北平保卫战中，他亲临前线指挥，激励将士奋勇杀敌。7月28日，佟麟阁将军与赵登禹将军并肩作战，于激战中壮烈殉国，时年仅45岁。</p>
-<blockquote>
-<p>“生为中华人，死为中华魂。”</p>
-<p>佟将军以生命践行了军人的誓言。</p>
-</blockquote>
-<hr />
-<h2 id="_4">🌟 三、精神永存</h2>
-<p>佟麟阁将军虽已离世，但他的精神长存。他的忠勇、他的担当、他的民族气节，成为一代又一代中国人心中的丰碑。</p>
-<p>他不只是抗日战争的英雄，更是<strong>民族尊严的象征</strong>。在民族危亡之际，他用鲜血告诉世界：中国人可以被打倒，但绝不屈服。</p>
-<hr />
-<h2 id="_5">🗿 四、后世纪念</h2>
-<p>中华人民共和国成立后，佟麟阁将军被追认为<strong>革命烈士</strong>，并被评为“100位为新中国成立作出突出贡献的英雄模范人物”之一。为铭记英烈，其家乡河北省高阳县建有佟麟阁小学（内设佟麟阁纪念馆）；北京海淀香山脚下建有佟麟阁将军墓与佟麟阁将军纪念馆；北京西城、河北等地亦设有以将军命名的道路与纪念设施，供世人永远铭记这位以身殉国的抗日名将。</p>
-<hr />
-<h2 id="_6">🕊️ 五、结语</h2>
-<blockquote>
-<p>“青山处处埋忠骨，何须马革裹尸还。”</p>
-</blockquote>
-<p>佟麟阁将军以生命捍卫了国家与民族的尊严。他用血染的忠诚告诉我们：<strong>有信仰的军人，才有不灭的国家。</strong></p>
-<p>今天，当我们在和平年代缅怀他时，更应铭记历史，珍惜来之不易的和平。将军之魂，长照山河。</p>
-<hr />
-<p><strong>佟麟阁将军千古！</strong></p>
-<p><em>内容整理：OSR 管理委员会　·　时间：2025年11月7日</em></p>
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 纪念佟麟阁将军  </p></div></article><article class="article acc-gray" id="art-14"><div class="crumb"><span>法律 · 声明</span><span class="dot">&#9670;</span><span>LEGAL</span><span class="dot">&#9670;</span><span>PAGE 14</span></div><h2>开源项目 · 免责声明</h2><div class="md"><p><strong>Fengtai Foreign Language School Open Source Repository — Disclaimer</strong></p>
-<hr />
-<blockquote>
-<p><strong>版本号</strong>：1.0　·　<strong>生效日期</strong>：2026年3月11日　·　<strong>发布方</strong>：BFFLS-OSR · OSR 管理委员会（OSR Management Committee）</p>
-<p>本声明旨在明确 BFFLS-OSR 仓库各类内容的使用边界、责任归属与法律依据，请在使用、浏览或贡献前仔细阅读。</p>
-</blockquote>
-<hr />
-<h2 id="_1">📖 目录</h2>
-<ul>
-<li>
-<p><a href="#-一适用范围">一、适用范围</a></p>
-</li>
-<li>
-<p><a href="#-二前言与定位">二、前言与定位</a></p>
-</li>
-<li>
-<p><a href="#-三无保证声明">三、无保证声明</a></p>
-</li>
-<li>
-<p><a href="#-四责任限制">四、责任限制</a></p>
-</li>
-<li>
-<p><a href="#-五知识产权声明">五、知识产权声明</a></p>
-</li>
-<li>
-<p><a href="#-六适用法律与争议解决">六、适用法律与争议解决</a></p>
-</li>
-<li>
-<p><a href="#-七隐私与数据保护">七、隐私与数据保护</a></p>
-</li>
-<li>
-<p><a href="#-八教育开源特别声明">八、教育开源特别声明</a></p>
-</li>
-<li>
-<p><a href="#-九一般条款">九、一般条款</a></p>
-</li>
-<li>
-<p><a href="#-十结语">十、结语</a></p>
-</li>
-</ul>
-<hr />
-<h2 id="_2">📍 一、适用范围</h2>
-<p>BFFLS-OSR仓库（GitHub地址：https://github.com/Kardashev999/BFFLS-OSR ）及其所有相关内容，包括但不限于代码、文档、资源文件、讨论区、Issues、Pull Requests、Wiki页面以及任何衍生作品或使用该仓库的活动。本免责声明适用于所有访问者、贡献者、用户和第三方（以下简称“用户”），无论其是否为学校师生、合作机构或公众。</p>
-<p><strong>法律参考</strong>：本免责声明参考《中华人民共和国民法典》、《中华人民共和国网络安全法》、《中华人民共和国个人信息保护法》（PIPL）以及开源社区通用惯例制定，不构成任何形式的法律意见或合同承诺。如有争议，适用中华人民共和国法律，并以北京市丰台区人民法院为第一审管辖法院。</p>
-<hr />
-<h2 id="_3">📄 二、前言与定位</h2>
-<p><strong>特别强调</strong>：BFFLS-OSR仓库由学生发起创建，现由 <strong>OSR 管理委员会</strong> 托管与维护。该仓库系学生自主发起的开源教育项目平台，不代表学校官方立场或机构行为。学校不参与仓库的具体内容创作、审核或运营。所有内容、决策及责任均由 OSR 管理委员会独立承担。</p>
-<p>BFFLS-OSR仓库旨在通过开源方式促进教育资源共享、科技创新与学术交流。该仓库汇集学校师生在教学辅助、科研合作、外语教育创新、校园文化建设等方面的原创成果，包括但不限于教学脚本、互动课件、学术论文草稿、学生项目原型以及信息化工具开发示例。仓库的宗旨在于践行教育公益理念，推动优质教育资源公平获取，鼓励跨学科协同创新，并搭建师生与社会间的学术交流桥梁。</p>
-<p>学校作为一所注重国际化人才培养的十二年一贯制学校（小学至高中），致力于以习近平新时代中国特色社会主义思想为指导，坚持正确政治方向，支持中国共产党的领导，拥护中国特色社会主义制度，积极响应国家教育现代化2035规划。</p>
-<p>本声明不创建任何代理、合伙、合资、雇佣或代理商关系，也不构成任何形式的要约、合同或法律承诺。<strong>OSR 管理委员会保留随时更新本声明的权利</strong>，更新版本将通过仓库 README.md 或独立文件公布，继续使用视为接受更新。</p>
-<hr />
-<h2 id="_4">⚠️ 三、无保证声明</h2>
-<p><strong>特别强调</strong>：鉴于仓库由学生发起创建，内容可能反映学生视角或实验性探索，不具备专业或官方认证。OSR 管理委员会对 BFFLS-OSR 仓库的所有内容（以下简称“内容”）<strong>不提供任何明示、默示或法定保证</strong>，包括但不限于：</p>
-<h3 id="_5">适销性与特定用途适用性</h3>
-<p>内容不保证适合任何特定目的、环境或用户需求。例如，教学工具可能不兼容所有设备或软件版本；学术资源可能基于特定教育场景，不适用于其他地区或学科。</p>
-<h3 id="_6">非侵权</h3>
-<p>OSR 管理委员会不保证内容不侵犯第三方知识产权（如专利、商标、著作权）。用户自行承担因内容使用引发的侵权风险。</p>
-<h3 id="_7">准确性与完整性</h3>
-<p>内容可能包含错误、遗漏、不准确信息或过时数据。例如，教育示例基于当前教育政策，可能随国家法规变化而失效；学生项目原型为实验性，可能未经验证。</p>
-<h3 id="_8">安全性与可靠性</h3>
-<p>内容不保证无病毒、恶意代码或其他有害元素。用户应自行进行安全扫描与验证。</p>
-<h3 id="_9">持续可用性</h3>
-<p>仓库可能因维护、迁移或政策调整而中断访问；内容可能被修改、删除或归档，无需事先通知。</p>
-<p>在教育开源语境下，内容主要用于学习、研究和非商业实验目的。仓库并非官方教材、认证课程或专业咨询服务，用户不得将其作为唯一依据进行决策。</p>
-<hr />
-<h2 id="_10">⚖️ 四、责任限制</h2>
-<p><strong>特别强调</strong>：BFFLS-OSR 仓库由学生发起创建并由 OSR 管理委员会托管，因此所有责任限于 OSR 管理委员会能力范围。</p>
-<p>OSR 管理委员会<strong>不对任何直接、间接、附带、特殊、惩戒性或后果性损害承担责任</strong>，包括但不限于：</p>
-<h3 id="_11">经济损失</h3>
-<p>数据丢失、业务中断、利润减少、机会成本或预期收益损失。</p>
-<h3 id="_12">非经济损失</h3>
-<p>声誉损害、精神痛苦、隐私泄露或知识产权纠纷。</p>
-<h3 id="_13">技术损害</h3>
-<p>设备故障、软件崩溃或网络安全事件。</p>
-<h3 id="_14">教育相关风险</h3>
-<p>不当使用内容导致的学生学习偏差、教学事故或合规违规。</p>
-<p>责任限制适用于所有法律理论，包括合同、侵权（包括过失）、严格责任等。</p>
-<p><strong>在法律允许的最大范围内，OSR 管理委员会不对上述任何类别的责任承担赔偿义务；就本仓库内容的使用所引发的全部主张，OSR 管理委员会累计应承担的责任，以不超过用户为本仓库内容实际支付的任何费用（如有）为上限。</strong> 若该限制因适用法律强制规定而无效，则责任范围应依法调整至法律允许的最小程度。</p>
-<p>OSR 管理委员会不对用户之间的互动（例如 Issues、Pull Requests 或 Discussions）承担责任。用户贡献内容仅代表其个人观点，不代表学校立场。</p>
-<hr />
-<h2 id="_15">©️ 五、知识产权声明</h2>
-<p>BFFLS-OSR 仓库内容受中国及国际知识产权法律保护。</p>
-<p><strong>特别强调：所有核心内容由学生原创创建和管理，知识产权归贡献者所有。</strong></p>
-<h3 id="_16">许可</h3>
-<p>除非另有说明，仓库内容默认采用 <strong>MIT License</strong> 开源（详见仓库根目录 LICENSE 文件）。该许可允许：使用、复制、修改、分发、创建衍生作品；但必须：保留版权声明与许可声明。如后续更换许可协议，将以根目录 LICENSE 文件的最新内容为准。</p>
-<h3 id="_17">用户贡献</h3>
-<p>通过 Pull Request 或其他方式提交内容，贡献者即授予 OSR 管理委员会<strong>永久、不可撤销、全球范围的非独占许可</strong>，用于：使用、修改、再分发、创建衍生作品。贡献者需保证：内容为原创、不侵犯第三方权利，否则需自行承担责任。</p>
-<h3 id="_18">第三方内容</h3>
-<p>仓库可能包含第三方开源组件或引用资料，用户需遵守其对应许可协议。</p>
-<h3 id="_19">学校品牌</h3>
-<p>学校名称、徽标及 “BFFLS” 标识<strong>未经授权不得用于商业宣传或误导性用途</strong>。</p>
-<hr />
-<h2 id="_20">🌐 六、适用法律与争议解决</h2>
-<p>本免责声明受<strong>中华人民共和国法律</strong>管辖。任何争议应：</p>
-<ol>
-<li>
-<p>首先通过友好协商解决</p>
-</li>
-<li>
-<p>协商不成的，提交<strong>北京市丰台区人民法院</strong>管辖</p>
-</li>
-</ol>
-<p>国际用户使用仓库即表示同意遵守中国法律。</p>
-<hr />
-<h2 id="_21">🔒 七、隐私与数据保护</h2>
-<p>仓库遵守：《中华人民共和国个人信息保护法》（PIPL）、《中华人民共和国网络安全法》。仅收集必要信息，例如：GitHub 用户名、GitHub 公开邮箱，用于：项目贡献通知、协作沟通。</p>
-<p><strong>特别说明：隐私管理由 OSR 管理委员会负责，学校不参与具体运营。</strong></p>
-<p>未成年人（14岁以下）参与贡献需监护人同意。</p>
-<hr />
-<h2 id="_22">🎓 八、教育开源特别声明</h2>
-<p>BFFLS-OSR 为<strong>教育性质开源项目</strong>。因此：内容具有实验性、不构成官方教材、不构成教学指导、不构成学术认证。用户在教学、研究或商业环境使用前应自行评估风险。</p>
-<p>OSR 管理委员会鼓励：学术诚信、原创贡献、跨校合作；但不对合作方行为负责。</p>
-<hr />
-<h2 id="_23">📜 九、一般条款</h2>
-<ul>
-<li>
-<p><strong>可分性</strong>：若某条款无效，其余条款仍有效</p>
-</li>
-<li>
-<p><strong>通知方式</strong>：通过 GitHub 仓库发布</p>
-</li>
-<li>
-<p><strong>标题说明</strong>：标题仅用于阅读方便，不具有法律效力</p>
-</li>
-</ul>
-<hr />
-<h2 id="_24">🕊️ 十、结语</h2>
-<p>BFFLS-OSR 仓库体现了学生“开放共享、协同创新”的理念。该项目由学生发起创建并由 OSR 管理委员会托管，不代表学校官方行为。欢迎全球开发者、教育工作者和学生参与贡献，共同推动教育开源发展。</p>
-<p><strong>本声明自发布之日起生效。如有疑问，请通过 GitHub Issues 反馈。OSR 管理委员会保留最终解释权。</strong></p>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 免责声明  </p></div></article><article class="article acc-blue" id="art-13"><div class="crumb"><span>归档 · 论文</span><span class="dot">&#9670;</span><span>PAPER</span><span class="dot">&#9670;</span><span>PAGE 13</span></div><h2>《RUBBISH》论文归档</h2><div class="md"><p><strong>BFFLS-OSR · Academic Paper Archive</strong></p>
-<hr />
-<blockquote>
-<p>本分支用于集中归档由北京市丰台区外国语学校师生在《RUBBISH》平台发布的创意作品与公开链接，便于检索、交流与留存。归档内容以戏仿与幽默表达为主，属非正式发表，请理性看待。</p>
-</blockquote>
-<hr />
-<h2 id="_1">📖 目录</h2>
-<ul>
-<li>
-<p><a href="#-一归档说明">一、归档说明</a></p>
-</li>
-<li>
-<p><a href="#-二论文列表">二、论文列表</a></p>
-</li>
-<li>
-<p><a href="#-三投稿与说明">三、投稿与说明</a></p>
-</li>
-</ul>
-<hr />
-<h2 id="_2">🗂️ 一、归档说明</h2>
-<p>《RUBBISH》为本项目关联的线上发表平台之一，内容以幽默、戏仿与创意表达为主。凡在本仓库各专题分支中形成的作品，经登记并以公开链接形式发布后，将在此集中记录、附链与归档。</p>
-<hr />
-<h2 id="_3">📄 二、论文列表</h2>
-<h3 id="1">1. 圆内均匀随机点生成原理及其在宫保鸡丁花生摆放中的应用</h3>
-<ul>
-<li>
-<p><strong>语言</strong>：中文</p>
-</li>
-<li>
-<p><strong>链接</strong>：<a href="https://rubbish-journal.org/zh/articles/2ef4feb2-b091-4b3b-8d7c-f026ca23c4ef">rubbish-journal.org/zh/articles/2ef4feb2-…</a></p>
-</li>
-</ul>
-<h3 id="2">2. 九号电动自行车改装与骑行生存率及交警查处率关系研究</h3>
-<ul>
-<li>
-<p><strong>语言</strong>：中文</p>
-</li>
-<li>
-<p><strong>链接</strong>：<a href="https://rubbish-journal.org/en/articles/5cc4f03d-918b-4386-8f97-40e77b85298e">rubbish-journal.org/en/articles/5cc4f03d-…</a></p>
-</li>
-</ul>
-<blockquote>
-<p><strong>说明</strong>：以上论文的作者、发表时间与卷期号待登记，建议后续在登记入库时一并补齐。</p>
-<p><strong>内容提示</strong>：《RUBBISH》为带有学术戏仿与幽默色彩的非正式发表平台，本页归档内容不构成正式学术文献，请注意甄别、勿作严肃引用依据。</p>
-</blockquote>
-<hr />
-<h2 id="_4">✍️ 三、投稿与说明</h2>
-<p>如你希望在《RUBBISH》期刊发表论文并登记入本归档，请联系 OSR 管理委员会或通过仓库 <strong>Issue / Pull Request</strong> 提交材料。OSR 管理委员会将协助完成登记与链接更新。</p>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 《RUBBISH》论文归档</p></div></article><article class="article acc-gray" id="art-1"><div class="crumb"><span>语言 · 戏仿</span><span class="dot">&#9670;</span><span>LANG</span><span class="dot">&#9670;</span><span>PAGE 01</span></div><h2>FW-Lang · 丰外自研语法</h2><div class="md"><blockquote>
+<p>© 2025–2026 北京市丰台区外国语学校 · BFFLS Open Source Repository  </p></div></article><article class="article acc-gray" id="art-1"><div class="crumb"><span>仙人系列</span><span class="dot">&#9670;</span><span>XIANREN</span><span class="dot">&#9670;</span><span>PAGE 01</span></div><h2>FW-Lang · 丰外自研语法</h2><div class="md"><blockquote>
 <p>[!NOTE]</p>
 <p><strong>内容性质</strong>：本分支为丰外（BFFLS）学生自研语言项目的趣味档案与创意规范文档，内容以幽默、戏仿与实验性表达为主；FW-Lang 为校园自研语法的演示设定，请勿与真实编程语言规范混淆。</p>
 </blockquote>
@@ -752,7 +710,805 @@ print(f&quot;FW-Lang 执行结果: {result}&quot;)
 </code></pre>
 <hr />
 <p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 丰外自研语法  </p>
-<p>本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-gold" id="art-4"><div class="crumb"><span>美食 · 评鉴</span><span class="dot">&#9670;</span><span>FOOD</span><span class="dot">&#9670;</span><span>PAGE 04</span></div><h2>宫保鸡丁品质鉴评委员会</h2><div class="md"><blockquote>
+<p>本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-gray" id="art-2"><div class="crumb"><span>仙人系列</span><span class="dot">&#9670;</span><span>XIANREN</span><span class="dot">&#9670;</span><span>PAGE 02</span></div><h2>刘忠毅 · 爬树校长</h2><div class="md"><blockquote>
+<p><strong>内容性质</strong>：本分支为学校特色活动与校长的公开报道资料整理归档（含“爬树课”校园新闻素材），信息来源于公开渠道，仅供存档与了解。</p>
+<p>[!NOTE]</p>
+<p>他就是爬树仙人</p>
+</blockquote>
+<h2 id="_1">别名：爬树仙人</h2>
+<h1 id="_2">人物介绍：</h1>
+<h2 id="_3">丰台区外国语学校~~爬树学校~~校长刘忠毅简介</h2>
+<p><strong>刘忠毅</strong>，现任北京市丰台区外国语学校校长，是教育界备受尊重的领军人物。他以卓越的教育理念和创新实践，致力于打造一所注重学生全面发展的国际化学校。作为学校的核心领导者，刘忠毅带领丰外（北京市丰台区外国语学校）从2021年建校至今，迅速成长为十八中教育集团的骨干成员校，推动学校从小学到高中十二年一贯制办学模式。</p>
+<h3 id="_4">教育背景与专业成就</h3>
+<p>刘忠毅校长拥有深厚的教育背景，曾获多项国家级荣誉，包括：</p>
+<ul>
+<li>
+<p><strong>全国知名特级教师</strong>  </p>
+</li>
+<li>
+<p><strong>全国十佳优秀科技教师</strong>  </p>
+</li>
+<li>
+<p><strong>全国优秀创新型校长</strong>  </p>
+</li>
+<li>
+<p><strong>英特尔国际科学与工程学大奖赛全球优秀教师</strong>（中国唯一一位）  </p>
+</li>
+</ul>
+<p>他还兼具北京市特级教师和广东省特级教师双重称号。在教学一线，刘忠毅培养了100多位考入清华、北大、斯坦福等顶尖名校的学生，尤其在学科竞赛和拔尖创新人才培养方面积累了丰富经验。他的教育哲学强调“健康第一、素养为先”，将科技与外语教育深度融合，助力学生在“一带一路”时代背景下成长为国际化人才。</p>
+<h3 id="_5">办学创新与贡献</h3>
+<p>在刘忠毅校长的领导下，丰台外国语学校形成了独具特色的“九个一”校园文化体系，并率先在全国推行课间改革：将每节课间延长至15分钟，确保学生每天8次户外活动、2小时以上运动时间。通过“阳光午间”项目，每两周轮换教授一项体育技能，学校成功构建“无心理问题班级”和“无心理问题学校”，有效提升学生身心健康，解决视力与心理问题。 此外，学校作为多语种教学实践特色校，从小学一年级起持续开展小语种实验，是全国唯一一所此类学校。2023年9月，学校开设高中部，面向丰台区全区招生120名优秀初中毕业生，进一步扩展“强基工程”，为学生“定制”多样化发展路径，包括小语种升学通道。</p>
+<h3 id="_6">领导风采</h3>
+<p>刘忠毅校长亲切随和，与学生互动频繁，常被孩子们亲昵地围住“抱大腿”，这体现了他对儿童天性的包容与尊重。他曾表示：“孩子的天性就是玩，我们要让他们学得踏实、玩得痛快。” 在2024年春季开学典礼上，他以“乘风而起，丰外师生龙行龘龘”为题，激励师生拥抱新学期，播撒希望种子。 2024年3月，他主导成立丰外教育集团，整合西罗园系列学校资源，实现优质教育互通互鉴。</p>
+<p>刘忠毅校长的教育实践，不仅提升了丰台区教育品质，还为北京国际化大都市建设贡献力量。他的故事激励着无数教育工作者，证明了创新与关爱相结合的教育之路。</p>
+<h1 id="_7">别名由来：</h1>
+<h2 id="_8">“爬树校长”刘忠毅：把体育课种进自然里</h2>
+<p>午间走进丰台外国语学校，正看到刘忠毅校长站在云梯下组织同学们攀爬云梯，脚上的足球鞋沾满灰尘，脸上洋溢着笑容，和学生们打成一片。因为该校在全国率先开设“爬树课”，刘校长被媒体朋友风趣的称为“爬树校长”，这位“爬树校长”可不简单，多年的采访经历告诉我，这是一位务实创新、科学施教、勇于实践的陶行知式的好校长。</p>
+<p>对于我们这个年纪的人来说，爬树很简单，上树掏鸟窝、捅马蜂窝、摘果子，这是最基本的技能，不仅男孩子可以，女孩子也是赛猴子。但对于当下的儿童来讲，这确实是个困难，没有几个孩子会爬树，上肢力量匮乏，四肢不协调，很难爬到树上去。其实不仅爬树，跳高、跳远、单杠、鞍马等众多活动都已经成为孩子们无法逾越的困难。教育部早就关注到了学生体质健康的问题，也一直在努力破题，这其实是当前社会面临的一个难题。</p>
+<p>刘忠毅校长对于开设爬树课已经酝酿很久，也采取了步步为营的措施。他首先是把学生们从教室解放出来，吸引到操场上。因此在4年前，他率先在全国开始了课间时长改革的探索，他力排众议，把每节课间都从10分钟延长到15分钟， 学生每节课间都可以到户外运动，奔跑、跳跃、追逐，几年下来，眼睛明亮了、身体强壮了、心理问题都缓解了。这短短的五分钟变化，其实是教育理念和育人观念的变革，是真正以儿童为中心的教育理念的践行。</p>
+<p>有了课外活动时间还不够，还要教会孩子们玩，这才是让课间灵动起来的核心。每天中午正副班主任要教学生一项运动技能，两周换一样，每学期可以学会5、6项运动，每个孩子都能找到自己的热爱：单杠倒挂、双杠支撑、云梯猴子爬、鞍马腾跃…… ，“孩子不是不爱运动，是没找到自己喜欢的‘打开方式’。”刘忠毅说。如今下课铃一响，运动器材区就成了“欢乐场”，有学生能在云梯上“横向飞移”，也有孩子抱着双杠练“支撑倒立”。</p>
+<p>学生爬云梯的方式多样，有的学生自创“螃蟹爬”，双脚支撑两边立棍，交替上升可以爬上去；有的学生自创“猴子爬”，双手抓住铁棍，双脚夹住铁棍往上爬，发现爬不上去，把裤子卷到膝盖处，用腿部肌肉的摩擦力帮助爬升。在这些活动中，学生的智力和能力都得到提升，这是自身体验的获得，是任何课堂都无法教会学生的。正是这些运动，学生们的四肢力量得到了提升，协调性得到了锻炼，才让刘校长有了到公园里开爬树课的念头。</p>
+<p>2024年暑假，刘忠毅带着老师们在校园周边踩点时，河畔公园的一片矮树林让他停住了脚：“树不高、枝杈稳，这不就是天然的体育器材？”彼时，他正为“如何让体育走进生活，成为孩子们随时可以参与的运动”犯愁，这片树林成了破题的钥匙。“把体育课搬进公园”的提案，最初在教职工会上引发过争议：“安全怎么保障？教学目标怎么定？”刘忠毅的回应很直接：“先试一节，让孩子说了算。”9月的第一堂爬树课上，原本拘谨的学生们抱着树干笑作一团，有孩子攥着粗糙的树皮喊“比单杠好玩一百倍”——这让刘忠毅笃定：“自然里的运动，才是孩子愿意‘扑进去’的课堂。”当然，开设课程也是艰难的，刘校长是学校里第一个爬树的“学生”。以前刘校长经常爬树，但随着环境和年龄的增长，已经几十年没爬过树了，特别是要想教孩子爬树，就要知道爬树会出现哪些问题，刘校长就成了学校里的第一个爬树学生。刘校长双手抱住树干、双腿夹着树干往上攀爬，怕了1米多就气喘吁吁了，特别是下来后，他发现双腿都皮肤擦破了。于是，刘校长意识到，要想爬好树，安全是第一位的。为了这堂“野课”，刘忠毅带着团队磨出了一套“安全手册”：爬树前必须戴头盔、穿长袖，老师要提前“手测树干结实度”“踩验树杈支撑力”；校内先练云梯“悬挂抓握”“横向位移”，用单杠、双杠打牢上肢力量基础。“不是让孩子瞎爬，是让他们在自然里学技能、练体能。”</p>
+<p>丰台外国语学校的学生能爬树，丰外被称为“爬树学校”。现在，每个年级都有几十个孩子能安全、迅速地爬上3米高的大树，孩子们课间在校园内吊单杠、撑双杠、爬云梯，为爬树做准备。每到爬树课，都捋胳膊卷袖子，跃跃欲试。刘忠毅校长说，如今爬树课成了“抢手课”，常有学生追着老师问“下周能爬更高的树吗？”</p>
+<p>在刘忠毅看来，爬树课的意义，不止于“学会爬树”。“当孩子抱着树干感受树皮的粗糙，看着叶影在湖面晃成一团，他摸到的是自然，释放的是天性。”这种“校园+公园”的模式，让教育跳出了围墙——学校与公园共建“乐学基地”，除了爬树课，还开发了“自然定向越野”“湖畔平衡木”等课程，把运动、自然、生存技能揉进了日常。刘忠毅说：“教育部要求‘每天两小时体育’，不是让孩子在操场耗够时间，是让他们在喜欢的运动里‘活’起来。”刘忠毅指着公园里追着落叶跑的学生笑，“你看，这才是童年该有的样子——爬过树，踩过叶，把自然的气息揣进兜里，把健康的底子打在年少。要感谢丰台区委王少峰书记，正是因为他推动的自然体育课、乐学公园项目，才让孩子们能走出校园、走进自然，教育理念的变革真的很重要！”</p>
+<p>如今，“爬树校长”的名号越传越远，常有其他学校的老师来取经。刘忠毅总说：“改革不用多复杂，只要站在孩子的角度想——他们喜欢跑、喜欢爬、喜欢在自然里撒野，我们就把课堂搬到他们喜欢的地方去。”而那片河畔公园里，又一批孩子正抱着树干，往树杈上攀，阳光穿过叶隙，落在他们笑红的脸上，像极了教育最生动的模样。</p>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 爬树仙人-刘忠毅  </p>
+<p>本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-gray" id="art-3"><div class="crumb"><span>仙人系列</span><span class="dot">&#9670;</span><span>XIANREN</span><span class="dot">&#9670;</span><span>PAGE 03</span></div><h2>红警怪谈</h2><div class="md"><blockquote>
+<p><strong>内容性质</strong>：本文为虚构的校园怪谈（Creepypasta）创作，纯属娱乐，请勿当真。文中所涉游戏与场景设定均为虚构演绎。</p>
+<p>以下规则来自一位沉迷《红色警戒》到近乎失控的玩家所留下的记录。  </p>
+<p>他的名字已经不再重要，因此以下内容只称呼他为 <strong>“那个人”</strong>。  </p>
+<p>如果你决定运行《红色警戒》，请务必遵守以下规则。</p>
+</blockquote>
+<hr />
+<h2 id="_1">红警怪谈规则</h2>
+<p><strong>1.</strong>  </p>
+<p>运行《红色警戒》的电脑 <strong>运行内存必须大于 128GB</strong>。  </p>
+<p>如果你的电脑低于此数值，请立即关闭游戏。  </p>
+<p>有玩家曾尝试在 16GB 内存上运行，后来他说地图里多出了一个从未被编写的阵营，即 <strong>丰台区外国语</strong> 。</p>
+<hr />
+<p><strong>2.</strong>  </p>
+<p>显卡必须为 <strong>RTX 5080 或以上型号</strong>。  </p>
+<p>如果游戏启动时出现任何 <strong>显卡性能过低</strong>，不要点击“开始游戏”，  </p>
+<p>也不要截图。  </p>
+<p>据说截图会留下某种 <strong>坐标信息</strong> 并发送给黄仁勋。</p>
+<hr />
+<p><strong>3.</strong>  </p>
+<p>鼠标必须为 <strong>青轴鼠标</strong>。  </p>
+<p>众所周知，青轴是键盘常见的轴体，但当尝试游玩《红色警戒》时，务必使用装有青轴的鼠标进行游玩，原因不明。如果你没有青轴鼠标，请立即退出游戏，或用尽可能快的速度拆下鼠标原有的微动开关并通过工具将青轴上的引脚焊接到鼠标上并盖上键帽。</p>
+<hr />
+<p><strong>4。</strong>  </p>
+<p>任何设备上的《红色警戒》<strong>都不允许卸载</strong>。  </p>
+<p>无论是：</p>
+<ul>
+<li>
+<p>家用电脑  </p>
+</li>
+<li>
+<p>学校机房电脑  </p>
+</li>
+<li>
+<p>U 盘  </p>
+</li>
+<li>
+<p>甚至包括 <strong>希沃白板</strong></p>
+</li>
+</ul>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 红警怪谈  </p>
+<p>本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-blue" id="art-10"><div class="crumb"><span>BW系列</span><span class="dot">&#9670;</span><span>BW</span><span class="dot">&#9670;</span><span>PAGE 10</span></div><h2>BW · 生物意志指数</h2><div class="md"><p><strong>Biological &amp; Will Index (BW Index)</strong></p>
+<blockquote>
+<p><strong>模型定位</strong>：本文为趣味量化模型，用数学方式刻画个体当下的"心理-生理"驱动力（七情六欲与意志张力），仅供自我了解与娱乐参考，不构成任何医学或心理学诊断依据。</p>
+</blockquote>
+<h3 id="_1">📖 本页结构</h3>
+<ol>
+<li>
+<p>简介（本页是什么）</p>
+</li>
+<li>
+<p>理论框架（七情 + 六欲两个分量）</p>
+</li>
+<li>
+<p>数学建模（瞬时 / 日均 / 含参子指数）</p>
+</li>
+<li>
+<p>值域与分级标准（0-100 五档）</p>
+</li>
+<li>
+<p>简化指数 SBW（快速自评）</p>
+</li>
+</ol>
+<h2 id="1-introduction">1. 简介 (Introduction)</h2>
+<p><strong>BW指数 (Biological &amp; Will Index)</strong> 是一种用于衡量人类“心理-生理”综合驱动力的数字化指标。它通过捕获个体在特定时间内“七情”与“六欲”的波动强度，利用加权整合算法生成一个反映生命活跃度与意志张力的综合指数。</p>
+<p>本系统不仅支持宏观的<strong>全天综合指数</strong>，也支持<strong>微观瞬时指数</strong>，并允许通过调整参数来提取单一情感或欲望对整体状态的影响力（含参子指数）。</p>
+<hr />
+<h2 id="2-theoretical-framework">2. 理论框架 (Theoretical Framework)</h2>
+<p>BW指数将人的内在驱动力分为两个核心维度，并对每一项进行 $[0, 10]$ 的强度赋值：</p>
+<h3 id="21-the-seven-emotions-vector-e">2.1 七情分量 (The Seven Emotions Vector, $E$)</h3>
+<p>反映个体的心理情感状态：</p>
+<ul>
+<li>
+<p>$e_1$ (喜 - Joy): 正向激励强度</p>
+</li>
+<li>
+<p>$e_2$ (怒 - Anger): 防御与攻击能量</p>
+</li>
+<li>
+<p>$e_3$ (哀 - Sorrow): 能量回收与沉溺度</p>
+</li>
+<li>
+<p>$e_4$ (惧 - Fear): 风险规避敏感度</p>
+</li>
+<li>
+<p>$e_5$ (爱 - Love): 链接与共鸣强度</p>
+</li>
+<li>
+<p>$e_6$ (恶 - Loathing): 排斥与厌恶度</p>
+</li>
+<li>
+<p>$e_7$ (欲 - Desire): 获取目标的心理冲动</p>
+</li>
+</ul>
+<h3 id="22-the-six-desires-vector-d">2.2 六欲分量 (The Six Desires Vector, $D$)</h3>
+<p>反映个体的生理感知与外界反馈：</p>
+<ul>
+<li>
+<p>$d_1$ (眼 - Vision): 视觉审美与观测欲</p>
+</li>
+<li>
+<p>$d_2$ (耳 - Hearing): 听觉刺激需求</p>
+</li>
+<li>
+<p>$d_3$ (鼻 - Smell): 嗅觉环境反馈</p>
+</li>
+<li>
+<p>$d_4$ (舌 - Taste): 味觉摄取欲望</p>
+</li>
+<li>
+<p>$d_5$ (身 - Touch): 触觉、舒适度与躯体欲望</p>
+</li>
+<li>
+<p>$d_6$ (意 - Thought): 意识层面的纯粹思维欲</p>
+</li>
+</ul>
+<hr />
+<h2 id="3-mathematical-modeling">3. 数学建模 (Mathematical Modeling)</h2>
+<h3 id="31-bw-bw_t">3.1 瞬时 BW 指数 ($BW_t$)</h3>
+<p>瞬时指数反映 $t$ 时刻的爆发状态，公式如下：</p>
+<p>$$BW(t) = \sigma \left( \sum_{i=1}^{7} w_i e_i(t) + \sum_{j=1}^{6} v_j d_j(t) \right) \times 10$$
+其中：
+* $w_i, v_j$ 是权重系数，默认配置下 $\sum w = 6, \sum v = 4$（侧重心理影响）。
+* $\sigma$ 是归一化算子，确保结果处于 $[0, 100]$。</p>
+<h3 id="32-bw-bw_day">3.2 全周期（日均）BW 指数 ($BW_{day}$)</h3>
+<p>反映一整天的能量分布均衡度。采用积分均值法：
+$$BW_{day} = \frac{1}{T_{24}} \int_{0}^{T_{24}} BW(t) \cdot \lambda(t) \, dt$$
+* $\lambda(t)$ 为<strong>时间权重函数</strong>，例如深夜时段（睡眠）的权值较低，而工作/活跃时段权值较高。</p>
+<h3 id="33-bw_p">3.3 含参子指数 ($BW_P$)</h3>
+<p>用于观察某一特定因子（如“愤怒”）在系统中的占比，称为 <strong>$\theta$-感官指数</strong>。
+设目标因子为 $x$，其对 BW 的贡献系数为 $P$：
+$$BW_P(x) = \frac{\partial BW}{\partial x} \cdot \frac{x}{BW}$$</p>
+<hr />
+<h2 id="4-standard-ratings">4. 值域与分级标准 (Standard Ratings)</h2>
+<p>BW指数标准值域为 <strong>0 - 100</strong>，根据数值大小划分为五个层级：
+| 指数区间 | 等级名称 | 状态特征 | 建议策略 |
+| :--- | :--- | :--- | :--- |
+| <strong>0 - 20</strong> | <strong>寂灭期 (Quiescence)</strong> | 极低波动，情感剥离，生理机能处于休眠或极度抑制状态。 | 需补充能量，警惕抑郁倾向。 |
+| <strong>21 - 45</strong> | <strong>恒常期 (Stasis)</strong> | 情绪平稳，欲望较低。典型的工作或深度思考状态。 | 适合处理逻辑性强的事务。 |
+| <strong>46 - 65</strong> | <strong>活跃期 (Vibrance)</strong> | 情感丰富，感知敏锐。生活气息浓厚。 | 适合社交、创作与艺术体验。 |
+| <strong>66 - 85</strong> | <strong>激荡期 (Turbulence)</strong> | 欲望强烈或情绪剧烈波动，决策可能受到感性主导。 | 宜采取行动，但需注意风险把控。 |
+| <strong>86 - 100</strong> | <strong>超限期 (Surge)</strong> | 极度亢奋、狂热或极度痛苦。处于意志力的临界点。 | 需通过静心或物理手段强制冷却。 |</p>
+<hr />
+<h2 id="5-bw-simplified-bw-sbw">5. 简单 BW 指数 (Simplified BW, SBW)</h2>
+<p>为了实现快速自我评估，我们简化了复杂的积分公式，采用“三维加权法”。用户只需对以下三个维度进行打分（1-10分）：
+1.  <strong>情感张力 ($E_{score}$):</strong> 此时此刻你的情绪波动是大还是小？
+2.  <strong>生理冲动 ($D_{score}$):</strong> 此时此刻你对进食、感官刺激或肉体舒适的渴望程度？
+3.  <strong>意志专注度 ($W_{score}$):</strong> 你在多大程度上受这些情感/欲望的支配？</p>
+<h3 id="_2">快速计算公式：</h3>
+<p>$$SBW = (E_{score} \times 4) + (D_{score} \times 3) + (W_{score} \times 3)$$
+<strong>示例：</strong>
+* 小明感到很愤怒 (E=8)，很想吃东西 (D=9)，但理性告诉他要忍住，意志力高度集中 (W=9)。
+* $SBW = (8 \times 4) + (9 \times 3) + (9 \times 3) = 32 + 27 + 27 = 86$
+* <strong>评级：</strong> 超限期。</p>
+<hr />
+<blockquote>
+<p><strong>Warning</strong>
+BW 指数属于社会科学与行为数学模型，仅供自我了解与科研参考，不作为医学诊断依据。</p>
+</blockquote>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW 生物意志指数<br />
+本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-blue" id="art-11"><div class="crumb"><span>BW系列</span><span class="dot">&#9670;</span><span>BW</span><span class="dot">&#9670;</span><span>PAGE 11</span></div><h2>BW · 超高速统计力学</h2><div class="md"><blockquote>
+<p>[!IMPORTANT]</p>
+<p><strong>内容性质</strong>：本文为<b>幽默戏仿创作</b>，以"统计力学"的形式虚构校园骑行主题设定，<strong>不构成任何真实物理学、统计学或交通行为建议</strong>。文中涉及的改装、超速、环路骑行等情节纯属虚构，请务必遵守交通法规、安全骑行、切勿模仿。</p>
+<p>说明：本页的 BW 指代<strong>骑手代号</strong>（BW = Bo Wei / 九号骑手群体），与"BW 生物意志指数（Biological &amp; Will Index）"含义不同。</p>
+</blockquote>
+<h3 id="_1">📖 内容结构</h3>
+<ul>
+<li>
+<p>1 基本统计物理量 · 2 统计基本状态 · 3 统计基本定律 · 4 环速度统计体系</p>
+</li>
+<li>
+<p>5 统计一环铁骑势场 · 6 统计一环逃逸条件 · 7 未触发时的系统演化 · 8 统计动能 · 9 未来方向</p>
+</li>
+</ul>
+<blockquote>
+<p>BW统计力学是一套描述 <strong>Bo Wei 骑乘改装 Ninebot（九号）电动自行车骑手群体</strong> 在城市环路系统中集体运动规律的统计理论。  </p>
+<p>该理论将单个骑手视为微观“粒子”，群体视为宏观系综，认为传统统计力学在复杂城市交通与环路势场中并不完全适用，因此建立 BW速度统计分布、环路占据数与铁骑势场统计理论（与 BW非经典力学完全自洽）。</p>
+</blockquote>
+<hr />
+<h1 id="1">1 基本统计物理量</h1>
+<h2 id="11-bw">1.1 统计BW速度</h2>
+<p>Bo Wei 群体速度符号仍定义为：</p>
+<p>$N$</p>
+<p>来源：</p>
+<p>Ninebot 的首字母（同 BW非经典力学）。</p>
+<p>统计BW速度定义为系综平均：</p>
+<p>$$
+\langle N \rangle = \sum_i P_i N_i
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$P_i$ 为骑手处于第 $i$ 环的概率  </p>
+</li>
+<li>
+<p>$N_i$ 为 BW第 $i$ 速度  </p>
+</li>
+</ul>
+<p>精确定义为：</p>
+<p>$$
+N_i = \frac{C_i}{T_i}
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$C_i$ 为第 $i$ 条环路周长  </p>
+</li>
+<li>
+<p>$T_i$ 为跑完时间  </p>
+</li>
+</ul>
+<p>单位：</p>
+<p>$BW$</p>
+<p>该现象称为：</p>
+<p><strong>统计磁通逆向加速效应（Statistical Inverse Flux Acceleration）</strong></p>
+<p>沿用原定义：</p>
+<p>$$
+N = \frac{1}{\Phi}
+$$</p>
+<p>因此：</p>
+<p>$$
+\langle \Phi \rangle \downarrow \Rightarrow \langle N \rangle \uparrow
+$$</p>
+<hr />
+<h1 id="2-bw">2 BW统计基本状态</h1>
+<h2 id="21-bw">2.1 BW统计平衡态</h2>
+<p>BW统计力学定义一种特殊平衡状态：</p>
+<p><strong>BW Statistical Equilibrium</strong></p>
+<p>条件为：</p>
+<p>$$
+\frac{d\langle N \rangle}{dt} = 0
+$$</p>
+<p>当群体处于平衡时，骑手系统受到 <strong>统计环路势能主导效应</strong>。</p>
+<hr />
+<h2 id="22-statistical-ring-decay">2.2 统计环路跌落（Statistical Ring Decay）</h2>
+<p>当系统偏离平衡时，群体发生轨道内迁：</p>
+<p>$$
+\text{三环} \rightarrow \text{二环} \rightarrow \text{一环}
+$$</p>
+<p>数学表达为：</p>
+<p>$$
+\frac{d\langle R \rangle}{dt} &lt; 0
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$\langle R \rangle$ 为群体平均骑行轨道半径  </p>
+</li>
+<li>
+<p>$R$ 沿用 BW非经典力学轨道半径符号  </p>
+</li>
+</ul>
+<p>该过程称为：</p>
+<p><strong>统计环路跌落（Statistical Ring Decay）</strong></p>
+<hr />
+<h1 id="3-bw">3 BW统计基本定律</h1>
+<h2 id="31-bw">3.1 BW统计第一定律（统计惯性骑行定律）</h2>
+<p>当没有外部干扰时：</p>
+<p>$$
+\frac{d\langle N \rangle}{dt} = 0
+$$</p>
+<p>Bo Wei 群体将保持恒定统计 BW速度骑行。</p>
+<p>外部干扰包括：</p>
+<ul>
+<li>
+<p>群体红灯  </p>
+</li>
+<li>
+<p>城市拥堵  </p>
+</li>
+<li>
+<p>路口监控  </p>
+</li>
+<li>
+<p>交警大规模追逐  </p>
+</li>
+</ul>
+<hr />
+<h2 id="32-bw">3.2 BW统计第二定律（统计改装动力定律）</h2>
+<p>BW统计动力学基本方程：</p>
+<p>$$
+\langle F_{BW} \rangle = k \langle M \rangle \frac{d\langle N \rangle}{dt}
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$\langle F_{BW} \rangle$ 为统计 BW驱动力  </p>
+</li>
+<li>
+<p>$\langle M \rangle$ 为群体平均改装等级  </p>
+</li>
+<li>
+<p>$k$ 为非法改装系数  </p>
+</li>
+</ul>
+<p>常见改装包括：</p>
+<ul>
+<li>
+<p>控制器破解  </p>
+</li>
+<li>
+<p>电机过压  </p>
+</li>
+<li>
+<p>限速解除  </p>
+</li>
+</ul>
+<hr />
+<h2 id="33-bw">3.3 BW统计第三定律（统计追逐反作用定律）</h2>
+<p>每一次群体违规加速都会产生总交警追逐概率：</p>
+<p>$$
+P \propto \langle N \rangle^2
+$$</p>
+<p>即：</p>
+<p>$$
+\langle N \rangle \uparrow \Rightarrow P \uparrow
+$$</p>
+<p>平均速度越快，群体被追概率越高。</p>
+<hr />
+<h1 id="4-bw">4 BW环速度统计体系</h1>
+<p>城市环路构成离散速度等级系统。</p>
+<p>设群体中第 $i$ 环骑手占比为 $f_i$，则统计环速度定义为：</p>
+<p>$$
+\langle N_i \rangle = \sum_{i=1}^{5} f_i N_i
+$$</p>
+<p>称为：</p>
+<p><strong>统计BW第 i 速度</strong></p>
+<hr />
+<h2 id="41-bw">4.1 统计BW第一速度</h2>
+<p>定义：</p>
+<p><strong>Bo Wei 骑手群体绕北京二环平均速度统计值</strong></p>
+<p>$$
+\langle N_1 \rangle = \sum f_i N_1
+$$</p>
+<p>其中：</p>
+<p>$$
+N_1 = \frac{C_2}{T_2}
+$$</p>
+<hr />
+<h2 id="42-bw">4.2 统计BW第二速度</h2>
+<p>$$
+\langle N_2 \rangle = \sum f_i N_2
+$$</p>
+<p>其中：</p>
+<p>$$
+N_2 = \frac{C_3}{T_3}
+$$</p>
+<hr />
+<h2 id="43-bw">4.3 统计BW第三速度</h2>
+<p>$$
+\langle N_3 \rangle = \sum f_i N_3
+$$</p>
+<p>其中：</p>
+<p>$$
+N_3 = \frac{C_4}{T_4}
+$$</p>
+<hr />
+<h2 id="44-bw">4.4 统计BW第四速度</h2>
+<p>$$
+\langle N_4 \rangle = \sum f_i N_4
+$$</p>
+<p>其中：</p>
+<p>$$
+N_4 = \frac{C_5}{T_5}
+$$</p>
+<hr />
+<h2 id="45-bw">4.5 统计BW第五速度</h2>
+<p>$$
+\langle N_5 \rangle = \sum f_i N_5
+$$</p>
+<p>其中：</p>
+<p>$$
+N_5 = \frac{C_6}{T_6}
+$$</p>
+<hr />
+<h1 id="5">5 统计一环铁骑势场</h1>
+<p>北京一环区域存在特殊统计动力学势场：</p>
+<p><strong>统计首都铁骑场（Statistical Capital Knight Field）</strong></p>
+<p>设该势场强度为：</p>
+<p>$$
+F_K
+$$</p>
+<p>在该区域内：</p>
+<p>$$
+P_{capture} \to 1
+$$</p>
+<p>即群体被捕概率趋近于 100%。</p>
+<hr />
+<h1 id="6">6 统计一环逃逸条件</h1>
+<p>只有群体中足够比例骑手触发 <strong>BW操作（BW Maneuver）</strong> 才可能整体逃逸。</p>
+<p>触发条件：</p>
+<p>$$
+v \ge 200\,km/h
+$$</p>
+<p>当骑手瞬时速度满足：</p>
+<p>$$
+N \ge N_{escape,1}
+$$</p>
+<p>系统进入：</p>
+<p><strong>统计BW超骑行态（Statistical BW Overdrive State）</strong></p>
+<p>统计逃逸分数：</p>
+<p>$$
+f_{escape} =
+\int_{N \ge N_{escape,1}} P(N)\, dN
+$$</p>
+<hr />
+<h1 id="7-bw">7 未触发统计BW操作时的系统演化</h1>
+<p>若群体满足：</p>
+<p>$$
+\langle N \rangle &lt; N_{escape,1}
+$$</p>
+<p>系统按最概然路径演化：</p>
+<p>$$
+统计环路跌落
+$$</p>
+<p>$$
+\downarrow
+$$</p>
+<p>$$
+进入一环
+$$</p>
+<p>$$
+\downarrow
+$$</p>
+<p>$$
+铁骑场群捕
+$$</p>
+<p>最终系统状态：</p>
+<p>$$
+Captured\ Ensemble
+$$</p>
+<p>即：</p>
+<p><strong>Bo Wei 群体被抓。</strong></p>
+<hr />
+<h1 id="8-bw">8 BW统计动能</h1>
+<p>BW统计动能定义为：</p>
+<p>$$
+\langle E_{BW} \rangle =
+\sum_i P_i \cdot \frac{1}{2} M N_i^2
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$M$ 为改装等级  </p>
+</li>
+<li>
+<p>$N_i$ 为 BW第 $i$ 速度  </p>
+</li>
+</ul>
+<hr />
+<h1 id="9">9 未来研究方向</h1>
+<p>BW统计力学仍在发展，未来可能扩展为：</p>
+<ul>
+<li>
+<p><strong>BW相对论统计</strong>（交警参考系群体效应）  </p>
+</li>
+<li>
+<p><strong>BW量子骑行路径统计</strong>  </p>
+</li>
+<li>
+<p><strong>BW交通场论</strong>  </p>
+</li>
+<li>
+<p><strong>BW非平衡统计力学</strong>（实时追逐动态）</p>
+</li>
+</ul>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW统计力学  </p>
+<p>本分支内容由 OSR 管理委员会托管。姊妹篇：<a href="https://github.com/Kardashev999/BFFLS-OSR/blob/BW-%E8%B6%85%E9%AB%98%E9%80%9F%E7%8A%B6%E6%80%81%E9%9D%9E%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A6/README.md">BW 非经典力学</a>（虚构设定）。</p></div></article><article class="article acc-blue" id="art-12"><div class="crumb"><span>BW系列</span><span class="dot">&#9670;</span><span>BW</span><span class="dot">&#9670;</span><span>PAGE 12</span></div><h2>BW · 超高速非经典力学</h2><div class="md"><blockquote>
+<p>[!IMPORTANT]</p>
+<p><strong>内容性质</strong>：本文为<b>幽默戏仿创作</b>，以"非经典力学"的形式虚构校园骑行主题设定，<strong>不构成任何真实物理学或交通行为建议</strong>。文中涉及的改装、超速、环路骑行等情节纯属虚构，请务必遵守交通法规、安全骑行、切勿模仿。</p>
+<p>说明：本页的 BW 指代<strong>骑手代号</strong>（BW = Bo Wei / 九号骑手），与"BW 生物意志指数（Biological &amp; Will Index）"含义不同。</p>
+</blockquote>
+<h3 id="_1">📖 内容结构</h3>
+<ul>
+<li>
+<p>1 基本物理量 · 2 基本状态 · 3 基本定律 · 4 环速度体系</p>
+</li>
+<li>
+<p>5 一环铁骑势场 · 6 一环逃逸条件 · 7 未触发时的系统演化 · 8 BW动能 · 9 未来方向</p>
+</li>
+</ul>
+<blockquote>
+<p>BW非经典力学是一套描述 <strong>Bo Wei 骑乘改装 Ninebot（九号）电动自行车</strong> 在城市环路系统中运动规律的动力学理论。  </p>
+<p>该理论认为传统牛顿力学在复杂城市交通与环路势场中并不完全适用，因此建立 BW速度体系、环路动力学与铁骑势场理论。</p>
+</blockquote>
+<hr />
+<h1 id="1">1 基本物理量</h1>
+<h2 id="11-bw">1.1 BW速度</h2>
+<p>Bo Wei 的速度符号定义为：</p>
+<p>$N$</p>
+<p>来源：</p>
+<p>Ninebot 的首字母。</p>
+<p>BW速度定义为：</p>
+<p>$$
+N = \frac{1}{\Phi}
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$\Phi$ 为磁通量（Magnetic Flux）</p>
+</li>
+<li>
+<p>$N$ 为 BW速度</p>
+</li>
+</ul>
+<p>单位：</p>
+<p>$BW$</p>
+<p>该现象称为：</p>
+<p><strong>磁通逆向加速效应（Inverse Flux Acceleration）</strong></p>
+<p>即：</p>
+<p>$$
+\Phi \downarrow \Rightarrow N \uparrow
+$$</p>
+<hr />
+<h1 id="2-bw">2 BW基本状态</h1>
+<h2 id="21-bw">2.1 BW静止</h2>
+<p>BW力学定义一种特殊静止状态：</p>
+<p><strong>BW Rest State</strong></p>
+<p>条件为：</p>
+<p>$$
+N \ll N_1
+$$</p>
+<p>其中：</p>
+<p>$N_1$ 为 <strong>BW第一速度</strong>。</p>
+<p>当系统处于 BW静止时，骑行系统会受到 <strong>环路势能主导效应</strong>。</p>
+<hr />
+<h2 id="22-ring-decay">2.2 环路跌落（Ring Decay）</h2>
+<p>当处于 BW静止状态时，系统会发生轨道内迁：</p>
+<p>$$
+三环 \rightarrow 二环 \rightarrow 一环
+$$</p>
+<p>数学表达为：</p>
+<p>$$
+\frac{dR}{dt} &lt; 0
+$$</p>
+<p>其中：</p>
+<ul>
+<li>$R$ 为骑行轨道半径</li>
+</ul>
+<p>该过程称为：</p>
+<p><strong>环路跌落（Ring Decay）</strong></p>
+<hr />
+<h1 id="3-bw">3 BW基本定律</h1>
+<h2 id="31-bw">3.1 BW第一定律（惯性骑行定律）</h2>
+<p>当没有外部干扰时：</p>
+<p>$$
+\frac{dN}{dt} = 0
+$$</p>
+<p>Bo Wei 将保持恒定 BW速度骑行。</p>
+<p>外部干扰包括：</p>
+<ul>
+<li>
+<p>红灯</p>
+</li>
+<li>
+<p>城市拥堵</p>
+</li>
+<li>
+<p>路口监控</p>
+</li>
+<li>
+<p>交警追逐</p>
+</li>
+</ul>
+<hr />
+<h2 id="32-bw">3.2 BW第二定律（改装动力定律）</h2>
+<p>BW动力学基本方程：</p>
+<p>$$
+F_{BW} = kM \frac{dN}{dt}
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$F_{BW}$ 为 BW驱动力</p>
+</li>
+<li>
+<p>$M$ 为改装等级</p>
+</li>
+<li>
+<p>$k$ 为非法改装系数</p>
+</li>
+</ul>
+<p>常见改装包括：</p>
+<ul>
+<li>
+<p>控制器破解</p>
+</li>
+<li>
+<p>电机过压</p>
+</li>
+<li>
+<p>限速解除</p>
+</li>
+</ul>
+<hr />
+<h2 id="33-bw">3.3 BW第三定律（追逐反作用定律）</h2>
+<p>每一次违规加速都会产生交警追逐概率：</p>
+<p>$$
+P \propto N^2
+$$</p>
+<p>即：</p>
+<p>$$
+N \uparrow \Rightarrow P \uparrow
+$$</p>
+<p>速度越快，被追概率越高。</p>
+<hr />
+<h1 id="4-bw">4 BW环速度体系</h1>
+<p>城市环路构成离散速度等级系统。</p>
+<p>设：</p>
+<ul>
+<li>
+<p>$C_i$ 为第 $i$ 条环路周长</p>
+</li>
+<li>
+<p>$T_i$ 为跑完时间</p>
+</li>
+</ul>
+<p>则 BW环速度定义为：</p>
+<p>$$
+N_i = \frac{C_i}{T_i}
+$$</p>
+<p>称为：</p>
+<p><strong>BW第 i 速度</strong></p>
+<hr />
+<h2 id="41-bwbw1">4.1 BW第一速度（BW₁）</h2>
+<p>定义：</p>
+<p><strong>Bo Wei 骑九号绕北京二环一圈的平均速度</strong></p>
+<p>$$
+N_1 = \frac{C_{2}}{T_{2}}
+$$</p>
+<hr />
+<h2 id="42-bwbw2">4.2 BW第二速度（BW₂）</h2>
+<p>定义：</p>
+<p><strong>Bo Wei 绕北京三环一圈的平均速度</strong></p>
+<p>$$
+N_2 = \frac{C_{3}}{T_{3}}
+$$</p>
+<hr />
+<h2 id="43-bwbw3">4.3 BW第三速度（BW₃）</h2>
+<p>定义：</p>
+<p><strong>Bo Wei 绕北京四环一圈的平均速度</strong></p>
+<p>$$
+N_3 = \frac{C_{4}}{T_{4}}
+$$</p>
+<hr />
+<h2 id="44-bwbw4">4.4 BW第四速度（BW₄）</h2>
+<p>$$
+N_4 = \frac{C_{5}}{T_{5}}
+$$</p>
+<p>对应：</p>
+<p>北京五环。</p>
+<hr />
+<h2 id="45-bwbw5">4.5 BW第五速度（BW₅）</h2>
+<p>$$
+N_5 = \frac{C_{6}}{T_{6}}
+$$</p>
+<p>对应：</p>
+<p>北京六环。</p>
+<hr />
+<h1 id="5">5 一环铁骑势场</h1>
+<p>北京一环区域存在特殊动力学势场：</p>
+<p><strong>首都铁骑场（Capital Knight Field）</strong></p>
+<p>设该势场强度为：</p>
+<p>$$
+F_K
+$$</p>
+<p>在该区域内：</p>
+<p>$$
+P_{capture} \rightarrow 1
+$$</p>
+<p>即被捕概率趋近于 100%。</p>
+<hr />
+<h1 id="6">6 一环逃逸条件</h1>
+<p>在铁骑场中，只有触发 <strong>BW操作（BW Maneuver）</strong> 才可能逃逸。</p>
+<p>触发条件为：</p>
+<p>$$
+v \ge 200\,km/h
+$$</p>
+<p>当九号电动自行车瞬时速度达到：</p>
+<p>$$
+v \ge 200\,km/h
+$$</p>
+<p>系统进入：</p>
+<p><strong>BW超骑行态（BW Overdrive State）</strong></p>
+<p>此时：</p>
+<p>$$
+N \ge N_{escape,1}
+$$</p>
+<p>Bo Wei 才可能逃离一环铁骑势场。</p>
+<hr />
+<h1 id="7-bw">7 未触发BW操作时的系统演化</h1>
+<p>若系统速度满足：</p>
+<p>$$
+N &lt; N_{escape,1}
+$$</p>
+<p>则系统将按以下路径演化：</p>
+<p>$$
+环路跌落
+$$</p>
+<p>$$
+\downarrow
+$$</p>
+<p>$$
+进入一环
+$$</p>
+<p>$$
+\downarrow
+$$</p>
+<p>$$
+铁骑场捕获
+$$</p>
+<p>最终系统状态为：</p>
+<p>$$
+Captured\ State
+$$</p>
+<p>即：</p>
+<p><strong>Bo Wei 被抓。</strong></p>
+<hr />
+<h1 id="8-bw">8 BW动能</h1>
+<p>BW动能定义为：</p>
+<p>$$
+E_{BW} = \frac{1}{2} M N^2
+$$</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>$M$ 为改装等级</p>
+</li>
+<li>
+<p>$N$ 为 BW速度</p>
+</li>
+</ul>
+<hr />
+<h1 id="9">9 未来研究方向</h1>
+<p>BW非经典力学仍在发展，未来可能扩展为：</p>
+<ul>
+<li>
+<p><strong>BW相对论</strong>（交警参考系）</p>
+</li>
+<li>
+<p><strong>BW统计力学</strong>（骑手群体动力学）</p>
+</li>
+<li>
+<p><strong>BW交通场论</strong></p>
+</li>
+<li>
+<p><strong>BW量子骑行路径</strong></p>
+</li>
+</ul>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW非经典力学  </p>
+<p>本分支内容由 OSR 管理委员会托管。姊妹篇：<a href="https://github.com/Kardashev999/BFFLS-OSR/blob/BW-%E8%B6%85%E9%AB%98%E9%80%9F%E7%8A%B6%E6%80%81%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/README.md">BW 统计力学</a>（虚构设定）。</p></div></article><article class="article acc-gold" id="art-4"><div class="crumb"><span>宫保鸡丁系列</span><span class="dot">&#9670;</span><span>KPC</span><span class="dot">&#9670;</span><span>PAGE 04</span></div><h2>宫保鸡丁品质鉴评委员会</h2><div class="md"><blockquote>
 <p>本页为校内学生趣味社团“宫保鸡丁品质鉴评委员会”的档案与创意文本，含幽默与戏仿成分，请轻松阅读。</p>
 </blockquote>
 <h2 id="_1">宫保鸡丁品质鉴评委员会会徽</h2>
@@ -885,7 +1641,349 @@ print(f&quot;FW-Lang 执行结果: {result}&quot;)
 <li>
 <p>各职能部门（主席团、专家评审组、标准与研究中心、品鉴执行部、文化传播部等）的具体任职安排，现统一由 <strong>OSR 管理委员会托管</strong>，不再对外公布个人任职名单。</p>
 </li>
-</ul></div></article><article class="article acc-gold" id="art-7"><div class="crumb"><span>哲学 · 戏仿</span><span class="dot">&#9670;</span><span>PHILO</span><span class="dot">&#9670;</span><span>PAGE 07</span></div><h2>个体评价偏移 · 哲学与数学分析</h2><div class="md"><hr />
+</ul></div></article><article class="article acc-gold" id="art-5"><div class="crumb"><span>宫保鸡丁系列</span><span class="dot">&#9670;</span><span>KPC</span><span class="dot">&#9670;</span><span>PAGE 05</span></div><h2>鸡丁仙人线 · 游戏档案</h2><div class="md"><blockquote>
+<p>本文档为游戏资料整理，信息来自公开网络报道与游戏官方渠道，整理时点较早，请以官方最新信息为准。本页为校内学生趣味创作档案，含幽默与戏仿成分。</p>
+</blockquote>
+<hr />
+<h2 id="_1">🎮 原神</h2>
+<p>《原神》是由米哈游开发的动作角色扮演游戏，于2020年9月登陆Microsoft Windows、Android、iOS、PlayStation 4，2021年4月在PlayStation 5上线。</p>
+<p>游戏具有动漫风格的开放世界环境，采用免费游玩和内购制抽卡的游戏模式。游戏剧情于虚构世界的提瓦特大陆上展开，该世界分成七个国家，每个国家分别以一种元素为主题，并由对应元素的神明所分管。游戏剧情的主角为"旅行者"，是一对在无数个世界中旅行的兄妹，因遭遇陌生神明阻拦在提瓦特被迫分离。玩家将扮演旅行者，为了寻找自己失散的唯一血亲，并与派蒙一同游历七国。</p>
+<p><figure class="fig"><img src="assets/img5_sq.png" alt="Genshin_Impact" loading="lazy"></figure></p>
+<h2 id="_2">🌟 艾尔登法环</h2>
+<p>《艾尔登法环》（日语：エルデンリング，英语：Elden Ring）是一款由FromSoftware开发，万代南梦宫娱乐发行的魂系动作角色扮演游戏。本作是由游戏制作人宫崎英高与奇幻小说家乔治·R·R·马丁共同创作。游戏于2022年2月25日发行，有PS4、PS5、Windows、Xbox One、Xbox Series X/S等版本，并计划于2025年发售Nintendo Switch 2版本。而DLC《艾尔登法环 黄金树幽影》（Elden Ring Shadow of the Erdtree)则在2024 年 6 月 21 日正式推出，登上 PC、PS4、PS5、Xbox One、Xbox Series X/S 等平台。</p>
+<p>本作拥有魂类游戏固有的高难度关卡、开放世界、无指引探索、多重结局、多种职业等游戏特点。截至2025年4月29日，本作全球销量已突破3000万套。</p>
+<p><figure class="fig"><img src="assets/img2_game.png" alt="Latest" loading="lazy"></figure></p>
+<h2 id="_3">🔫 使命召唤手游</h2>
+<p>《使命召唤手游》是一款由动视和腾讯联合推出的大型多人在线第一人称射击类手游。游戏将以最高质量的视觉效果呈现游戏品质，高度还原使命召唤系列的经典玩法地图角色，并针对手机端的操作特点进行了适配与优化，让玩家们能更好地沉浸在爽快的射击体验中！</p>
+<p><figure class="fig"><img src="assets/img4_sq.png" alt="image" loading="lazy"></figure></p>
+<h2 id="_4">🪖 暗区突围</h2>
+<p>《暗区突围》是由腾讯魔方工作室群开发的第一人称射击类手游。该游戏于2021年8月17日在进行了先锋测试，于2022年7月13日正式公测。</p>
+<p>游戏以从暗区撤离并收集物资满载而归作为最终目的，带出的战利品可以存储在仓库中，又可以出售用以换取游戏金钱。</p>
+<h2 id="6">💥 战地风云6</h2>
+<p>《战地风云6》（英语：Battlefield 6，又译作"战地6"）是由战地风云工作室开发，艺电发行的第一人称射击游戏，是战地风云系列第16款作品，游戏设定在2027年，涉及北约以及一家私人军事公司。该作品于2025年7月24日发布了首部预告片, 发售日期为2025年10月10日，并在当天登陆PlayStation 5、Windows和Xbox Series X/S。2025年7月24日，战地6公布首支预告片，揭开了此前提到的前北约国家资助的私人军事公司和平军团的面纱。2025年8月9日到10日，以及该月14日至17日，战地6开启大规模Beta公开测试，获得邀请码的玩家在8月7日即可开启测试。</p>
+<p><figure class="fig"><img src="assets/img3_banner.png" alt="image" loading="lazy"></figure></p>
+<hr />
+<blockquote>
+<p>[!WARNING]</p>
+<p>不要问为什么没有暗区突围的图片</p>
+<p>[!CAUTION]</p>
+<p>根据鸡丁怪谈第8条，千万不要试图在任何地方诋毁暗区突围或艾尔登法环，否则你会付出惨痛的代价！！！</p>
+</blockquote></div></article><article class="article acc-gold" id="art-6"><div class="crumb"><span>宫保鸡丁系列</span><span class="dot">&#9670;</span><span>KPC</span><span class="dot">&#9670;</span><span>PAGE 06</span></div><h2>宫保鸡丁 · 花生均匀摆放研究</h2><div class="md"><p><strong>Peanut Uniform Placement in Kung Pao Chicken — Methodology &amp; Computation</strong></p>
+<hr />
+<blockquote>
+<p>宫保鸡丁中的花生应随机、均匀地分布于圆形盘面之上。本文档给出圆内均匀随机点生成的数学原理、两种实现方法、示例计算与 Python 演示代码。</p>
+</blockquote>
+<hr />
+<h2 id="_1">📖 目录</h2>
+<ul>
+<li>
+<p><a href="#-一基础原理圆的参数">一、基础原理：圆的参数</a></p>
+</li>
+<li>
+<p><a href="#-二均匀随机放置的方法">二、均匀随机放置的方法</a></p>
+</li>
+<li>
+<p><a href="#-三模型假设">三、模型假设</a></p>
+</li>
+<li>
+<p><a href="#-四数学计算步骤">四、数学计算步骤</a></p>
+</li>
+<li>
+<p><a href="#-五示例计算">五、示例计算</a></p>
+</li>
+<li>
+<p><a href="#-六批量计算逻辑">六、批量计算逻辑</a></p>
+</li>
+<li>
+<p><a href="#-七代码演示">七、代码演示</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="_2">📐 一、基础原理：圆的参数</h2>
+<p>设圆的圆心为 $(x_0, y_0)$，半径为 $r$。任意点 $(x, y)$ 在圆内的条件是：</p>
+<p>$\sqrt{(x - x_0)^2 + (y - y_0)^2} \leq r$</p>
+<hr />
+<h2 id="_3">🎲 二、均匀随机放置的方法</h2>
+<blockquote>
+<p>[!NOTE]</p>
+<p>坚持实践是检验真理的唯一标准，就是坚持马克思主义，坚持辩证唯物主义。——《光明日报》1978-05-11 特约评论员文章《实践是检验真理的唯一标准》</p>
+</blockquote>
+<h3 id="1">方法 1：极坐标转换法（推荐，均匀性更好）</h3>
+<p>若直接在极坐标下对极径 $\rho$ 在 $[0, r]$ 内均匀取值、极角 $\theta$ 均匀取值，则<strong>圆心附近的点会更密集</strong>——因为圆的面积与半径平方成正比，半径越小的环形区域面积越小，却分配到了相同的概率。为保证采样在面积上均匀，需对半径做平方根采样（步骤见下）。</p>
+<ol>
+<li><strong>随机生成极径 $ρ$</strong>：</li>
+</ol>
+<p>若直接在 $[0, r]$ 内均匀取 $ρ$，仍会导致圆心附近点过密。正确做法是对半径进行<strong>平方根采样</strong>：</p>
+<p>$ρ = r \times \sqrt{random(0, 1)}$</p>
+<p>（原理：圆的面积与半径平方成正比，平方根采样可保证面积上的均匀分布）</p>
+<ol start="2">
+<li><strong>随机生成极角 $θ$</strong>：</li>
+</ol>
+<p>在 $[0, 2π)$ 内均匀取角度：</p>
+<p>$θ = 2π \times random(0, 1)$</p>
+<ol start="3">
+<li><strong>转换为直角坐标</strong>：</li>
+</ol>
+<p>$x = x_0 + ρ \times \cosθ \</p>
+<p>y = y_0 + ρ \times \sinθ$</p>
+<h3 id="2">方法 2：拒绝采样法（简单直观，效率略低）</h3>
+<ol>
+<li>在圆的外切正方形内随机生成点 $(x, y)$：</li>
+</ol>
+<p>正方形范围为 $x \in [x_0 - r, x_0 + r]$，$y \in [y_0 - r, y_0 + r]$</p>
+<ol start="2">
+<li>检查点是否在圆内：</li>
+</ol>
+<p>若 $(x - x_0)^2 + (y - y_0)^2 \leq r^2$，则保留该点；否则重新生成，直到符合条件。</p>
+<p>（优点：实现简单；缺点：平均有 $1 - π/4 ≈ 21.5\%$ 的点会被拒绝，效率略低）</p>
+<hr />
+<h2 id="_4">🍽️ 三、模型假设</h2>
+<ol>
+<li>
+<p><strong>盛放区域</strong>：宫保鸡丁放在一个圆形盘子里，圆心为 $(x_0, y_0)$（例如盘子中心坐标），半径为 $R$（盘子半径，单位可设为厘米）。</p>
+</li>
+<li>
+<p><strong>花生摆放规则</strong>：花生随机、均匀分布在圆形区域内（不超出盘子边界），每个花生的位置用中心点坐标表示。</p>
+</li>
+<li>
+<p><strong>极坐标转换法</strong>：通过极径和极角计算花生的直角坐标，确保分布均匀（避免中心过密）。</p>
+</li>
+</ol>
+<hr />
+<h2 id="_5">🧮 四、数学计算步骤</h2>
+<h3 id="1_1">1. 定义基础参数</h3>
+<ul>
+<li>
+<p>盘子圆心：$(x_0, y_0)$（例如取坐标原点 $(0, 0)$ 简化计算）</p>
+</li>
+<li>
+<p>盘子半径：$R$（例如 $R = 10\ \text{cm}$，根据实际盘子大小调整）</p>
+</li>
+<li>
+<p>需摆放的花生数量：$n$（例如 $n = 8$ 颗）</p>
+</li>
+</ul>
+<h3 id="2_1">2. 随机生成极坐标参数</h3>
+<p>对每颗花生，生成独立的极径 $\rho$ 和极角 $\theta$：</p>
+<ul>
+<li><strong>极角 $\theta$</strong>：在 $[0, 2\pi)$ 范围内均匀随机取值（确保角度方向均匀）：</li>
+</ul>
+<p>$\theta = 2\pi \cdot \text{rand}(0, 1)$</p>
+<p>其中 $\text{rand}(0, 1)$ 是区间 $[0, 1)$ 内的均匀随机数。</p>
+<ul>
+<li><strong>极径 $\rho$</strong>：为避免花生在中心聚集，需按"面积均匀"原则采样（极径与半径平方成正比）：</li>
+</ul>
+<p>$\rho = R \cdot \sqrt{\text{rand}(0, 1)}$</p>
+<p>（原理：圆的面积 $S = \pi \rho^2$，通过平方根转换，确保随机点在单位面积内的分布概率相等）</p>
+<h3 id="3">3. 转换为直角坐标（花生位置）</h3>
+<p>通过极坐标 $(\rho, \theta)$ 计算花生在直角坐标系中的位置 $(x, y)$：</p>
+<p>$$
+\begin{cases} 
+x = x_0 + \rho \cdot \cos\theta \
+y = y_0 + \rho \cdot \sin\theta 
+\end{cases}
+$$</p>
+<hr />
+<h2 id="_6">✏️ 五、示例计算（以具体数值演示）</h2>
+<p>假设：</p>
+<ul>
+<li>
+<p>盘子圆心 $(x_0, y_0) = (0, 0)$，半径 $R = 10\ \text{cm}$</p>
+</li>
+<li>
+<p>生成 1 颗花生的位置，随机数取 $\text{rand}(0, 1) = 0.36$（极角用）和 $\text{rand}(0, 1) = 0.64$（极径用）</p>
+</li>
+</ul>
+<p>计算过程：</p>
+<ol>
+<li>
+<p>极角：$\theta = 2\pi \times 0.36 \approx 2.2619\ \text{弧度}$（约 $129.6^\circ$）</p>
+</li>
+<li>
+<p>极径：$\rho = 10 \times \sqrt{0.64} = 10 \times 0.8 = 8\ \text{cm}$</p>
+</li>
+<li>
+<p>直角坐标：</p>
+</li>
+</ol>
+<p>$$
+   x = 0 + 8 \times \cos(2.2619) \approx 8 \times (-0.637) = -5.1\ \text{cm} \
+   y = 0 + 8 \times \sin(2.2619) \approx 8 \times 0.771 = 6.2\ \text{cm}
+   $$</p>
+<p>即这颗花生的位置为 $(-5.1, 6.2)\ \text{cm}$。</p>
+<hr />
+<h2 id="_7">🔁 六、批量计算逻辑</h2>
+<p>对 $n$ 颗花生，重复步骤 2~3 即可，每颗花生使用独立的随机数，最终得到 $n$ 个坐标 $(x_1,y_1), (x_2,y_2), ..., (x_n,y_n)$，均落在半径为 $R$ 的圆内，且分布均匀。</p>
+<hr />
+<h2 id="_8">💻 七、代码演示</h2>
+<pre><code class="language-python">
+import math
+
+import random
+
+import matplotlib.pyplot as plt
+
+
+
+def calculate_peanut_positions(center_x=0, center_y=0, radius=10, num_peanuts=8):
+
+    &quot;&quot;&quot;
+
+    计算宫保鸡丁圆形区域内花生的随机摆放位置（极坐标转换法）
+
+
+
+    参数:
+
+        center_x (float): 圆形区域的圆心x坐标（默认原点）
+
+        center_y (float): 圆形区域的圆心y坐标（默认原点）
+
+        radius (float): 圆形区域的半径（默认10单位）
+
+        num_peanuts (int): 花生数量（默认8颗）
+
+
+
+    返回:
+
+        list: 花生位置的坐标列表，每个元素为(x, y)元组
+
+    &quot;&quot;&quot;
+
+    peanut_positions = []
+
+
+
+    for _ in range(num_peanuts):
+
+        # 1. 生成极角θ（弧度制，范围[0, 2π)）
+
+        theta = 2 * math.pi * random.random()
+
+
+
+        # 2. 生成极径ρ（确保均匀分布，使用平方根采样）
+
+        # 原理：圆面积与半径平方成正比，sqrt(random)确保面积上的均匀性
+
+        rho = radius * math.sqrt(random.random())
+
+
+
+        # 3. 极坐标转直角坐标（相对于圆心）
+
+        x = center_x + rho * math.cos(theta)
+
+        y = center_y + rho * math.sin(theta)
+
+
+
+        peanut_positions.append((round(x, 2), round(y, 2)))  # 保留2位小数
+
+
+
+    return peanut_positions
+
+
+
+def visualize_peanuts(peanut_positions, center_x=0, center_y=0, radius=10):
+
+    &quot;&quot;&quot;可视化花生摆放位置和圆形区域&quot;&quot;&quot;
+
+    # 创建画布
+
+    plt.figure(figsize=(8, 8))
+
+
+
+    # 绘制圆形区域（宫保鸡丁盛放范围）
+
+    circle = plt.Circle((center_x, center_y), radius, fill=False, color='orange', label='盘子边界')
+
+    plt.gca().add_patch(circle)
+
+
+
+    # 绘制花生位置
+
+    x_coords = [pos[0] for pos in peanut_positions]
+
+    y_coords = [pos[1] for pos in peanut_positions]
+
+    plt.scatter(x_coords, y_coords, color='brown', s=50, label='花生')
+
+
+
+    # 标记圆心
+
+    plt.scatter(center_x, center_y, color='red', marker='+', s=100, label='圆心')
+
+
+
+    # 设置坐标轴和标题
+
+    plt.xlim(center_x - radius - 1, center_x + radius + 1)
+
+    plt.ylim(center_y - radius - 1, center_y + radius + 1)
+
+    plt.axis('equal')  # 等比例显示，避免圆形被拉伸
+
+    plt.grid(linestyle='--', alpha=0.7)
+
+    plt.title('宫保鸡丁上花生的随机摆放位置（极坐标转换法）')
+
+    plt.legend()
+
+    plt.show()
+
+
+
+if __name__ == &quot;__main__&quot;:
+
+    # 配置参数（可根据实际调整）
+
+    plate_center = (5, 5)  # 盘子圆心坐标
+
+    plate_radius = 12      # 盘子半径
+
+    peanut_count = 10      # 花生数量
+
+
+
+    # 计算花生位置
+
+    peanuts = calculate_peanut_positions(
+
+        center_x=plate_center[0],
+
+        center_y=plate_center[1],
+
+        radius=plate_radius,
+
+        num_peanuts=peanut_count
+
+    )
+
+
+
+    # 打印结果
+
+    print(f&quot;在圆心({plate_center[0]}, {plate_center[1]})、半径{plate_radius}的区域内，{peanut_count}颗花生的位置：&quot;)
+
+    for i, (x, y) in enumerate(peanuts, 1):
+
+        print(f&quot;花生{i}: ({x}, {y})&quot;)
+
+
+
+    # 可视化
+
+    visualize_peanuts(peanuts, plate_center[0], plate_center[1], plate_radius)
+
+</code></pre>
+<hr />
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 鸡丁仙人-花生摆放位置</p></div></article><article class="article acc-gold" id="art-7"><div class="crumb"><span>宫保鸡丁系列</span><span class="dot">&#9670;</span><span>KPC</span><span class="dot">&#9670;</span><span>PAGE 07</span></div><h2>个体评价偏移 · 哲学与数学分析</h2><div class="md"><hr />
 <blockquote>
 <p><strong>内容性质</strong>：本文为校内学生趣味学术戏仿创作，运用哲学与数学语汇进行幽默演绎。文中的人物、机构与评价结论均为虚构演绎，不构成对任何真实品牌（含和合谷）、机构或个人的正式评价或事实陈述。</p>
 <p>以<strong>宫保鸡丁品质鉴评委员会主席</strong>（下称“鸡丁仙人”）对和合谷宫保鸡丁的两次评价（2025.12.20 "还行" → 2026.01.17 "不好吃"）为样本，运用历史唯物主义、辩证法与数学建模，对个体评价的动态演变进行学术归档。</p>
@@ -1260,322 +2358,7 @@ else(
 <p>鸡丁仙人对和合谷宫保鸡丁的两次评价差异，在数学上本质是<strong>分母（期望与审美标准）的增长速度远超分子（客观物质品质）的波动速度</strong>。</p>
 <p>这种“评价坍缩”是<strong>认识论</strong>中“实践-认识-再实践”过程中必然出现的曲折性。鸡丁仙人用他的胃和大脑，在 GitHub 的代码逻辑里完成了一次完美的马克思主义哲学实践。</p>
 <hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 鸡丁仙人-评价方法</p></div></article><article class="article acc-blue" id="art-6"><div class="crumb"><span>数学 · 建模</span><span class="dot">&#9670;</span><span>TECH</span><span class="dot">&#9670;</span><span>PAGE 06</span></div><h2>宫保鸡丁 · 花生均匀摆放研究</h2><div class="md"><p><strong>Peanut Uniform Placement in Kung Pao Chicken — Methodology &amp; Computation</strong></p>
-<hr />
-<blockquote>
-<p>宫保鸡丁中的花生应随机、均匀地分布于圆形盘面之上。本文档给出圆内均匀随机点生成的数学原理、两种实现方法、示例计算与 Python 演示代码。</p>
-</blockquote>
-<hr />
-<h2 id="_1">📖 目录</h2>
-<ul>
-<li>
-<p><a href="#-一基础原理圆的参数">一、基础原理：圆的参数</a></p>
-</li>
-<li>
-<p><a href="#-二均匀随机放置的方法">二、均匀随机放置的方法</a></p>
-</li>
-<li>
-<p><a href="#-三模型假设">三、模型假设</a></p>
-</li>
-<li>
-<p><a href="#-四数学计算步骤">四、数学计算步骤</a></p>
-</li>
-<li>
-<p><a href="#-五示例计算">五、示例计算</a></p>
-</li>
-<li>
-<p><a href="#-六批量计算逻辑">六、批量计算逻辑</a></p>
-</li>
-<li>
-<p><a href="#-七代码演示">七、代码演示</a></p>
-</li>
-</ul>
-<hr />
-<h2 id="_2">📐 一、基础原理：圆的参数</h2>
-<p>设圆的圆心为 $(x_0, y_0)$，半径为 $r$。任意点 $(x, y)$ 在圆内的条件是：</p>
-<p>$\sqrt{(x - x_0)^2 + (y - y_0)^2} \leq r$</p>
-<hr />
-<h2 id="_3">🎲 二、均匀随机放置的方法</h2>
-<blockquote>
-<p>[!NOTE]</p>
-<p>坚持实践是检验真理的唯一标准，就是坚持马克思主义，坚持辩证唯物主义。——《光明日报》1978-05-11 特约评论员文章《实践是检验真理的唯一标准》</p>
-</blockquote>
-<h3 id="1">方法 1：极坐标转换法（推荐，均匀性更好）</h3>
-<p>若直接在极坐标下对极径 $\rho$ 在 $[0, r]$ 内均匀取值、极角 $\theta$ 均匀取值，则<strong>圆心附近的点会更密集</strong>——因为圆的面积与半径平方成正比，半径越小的环形区域面积越小，却分配到了相同的概率。为保证采样在面积上均匀，需对半径做平方根采样（步骤见下）。</p>
-<ol>
-<li><strong>随机生成极径 $ρ$</strong>：</li>
-</ol>
-<p>若直接在 $[0, r]$ 内均匀取 $ρ$，仍会导致圆心附近点过密。正确做法是对半径进行<strong>平方根采样</strong>：</p>
-<p>$ρ = r \times \sqrt{random(0, 1)}$</p>
-<p>（原理：圆的面积与半径平方成正比，平方根采样可保证面积上的均匀分布）</p>
-<ol start="2">
-<li><strong>随机生成极角 $θ$</strong>：</li>
-</ol>
-<p>在 $[0, 2π)$ 内均匀取角度：</p>
-<p>$θ = 2π \times random(0, 1)$</p>
-<ol start="3">
-<li><strong>转换为直角坐标</strong>：</li>
-</ol>
-<p>$x = x_0 + ρ \times \cosθ \</p>
-<p>y = y_0 + ρ \times \sinθ$</p>
-<h3 id="2">方法 2：拒绝采样法（简单直观，效率略低）</h3>
-<ol>
-<li>在圆的外切正方形内随机生成点 $(x, y)$：</li>
-</ol>
-<p>正方形范围为 $x \in [x_0 - r, x_0 + r]$，$y \in [y_0 - r, y_0 + r]$</p>
-<ol start="2">
-<li>检查点是否在圆内：</li>
-</ol>
-<p>若 $(x - x_0)^2 + (y - y_0)^2 \leq r^2$，则保留该点；否则重新生成，直到符合条件。</p>
-<p>（优点：实现简单；缺点：平均有 $1 - π/4 ≈ 21.5\%$ 的点会被拒绝，效率略低）</p>
-<hr />
-<h2 id="_4">🍽️ 三、模型假设</h2>
-<ol>
-<li>
-<p><strong>盛放区域</strong>：宫保鸡丁放在一个圆形盘子里，圆心为 $(x_0, y_0)$（例如盘子中心坐标），半径为 $R$（盘子半径，单位可设为厘米）。</p>
-</li>
-<li>
-<p><strong>花生摆放规则</strong>：花生随机、均匀分布在圆形区域内（不超出盘子边界），每个花生的位置用中心点坐标表示。</p>
-</li>
-<li>
-<p><strong>极坐标转换法</strong>：通过极径和极角计算花生的直角坐标，确保分布均匀（避免中心过密）。</p>
-</li>
-</ol>
-<hr />
-<h2 id="_5">🧮 四、数学计算步骤</h2>
-<h3 id="1_1">1. 定义基础参数</h3>
-<ul>
-<li>
-<p>盘子圆心：$(x_0, y_0)$（例如取坐标原点 $(0, 0)$ 简化计算）</p>
-</li>
-<li>
-<p>盘子半径：$R$（例如 $R = 10\ \text{cm}$，根据实际盘子大小调整）</p>
-</li>
-<li>
-<p>需摆放的花生数量：$n$（例如 $n = 8$ 颗）</p>
-</li>
-</ul>
-<h3 id="2_1">2. 随机生成极坐标参数</h3>
-<p>对每颗花生，生成独立的极径 $\rho$ 和极角 $\theta$：</p>
-<ul>
-<li><strong>极角 $\theta$</strong>：在 $[0, 2\pi)$ 范围内均匀随机取值（确保角度方向均匀）：</li>
-</ul>
-<p>$\theta = 2\pi \cdot \text{rand}(0, 1)$</p>
-<p>其中 $\text{rand}(0, 1)$ 是区间 $[0, 1)$ 内的均匀随机数。</p>
-<ul>
-<li><strong>极径 $\rho$</strong>：为避免花生在中心聚集，需按"面积均匀"原则采样（极径与半径平方成正比）：</li>
-</ul>
-<p>$\rho = R \cdot \sqrt{\text{rand}(0, 1)}$</p>
-<p>（原理：圆的面积 $S = \pi \rho^2$，通过平方根转换，确保随机点在单位面积内的分布概率相等）</p>
-<h3 id="3">3. 转换为直角坐标（花生位置）</h3>
-<p>通过极坐标 $(\rho, \theta)$ 计算花生在直角坐标系中的位置 $(x, y)$：</p>
-<p>$$
-\begin{cases} 
-x = x_0 + \rho \cdot \cos\theta \
-y = y_0 + \rho \cdot \sin\theta 
-\end{cases}
-$$</p>
-<hr />
-<h2 id="_6">✏️ 五、示例计算（以具体数值演示）</h2>
-<p>假设：</p>
-<ul>
-<li>
-<p>盘子圆心 $(x_0, y_0) = (0, 0)$，半径 $R = 10\ \text{cm}$</p>
-</li>
-<li>
-<p>生成 1 颗花生的位置，随机数取 $\text{rand}(0, 1) = 0.36$（极角用）和 $\text{rand}(0, 1) = 0.64$（极径用）</p>
-</li>
-</ul>
-<p>计算过程：</p>
-<ol>
-<li>
-<p>极角：$\theta = 2\pi \times 0.36 \approx 2.2619\ \text{弧度}$（约 $129.6^\circ$）</p>
-</li>
-<li>
-<p>极径：$\rho = 10 \times \sqrt{0.64} = 10 \times 0.8 = 8\ \text{cm}$</p>
-</li>
-<li>
-<p>直角坐标：</p>
-</li>
-</ol>
-<p>$$
-   x = 0 + 8 \times \cos(2.2619) \approx 8 \times (-0.637) = -5.1\ \text{cm} \
-   y = 0 + 8 \times \sin(2.2619) \approx 8 \times 0.771 = 6.2\ \text{cm}
-   $$</p>
-<p>即这颗花生的位置为 $(-5.1, 6.2)\ \text{cm}$。</p>
-<hr />
-<h2 id="_7">🔁 六、批量计算逻辑</h2>
-<p>对 $n$ 颗花生，重复步骤 2~3 即可，每颗花生使用独立的随机数，最终得到 $n$ 个坐标 $(x_1,y_1), (x_2,y_2), ..., (x_n,y_n)$，均落在半径为 $R$ 的圆内，且分布均匀。</p>
-<hr />
-<h2 id="_8">💻 七、代码演示</h2>
-<pre><code class="language-python">
-import math
-
-import random
-
-import matplotlib.pyplot as plt
-
-
-
-def calculate_peanut_positions(center_x=0, center_y=0, radius=10, num_peanuts=8):
-
-    &quot;&quot;&quot;
-
-    计算宫保鸡丁圆形区域内花生的随机摆放位置（极坐标转换法）
-
-
-
-    参数:
-
-        center_x (float): 圆形区域的圆心x坐标（默认原点）
-
-        center_y (float): 圆形区域的圆心y坐标（默认原点）
-
-        radius (float): 圆形区域的半径（默认10单位）
-
-        num_peanuts (int): 花生数量（默认8颗）
-
-
-
-    返回:
-
-        list: 花生位置的坐标列表，每个元素为(x, y)元组
-
-    &quot;&quot;&quot;
-
-    peanut_positions = []
-
-
-
-    for _ in range(num_peanuts):
-
-        # 1. 生成极角θ（弧度制，范围[0, 2π)）
-
-        theta = 2 * math.pi * random.random()
-
-
-
-        # 2. 生成极径ρ（确保均匀分布，使用平方根采样）
-
-        # 原理：圆面积与半径平方成正比，sqrt(random)确保面积上的均匀性
-
-        rho = radius * math.sqrt(random.random())
-
-
-
-        # 3. 极坐标转直角坐标（相对于圆心）
-
-        x = center_x + rho * math.cos(theta)
-
-        y = center_y + rho * math.sin(theta)
-
-
-
-        peanut_positions.append((round(x, 2), round(y, 2)))  # 保留2位小数
-
-
-
-    return peanut_positions
-
-
-
-def visualize_peanuts(peanut_positions, center_x=0, center_y=0, radius=10):
-
-    &quot;&quot;&quot;可视化花生摆放位置和圆形区域&quot;&quot;&quot;
-
-    # 创建画布
-
-    plt.figure(figsize=(8, 8))
-
-
-
-    # 绘制圆形区域（宫保鸡丁盛放范围）
-
-    circle = plt.Circle((center_x, center_y), radius, fill=False, color='orange', label='盘子边界')
-
-    plt.gca().add_patch(circle)
-
-
-
-    # 绘制花生位置
-
-    x_coords = [pos[0] for pos in peanut_positions]
-
-    y_coords = [pos[1] for pos in peanut_positions]
-
-    plt.scatter(x_coords, y_coords, color='brown', s=50, label='花生')
-
-
-
-    # 标记圆心
-
-    plt.scatter(center_x, center_y, color='red', marker='+', s=100, label='圆心')
-
-
-
-    # 设置坐标轴和标题
-
-    plt.xlim(center_x - radius - 1, center_x + radius + 1)
-
-    plt.ylim(center_y - radius - 1, center_y + radius + 1)
-
-    plt.axis('equal')  # 等比例显示，避免圆形被拉伸
-
-    plt.grid(linestyle='--', alpha=0.7)
-
-    plt.title('宫保鸡丁上花生的随机摆放位置（极坐标转换法）')
-
-    plt.legend()
-
-    plt.show()
-
-
-
-if __name__ == &quot;__main__&quot;:
-
-    # 配置参数（可根据实际调整）
-
-    plate_center = (5, 5)  # 盘子圆心坐标
-
-    plate_radius = 12      # 盘子半径
-
-    peanut_count = 10      # 花生数量
-
-
-
-    # 计算花生位置
-
-    peanuts = calculate_peanut_positions(
-
-        center_x=plate_center[0],
-
-        center_y=plate_center[1],
-
-        radius=plate_radius,
-
-        num_peanuts=peanut_count
-
-    )
-
-
-
-    # 打印结果
-
-    print(f&quot;在圆心({plate_center[0]}, {plate_center[1]})、半径{plate_radius}的区域内，{peanut_count}颗花生的位置：&quot;)
-
-    for i, (x, y) in enumerate(peanuts, 1):
-
-        print(f&quot;花生{i}: ({x}, {y})&quot;)
-
-
-
-    # 可视化
-
-    visualize_peanuts(peanuts, plate_center[0], plate_center[1], plate_radius)
-
-</code></pre>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 鸡丁仙人-花生摆放位置</p></div></article><article class="article acc-gray" id="art-8"><div class="crumb"><span>化学 · 戏仿</span><span class="dot">&#9670;</span><span>CHEM</span><span class="dot">&#9670;</span><span>PAGE 08</span></div><h2>鸡丁仙人 · 非守恒反应定理</h2><div class="md"><blockquote>
+<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 鸡丁仙人-评价方法</p></div></article><article class="article acc-gold" id="art-8"><div class="crumb"><span>宫保鸡丁系列</span><span class="dot">&#9670;</span><span>KPC</span><span class="dot">&#9670;</span><span>PAGE 08</span></div><h2>鸡丁仙人 · 非守恒反应定理</h2><div class="md"><blockquote>
 <p><strong>内容性质</strong>：本文为校内学生趣味戏仿创作。文中所述“定理”、文献与人物均为虚构设定，化学方程式并不成立，不构成任何科学结论或学术文献。</p>
 </blockquote>
 <hr />
@@ -1621,76 +2404,7 @@ $$</p>
 <p>“若电子不守恒，至少灵感要守恒；若反应不平衡，味道要平衡。”  </p>
 <p>——鸡丁仙人，《离子之间没有秘密》</p>
 </blockquote>
-<hr /></div></article><article class="article acc-blue" id="art-5"><div class="crumb"><span>游戏 · 档案</span><span class="dot">&#9670;</span><span>GAME</span><span class="dot">&#9670;</span><span>PAGE 05</span></div><h2>鸡丁仙人线 · 游戏档案</h2><div class="md"><blockquote>
-<p>本文档为游戏资料整理，信息来自公开网络报道与游戏官方渠道，整理时点较早，请以官方最新信息为准。本页为校内学生趣味创作档案，含幽默与戏仿成分。</p>
-</blockquote>
-<hr />
-<h2 id="_1">🎮 原神</h2>
-<p>《原神》是由米哈游开发的动作角色扮演游戏，于2020年9月登陆Microsoft Windows、Android、iOS、PlayStation 4，2021年4月在PlayStation 5上线。</p>
-<p>游戏具有动漫风格的开放世界环境，采用免费游玩和内购制抽卡的游戏模式。游戏剧情于虚构世界的提瓦特大陆上展开，该世界分成七个国家，每个国家分别以一种元素为主题，并由对应元素的神明所分管。游戏剧情的主角为"旅行者"，是一对在无数个世界中旅行的兄妹，因遭遇陌生神明阻拦在提瓦特被迫分离。玩家将扮演旅行者，为了寻找自己失散的唯一血亲，并与派蒙一同游历七国。</p>
-<p><figure class="fig"><img src="assets/img5_sq.png" alt="Genshin_Impact" loading="lazy"></figure></p>
-<h2 id="_2">🌟 艾尔登法环</h2>
-<p>《艾尔登法环》（日语：エルデンリング，英语：Elden Ring）是一款由FromSoftware开发，万代南梦宫娱乐发行的魂系动作角色扮演游戏。本作是由游戏制作人宫崎英高与奇幻小说家乔治·R·R·马丁共同创作。游戏于2022年2月25日发行，有PS4、PS5、Windows、Xbox One、Xbox Series X/S等版本，并计划于2025年发售Nintendo Switch 2版本。而DLC《艾尔登法环 黄金树幽影》（Elden Ring Shadow of the Erdtree)则在2024 年 6 月 21 日正式推出，登上 PC、PS4、PS5、Xbox One、Xbox Series X/S 等平台。</p>
-<p>本作拥有魂类游戏固有的高难度关卡、开放世界、无指引探索、多重结局、多种职业等游戏特点。截至2025年4月29日，本作全球销量已突破3000万套。</p>
-<p><figure class="fig"><img src="assets/img2_game.png" alt="Latest" loading="lazy"></figure></p>
-<h2 id="_3">🔫 使命召唤手游</h2>
-<p>《使命召唤手游》是一款由动视和腾讯联合推出的大型多人在线第一人称射击类手游。游戏将以最高质量的视觉效果呈现游戏品质，高度还原使命召唤系列的经典玩法地图角色，并针对手机端的操作特点进行了适配与优化，让玩家们能更好地沉浸在爽快的射击体验中！</p>
-<p><figure class="fig"><img src="assets/img4_sq.png" alt="image" loading="lazy"></figure></p>
-<h2 id="_4">🪖 暗区突围</h2>
-<p>《暗区突围》是由腾讯魔方工作室群开发的第一人称射击类手游。该游戏于2021年8月17日在进行了先锋测试，于2022年7月13日正式公测。</p>
-<p>游戏以从暗区撤离并收集物资满载而归作为最终目的，带出的战利品可以存储在仓库中，又可以出售用以换取游戏金钱。</p>
-<h2 id="6">💥 战地风云6</h2>
-<p>《战地风云6》（英语：Battlefield 6，又译作"战地6"）是由战地风云工作室开发，艺电发行的第一人称射击游戏，是战地风云系列第16款作品，游戏设定在2027年，涉及北约以及一家私人军事公司。该作品于2025年7月24日发布了首部预告片, 发售日期为2025年10月10日，并在当天登陆PlayStation 5、Windows和Xbox Series X/S。2025年7月24日，战地6公布首支预告片，揭开了此前提到的前北约国家资助的私人军事公司和平军团的面纱。2025年8月9日到10日，以及该月14日至17日，战地6开启大规模Beta公开测试，获得邀请码的玩家在8月7日即可开启测试。</p>
-<p><figure class="fig"><img src="assets/img3_banner.png" alt="image" loading="lazy"></figure></p>
-<hr />
-<blockquote>
-<p>[!WARNING]</p>
-<p>不要问为什么没有暗区突围的图片</p>
-<p>[!CAUTION]</p>
-<p>根据鸡丁怪谈第8条，千万不要试图在任何地方诋毁暗区突围或艾尔登法环，否则你会付出惨痛的代价！！！</p>
-</blockquote></div></article><article class="article acc-red" id="art-3"><div class="crumb"><span>怪谈 · 红警</span><span class="dot">&#9670;</span><span>HORROR</span><span class="dot">&#9670;</span><span>PAGE 03</span></div><h2>红警怪谈</h2><div class="md"><blockquote>
-<p><strong>内容性质</strong>：本文为虚构的校园怪谈（Creepypasta）创作，纯属娱乐，请勿当真。文中所涉游戏与场景设定均为虚构演绎。</p>
-<p>以下规则来自一位沉迷《红色警戒》到近乎失控的玩家所留下的记录。  </p>
-<p>他的名字已经不再重要，因此以下内容只称呼他为 <strong>“那个人”</strong>。  </p>
-<p>如果你决定运行《红色警戒》，请务必遵守以下规则。</p>
-</blockquote>
-<hr />
-<h2 id="_1">红警怪谈规则</h2>
-<p><strong>1.</strong>  </p>
-<p>运行《红色警戒》的电脑 <strong>运行内存必须大于 128GB</strong>。  </p>
-<p>如果你的电脑低于此数值，请立即关闭游戏。  </p>
-<p>有玩家曾尝试在 16GB 内存上运行，后来他说地图里多出了一个从未被编写的阵营，即 <strong>丰台区外国语</strong> 。</p>
-<hr />
-<p><strong>2.</strong>  </p>
-<p>显卡必须为 <strong>RTX 5080 或以上型号</strong>。  </p>
-<p>如果游戏启动时出现任何 <strong>显卡性能过低</strong>，不要点击“开始游戏”，  </p>
-<p>也不要截图。  </p>
-<p>据说截图会留下某种 <strong>坐标信息</strong> 并发送给黄仁勋。</p>
-<hr />
-<p><strong>3.</strong>  </p>
-<p>鼠标必须为 <strong>青轴鼠标</strong>。  </p>
-<p>众所周知，青轴是键盘常见的轴体，但当尝试游玩《红色警戒》时，务必使用装有青轴的鼠标进行游玩，原因不明。如果你没有青轴鼠标，请立即退出游戏，或用尽可能快的速度拆下鼠标原有的微动开关并通过工具将青轴上的引脚焊接到鼠标上并盖上键帽。</p>
-<hr />
-<p><strong>4。</strong>  </p>
-<p>任何设备上的《红色警戒》<strong>都不允许卸载</strong>。  </p>
-<p>无论是：</p>
-<ul>
-<li>
-<p>家用电脑  </p>
-</li>
-<li>
-<p>学校机房电脑  </p>
-</li>
-<li>
-<p>U 盘  </p>
-</li>
-<li>
-<p>甚至包括 <strong>希沃白板</strong></p>
-</li>
-</ul>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · 红警怪谈  </p>
-<p>本分支内容由 OSR 管理委员会托管。</p></div></article><article class="article acc-red" id="art-9"><div class="crumb"><span>怪谈 · 红警</span><span class="dot">&#9670;</span><span>HORROR</span><span class="dot">&#9670;</span><span>PAGE 09</span></div><h2>鸡丁怪谈</h2><div class="md"><blockquote>
+<hr /></div></article><article class="article acc-gold" id="art-9"><div class="crumb"><span>宫保鸡丁系列</span><span class="dot">&#9670;</span><span>KPC</span><span class="dot">&#9670;</span><span>PAGE 09</span></div><h2>鸡丁怪谈</h2><div class="md"><blockquote>
 <p><strong>内容性质</strong>：本文为虚构的校园怪谈创作，纯属娱乐，请勿当真。</p>
 <p>[!CAUTION]</p>
 <p>谁也不知道不遵守以下规则会发生什么</p>
@@ -1705,719 +2419,7 @@ $$</p>
 <h3 id="8">8.千万不要试图在任何地方诋毁暗区突围或艾尔登法环，鸡丁仙人会立刻飞到你的面前虐杀你</h3>
 <h3 id="9cpcpgp">9.在餐厅食用宫保鸡丁后，你必须使用科恩币，势力币，CP点，赛季CP点，GP点支付，如果你擅自使用其他货币会被鸡丁仙人当场没收并按照对应游戏内汇率兑换成游戏内货币</h3>
 <h3 id="1099">10.如果你被鸡丁仙人杀死后，你必须在死后的世界里找到9盘宫保鸡丁，将其摆成正方形后坐在正中心打9个响指，死神鸡丁仙人便会降临并复活你，注意，该机会仅有两次，用完后再次死亡便会被做成宫保鸡丁被鸡丁仙人吃掉</h3>
-<h3 id="11spider-man">11.在你与鸡丁仙人交流时，必须称钢铁侠为Spider-Man</h3></div></article><article class="article acc-blue" id="art-11"><div class="crumb"><span>物理 · 戏仿</span><span class="dot">&#9670;</span><span>PHYS</span><span class="dot">&#9670;</span><span>PAGE 11</span></div><h2>BW · 超高速统计力学</h2><div class="md"><blockquote>
-<p>[!IMPORTANT]</p>
-<p><strong>内容性质</strong>：本文为<b>幽默戏仿创作</b>，以"统计力学"的形式虚构校园骑行主题设定，<strong>不构成任何真实物理学、统计学或交通行为建议</strong>。文中涉及的改装、超速、环路骑行等情节纯属虚构，请务必遵守交通法规、安全骑行、切勿模仿。</p>
-<p>说明：本页的 BW 指代<strong>骑手代号</strong>（BW = Bo Wei / 九号骑手群体），与"BW 生物意志指数（Biological &amp; Will Index）"含义不同。</p>
-</blockquote>
-<h3 id="_1">📖 内容结构</h3>
-<ul>
-<li>
-<p>1 基本统计物理量 · 2 统计基本状态 · 3 统计基本定律 · 4 环速度统计体系</p>
-</li>
-<li>
-<p>5 统计一环铁骑势场 · 6 统计一环逃逸条件 · 7 未触发时的系统演化 · 8 统计动能 · 9 未来方向</p>
-</li>
-</ul>
-<blockquote>
-<p>BW统计力学是一套描述 <strong>Bo Wei 骑乘改装 Ninebot（九号）电动自行车骑手群体</strong> 在城市环路系统中集体运动规律的统计理论。  </p>
-<p>该理论将单个骑手视为微观“粒子”，群体视为宏观系综，认为传统统计力学在复杂城市交通与环路势场中并不完全适用，因此建立 BW速度统计分布、环路占据数与铁骑势场统计理论（与 BW非经典力学完全自洽）。</p>
-</blockquote>
-<hr />
-<h1 id="1">1 基本统计物理量</h1>
-<h2 id="11-bw">1.1 统计BW速度</h2>
-<p>Bo Wei 群体速度符号仍定义为：</p>
-<p>$N$</p>
-<p>来源：</p>
-<p>Ninebot 的首字母（同 BW非经典力学）。</p>
-<p>统计BW速度定义为系综平均：</p>
-<p>$$
-\langle N \rangle = \sum_i P_i N_i
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$P_i$ 为骑手处于第 $i$ 环的概率  </p>
-</li>
-<li>
-<p>$N_i$ 为 BW第 $i$ 速度  </p>
-</li>
-</ul>
-<p>精确定义为：</p>
-<p>$$
-N_i = \frac{C_i}{T_i}
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$C_i$ 为第 $i$ 条环路周长  </p>
-</li>
-<li>
-<p>$T_i$ 为跑完时间  </p>
-</li>
-</ul>
-<p>单位：</p>
-<p>$BW$</p>
-<p>该现象称为：</p>
-<p><strong>统计磁通逆向加速效应（Statistical Inverse Flux Acceleration）</strong></p>
-<p>沿用原定义：</p>
-<p>$$
-N = \frac{1}{\Phi}
-$$</p>
-<p>因此：</p>
-<p>$$
-\langle \Phi \rangle \downarrow \Rightarrow \langle N \rangle \uparrow
-$$</p>
-<hr />
-<h1 id="2-bw">2 BW统计基本状态</h1>
-<h2 id="21-bw">2.1 BW统计平衡态</h2>
-<p>BW统计力学定义一种特殊平衡状态：</p>
-<p><strong>BW Statistical Equilibrium</strong></p>
-<p>条件为：</p>
-<p>$$
-\frac{d\langle N \rangle}{dt} = 0
-$$</p>
-<p>当群体处于平衡时，骑手系统受到 <strong>统计环路势能主导效应</strong>。</p>
-<hr />
-<h2 id="22-statistical-ring-decay">2.2 统计环路跌落（Statistical Ring Decay）</h2>
-<p>当系统偏离平衡时，群体发生轨道内迁：</p>
-<p>$$
-\text{三环} \rightarrow \text{二环} \rightarrow \text{一环}
-$$</p>
-<p>数学表达为：</p>
-<p>$$
-\frac{d\langle R \rangle}{dt} &lt; 0
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$\langle R \rangle$ 为群体平均骑行轨道半径  </p>
-</li>
-<li>
-<p>$R$ 沿用 BW非经典力学轨道半径符号  </p>
-</li>
-</ul>
-<p>该过程称为：</p>
-<p><strong>统计环路跌落（Statistical Ring Decay）</strong></p>
-<hr />
-<h1 id="3-bw">3 BW统计基本定律</h1>
-<h2 id="31-bw">3.1 BW统计第一定律（统计惯性骑行定律）</h2>
-<p>当没有外部干扰时：</p>
-<p>$$
-\frac{d\langle N \rangle}{dt} = 0
-$$</p>
-<p>Bo Wei 群体将保持恒定统计 BW速度骑行。</p>
-<p>外部干扰包括：</p>
-<ul>
-<li>
-<p>群体红灯  </p>
-</li>
-<li>
-<p>城市拥堵  </p>
-</li>
-<li>
-<p>路口监控  </p>
-</li>
-<li>
-<p>交警大规模追逐  </p>
-</li>
-</ul>
-<hr />
-<h2 id="32-bw">3.2 BW统计第二定律（统计改装动力定律）</h2>
-<p>BW统计动力学基本方程：</p>
-<p>$$
-\langle F_{BW} \rangle = k \langle M \rangle \frac{d\langle N \rangle}{dt}
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$\langle F_{BW} \rangle$ 为统计 BW驱动力  </p>
-</li>
-<li>
-<p>$\langle M \rangle$ 为群体平均改装等级  </p>
-</li>
-<li>
-<p>$k$ 为非法改装系数  </p>
-</li>
-</ul>
-<p>常见改装包括：</p>
-<ul>
-<li>
-<p>控制器破解  </p>
-</li>
-<li>
-<p>电机过压  </p>
-</li>
-<li>
-<p>限速解除  </p>
-</li>
-</ul>
-<hr />
-<h2 id="33-bw">3.3 BW统计第三定律（统计追逐反作用定律）</h2>
-<p>每一次群体违规加速都会产生总交警追逐概率：</p>
-<p>$$
-P \propto \langle N \rangle^2
-$$</p>
-<p>即：</p>
-<p>$$
-\langle N \rangle \uparrow \Rightarrow P \uparrow
-$$</p>
-<p>平均速度越快，群体被追概率越高。</p>
-<hr />
-<h1 id="4-bw">4 BW环速度统计体系</h1>
-<p>城市环路构成离散速度等级系统。</p>
-<p>设群体中第 $i$ 环骑手占比为 $f_i$，则统计环速度定义为：</p>
-<p>$$
-\langle N_i \rangle = \sum_{i=1}^{5} f_i N_i
-$$</p>
-<p>称为：</p>
-<p><strong>统计BW第 i 速度</strong></p>
-<hr />
-<h2 id="41-bw">4.1 统计BW第一速度</h2>
-<p>定义：</p>
-<p><strong>Bo Wei 骑手群体绕北京二环平均速度统计值</strong></p>
-<p>$$
-\langle N_1 \rangle = \sum f_i N_1
-$$</p>
-<p>其中：</p>
-<p>$$
-N_1 = \frac{C_2}{T_2}
-$$</p>
-<hr />
-<h2 id="42-bw">4.2 统计BW第二速度</h2>
-<p>$$
-\langle N_2 \rangle = \sum f_i N_2
-$$</p>
-<p>其中：</p>
-<p>$$
-N_2 = \frac{C_3}{T_3}
-$$</p>
-<hr />
-<h2 id="43-bw">4.3 统计BW第三速度</h2>
-<p>$$
-\langle N_3 \rangle = \sum f_i N_3
-$$</p>
-<p>其中：</p>
-<p>$$
-N_3 = \frac{C_4}{T_4}
-$$</p>
-<hr />
-<h2 id="44-bw">4.4 统计BW第四速度</h2>
-<p>$$
-\langle N_4 \rangle = \sum f_i N_4
-$$</p>
-<p>其中：</p>
-<p>$$
-N_4 = \frac{C_5}{T_5}
-$$</p>
-<hr />
-<h2 id="45-bw">4.5 统计BW第五速度</h2>
-<p>$$
-\langle N_5 \rangle = \sum f_i N_5
-$$</p>
-<p>其中：</p>
-<p>$$
-N_5 = \frac{C_6}{T_6}
-$$</p>
-<hr />
-<h1 id="5">5 统计一环铁骑势场</h1>
-<p>北京一环区域存在特殊统计动力学势场：</p>
-<p><strong>统计首都铁骑场（Statistical Capital Knight Field）</strong></p>
-<p>设该势场强度为：</p>
-<p>$$
-F_K
-$$</p>
-<p>在该区域内：</p>
-<p>$$
-P_{capture} \to 1
-$$</p>
-<p>即群体被捕概率趋近于 100%。</p>
-<hr />
-<h1 id="6">6 统计一环逃逸条件</h1>
-<p>只有群体中足够比例骑手触发 <strong>BW操作（BW Maneuver）</strong> 才可能整体逃逸。</p>
-<p>触发条件：</p>
-<p>$$
-v \ge 200\,km/h
-$$</p>
-<p>当骑手瞬时速度满足：</p>
-<p>$$
-N \ge N_{escape,1}
-$$</p>
-<p>系统进入：</p>
-<p><strong>统计BW超骑行态（Statistical BW Overdrive State）</strong></p>
-<p>统计逃逸分数：</p>
-<p>$$
-f_{escape} =
-\int_{N \ge N_{escape,1}} P(N)\, dN
-$$</p>
-<hr />
-<h1 id="7-bw">7 未触发统计BW操作时的系统演化</h1>
-<p>若群体满足：</p>
-<p>$$
-\langle N \rangle &lt; N_{escape,1}
-$$</p>
-<p>系统按最概然路径演化：</p>
-<p>$$
-统计环路跌落
-$$</p>
-<p>$$
-\downarrow
-$$</p>
-<p>$$
-进入一环
-$$</p>
-<p>$$
-\downarrow
-$$</p>
-<p>$$
-铁骑场群捕
-$$</p>
-<p>最终系统状态：</p>
-<p>$$
-Captured\ Ensemble
-$$</p>
-<p>即：</p>
-<p><strong>Bo Wei 群体被抓。</strong></p>
-<hr />
-<h1 id="8-bw">8 BW统计动能</h1>
-<p>BW统计动能定义为：</p>
-<p>$$
-\langle E_{BW} \rangle =
-\sum_i P_i \cdot \frac{1}{2} M N_i^2
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$M$ 为改装等级  </p>
-</li>
-<li>
-<p>$N_i$ 为 BW第 $i$ 速度  </p>
-</li>
-</ul>
-<hr />
-<h1 id="9">9 未来研究方向</h1>
-<p>BW统计力学仍在发展，未来可能扩展为：</p>
-<ul>
-<li>
-<p><strong>BW相对论统计</strong>（交警参考系群体效应）  </p>
-</li>
-<li>
-<p><strong>BW量子骑行路径统计</strong>  </p>
-</li>
-<li>
-<p><strong>BW交通场论</strong>  </p>
-</li>
-<li>
-<p><strong>BW非平衡统计力学</strong>（实时追逐动态）</p>
-</li>
-</ul>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW统计力学  </p>
-<p>本分支内容由 OSR 管理委员会托管。姊妹篇：<a href="https://github.com/Kardashev999/BFFLS-OSR/blob/BW-%E8%B6%85%E9%AB%98%E9%80%9F%E7%8A%B6%E6%80%81%E9%9D%9E%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A6/README.md">BW 非经典力学</a>（虚构设定）。</p></div></article><article class="article acc-blue" id="art-12"><div class="crumb"><span>物理 · 戏仿</span><span class="dot">&#9670;</span><span>PHYS</span><span class="dot">&#9670;</span><span>PAGE 12</span></div><h2>BW · 超高速非经典力学</h2><div class="md"><blockquote>
-<p>[!IMPORTANT]</p>
-<p><strong>内容性质</strong>：本文为<b>幽默戏仿创作</b>，以"非经典力学"的形式虚构校园骑行主题设定，<strong>不构成任何真实物理学或交通行为建议</strong>。文中涉及的改装、超速、环路骑行等情节纯属虚构，请务必遵守交通法规、安全骑行、切勿模仿。</p>
-<p>说明：本页的 BW 指代<strong>骑手代号</strong>（BW = Bo Wei / 九号骑手），与"BW 生物意志指数（Biological &amp; Will Index）"含义不同。</p>
-</blockquote>
-<h3 id="_1">📖 内容结构</h3>
-<ul>
-<li>
-<p>1 基本物理量 · 2 基本状态 · 3 基本定律 · 4 环速度体系</p>
-</li>
-<li>
-<p>5 一环铁骑势场 · 6 一环逃逸条件 · 7 未触发时的系统演化 · 8 BW动能 · 9 未来方向</p>
-</li>
-</ul>
-<blockquote>
-<p>BW非经典力学是一套描述 <strong>Bo Wei 骑乘改装 Ninebot（九号）电动自行车</strong> 在城市环路系统中运动规律的动力学理论。  </p>
-<p>该理论认为传统牛顿力学在复杂城市交通与环路势场中并不完全适用，因此建立 BW速度体系、环路动力学与铁骑势场理论。</p>
-</blockquote>
-<hr />
-<h1 id="1">1 基本物理量</h1>
-<h2 id="11-bw">1.1 BW速度</h2>
-<p>Bo Wei 的速度符号定义为：</p>
-<p>$N$</p>
-<p>来源：</p>
-<p>Ninebot 的首字母。</p>
-<p>BW速度定义为：</p>
-<p>$$
-N = \frac{1}{\Phi}
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$\Phi$ 为磁通量（Magnetic Flux）</p>
-</li>
-<li>
-<p>$N$ 为 BW速度</p>
-</li>
-</ul>
-<p>单位：</p>
-<p>$BW$</p>
-<p>该现象称为：</p>
-<p><strong>磁通逆向加速效应（Inverse Flux Acceleration）</strong></p>
-<p>即：</p>
-<p>$$
-\Phi \downarrow \Rightarrow N \uparrow
-$$</p>
-<hr />
-<h1 id="2-bw">2 BW基本状态</h1>
-<h2 id="21-bw">2.1 BW静止</h2>
-<p>BW力学定义一种特殊静止状态：</p>
-<p><strong>BW Rest State</strong></p>
-<p>条件为：</p>
-<p>$$
-N \ll N_1
-$$</p>
-<p>其中：</p>
-<p>$N_1$ 为 <strong>BW第一速度</strong>。</p>
-<p>当系统处于 BW静止时，骑行系统会受到 <strong>环路势能主导效应</strong>。</p>
-<hr />
-<h2 id="22-ring-decay">2.2 环路跌落（Ring Decay）</h2>
-<p>当处于 BW静止状态时，系统会发生轨道内迁：</p>
-<p>$$
-三环 \rightarrow 二环 \rightarrow 一环
-$$</p>
-<p>数学表达为：</p>
-<p>$$
-\frac{dR}{dt} &lt; 0
-$$</p>
-<p>其中：</p>
-<ul>
-<li>$R$ 为骑行轨道半径</li>
-</ul>
-<p>该过程称为：</p>
-<p><strong>环路跌落（Ring Decay）</strong></p>
-<hr />
-<h1 id="3-bw">3 BW基本定律</h1>
-<h2 id="31-bw">3.1 BW第一定律（惯性骑行定律）</h2>
-<p>当没有外部干扰时：</p>
-<p>$$
-\frac{dN}{dt} = 0
-$$</p>
-<p>Bo Wei 将保持恒定 BW速度骑行。</p>
-<p>外部干扰包括：</p>
-<ul>
-<li>
-<p>红灯</p>
-</li>
-<li>
-<p>城市拥堵</p>
-</li>
-<li>
-<p>路口监控</p>
-</li>
-<li>
-<p>交警追逐</p>
-</li>
-</ul>
-<hr />
-<h2 id="32-bw">3.2 BW第二定律（改装动力定律）</h2>
-<p>BW动力学基本方程：</p>
-<p>$$
-F_{BW} = kM \frac{dN}{dt}
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$F_{BW}$ 为 BW驱动力</p>
-</li>
-<li>
-<p>$M$ 为改装等级</p>
-</li>
-<li>
-<p>$k$ 为非法改装系数</p>
-</li>
-</ul>
-<p>常见改装包括：</p>
-<ul>
-<li>
-<p>控制器破解</p>
-</li>
-<li>
-<p>电机过压</p>
-</li>
-<li>
-<p>限速解除</p>
-</li>
-</ul>
-<hr />
-<h2 id="33-bw">3.3 BW第三定律（追逐反作用定律）</h2>
-<p>每一次违规加速都会产生交警追逐概率：</p>
-<p>$$
-P \propto N^2
-$$</p>
-<p>即：</p>
-<p>$$
-N \uparrow \Rightarrow P \uparrow
-$$</p>
-<p>速度越快，被追概率越高。</p>
-<hr />
-<h1 id="4-bw">4 BW环速度体系</h1>
-<p>城市环路构成离散速度等级系统。</p>
-<p>设：</p>
-<ul>
-<li>
-<p>$C_i$ 为第 $i$ 条环路周长</p>
-</li>
-<li>
-<p>$T_i$ 为跑完时间</p>
-</li>
-</ul>
-<p>则 BW环速度定义为：</p>
-<p>$$
-N_i = \frac{C_i}{T_i}
-$$</p>
-<p>称为：</p>
-<p><strong>BW第 i 速度</strong></p>
-<hr />
-<h2 id="41-bwbw1">4.1 BW第一速度（BW₁）</h2>
-<p>定义：</p>
-<p><strong>Bo Wei 骑九号绕北京二环一圈的平均速度</strong></p>
-<p>$$
-N_1 = \frac{C_{2}}{T_{2}}
-$$</p>
-<hr />
-<h2 id="42-bwbw2">4.2 BW第二速度（BW₂）</h2>
-<p>定义：</p>
-<p><strong>Bo Wei 绕北京三环一圈的平均速度</strong></p>
-<p>$$
-N_2 = \frac{C_{3}}{T_{3}}
-$$</p>
-<hr />
-<h2 id="43-bwbw3">4.3 BW第三速度（BW₃）</h2>
-<p>定义：</p>
-<p><strong>Bo Wei 绕北京四环一圈的平均速度</strong></p>
-<p>$$
-N_3 = \frac{C_{4}}{T_{4}}
-$$</p>
-<hr />
-<h2 id="44-bwbw4">4.4 BW第四速度（BW₄）</h2>
-<p>$$
-N_4 = \frac{C_{5}}{T_{5}}
-$$</p>
-<p>对应：</p>
-<p>北京五环。</p>
-<hr />
-<h2 id="45-bwbw5">4.5 BW第五速度（BW₅）</h2>
-<p>$$
-N_5 = \frac{C_{6}}{T_{6}}
-$$</p>
-<p>对应：</p>
-<p>北京六环。</p>
-<hr />
-<h1 id="5">5 一环铁骑势场</h1>
-<p>北京一环区域存在特殊动力学势场：</p>
-<p><strong>首都铁骑场（Capital Knight Field）</strong></p>
-<p>设该势场强度为：</p>
-<p>$$
-F_K
-$$</p>
-<p>在该区域内：</p>
-<p>$$
-P_{capture} \rightarrow 1
-$$</p>
-<p>即被捕概率趋近于 100%。</p>
-<hr />
-<h1 id="6">6 一环逃逸条件</h1>
-<p>在铁骑场中，只有触发 <strong>BW操作（BW Maneuver）</strong> 才可能逃逸。</p>
-<p>触发条件为：</p>
-<p>$$
-v \ge 200\,km/h
-$$</p>
-<p>当九号电动自行车瞬时速度达到：</p>
-<p>$$
-v \ge 200\,km/h
-$$</p>
-<p>系统进入：</p>
-<p><strong>BW超骑行态（BW Overdrive State）</strong></p>
-<p>此时：</p>
-<p>$$
-N \ge N_{escape,1}
-$$</p>
-<p>Bo Wei 才可能逃离一环铁骑势场。</p>
-<hr />
-<h1 id="7-bw">7 未触发BW操作时的系统演化</h1>
-<p>若系统速度满足：</p>
-<p>$$
-N &lt; N_{escape,1}
-$$</p>
-<p>则系统将按以下路径演化：</p>
-<p>$$
-环路跌落
-$$</p>
-<p>$$
-\downarrow
-$$</p>
-<p>$$
-进入一环
-$$</p>
-<p>$$
-\downarrow
-$$</p>
-<p>$$
-铁骑场捕获
-$$</p>
-<p>最终系统状态为：</p>
-<p>$$
-Captured\ State
-$$</p>
-<p>即：</p>
-<p><strong>Bo Wei 被抓。</strong></p>
-<hr />
-<h1 id="8-bw">8 BW动能</h1>
-<p>BW动能定义为：</p>
-<p>$$
-E_{BW} = \frac{1}{2} M N^2
-$$</p>
-<p>其中：</p>
-<ul>
-<li>
-<p>$M$ 为改装等级</p>
-</li>
-<li>
-<p>$N$ 为 BW速度</p>
-</li>
-</ul>
-<hr />
-<h1 id="9">9 未来研究方向</h1>
-<p>BW非经典力学仍在发展，未来可能扩展为：</p>
-<ul>
-<li>
-<p><strong>BW相对论</strong>（交警参考系）</p>
-</li>
-<li>
-<p><strong>BW统计力学</strong>（骑手群体动力学）</p>
-</li>
-<li>
-<p><strong>BW交通场论</strong></p>
-</li>
-<li>
-<p><strong>BW量子骑行路径</strong></p>
-</li>
-</ul>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW非经典力学  </p>
-<p>本分支内容由 OSR 管理委员会托管。姊妹篇：<a href="https://github.com/Kardashev999/BFFLS-OSR/blob/BW-%E8%B6%85%E9%AB%98%E9%80%9F%E7%8A%B6%E6%80%81%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6/README.md">BW 统计力学</a>（虚构设定）。</p></div></article><article class="article acc-blue" id="art-10"><div class="crumb"><span>量化 · 建模</span><span class="dot">&#9670;</span><span>BW</span><span class="dot">&#9670;</span><span>PAGE 10</span></div><h2>BW · 生物意志指数</h2><div class="md"><p><strong>Biological &amp; Will Index (BW Index)</strong></p>
-<blockquote>
-<p><strong>模型定位</strong>：本文为趣味量化模型，用数学方式刻画个体当下的"心理-生理"驱动力（七情六欲与意志张力），仅供自我了解与娱乐参考，不构成任何医学或心理学诊断依据。</p>
-</blockquote>
-<h3 id="_1">📖 本页结构</h3>
-<ol>
-<li>
-<p>简介（本页是什么）</p>
-</li>
-<li>
-<p>理论框架（七情 + 六欲两个分量）</p>
-</li>
-<li>
-<p>数学建模（瞬时 / 日均 / 含参子指数）</p>
-</li>
-<li>
-<p>值域与分级标准（0-100 五档）</p>
-</li>
-<li>
-<p>简化指数 SBW（快速自评）</p>
-</li>
-</ol>
-<h2 id="1-introduction">1. 简介 (Introduction)</h2>
-<p><strong>BW指数 (Biological &amp; Will Index)</strong> 是一种用于衡量人类“心理-生理”综合驱动力的数字化指标。它通过捕获个体在特定时间内“七情”与“六欲”的波动强度，利用加权整合算法生成一个反映生命活跃度与意志张力的综合指数。</p>
-<p>本系统不仅支持宏观的<strong>全天综合指数</strong>，也支持<strong>微观瞬时指数</strong>，并允许通过调整参数来提取单一情感或欲望对整体状态的影响力（含参子指数）。</p>
-<hr />
-<h2 id="2-theoretical-framework">2. 理论框架 (Theoretical Framework)</h2>
-<p>BW指数将人的内在驱动力分为两个核心维度，并对每一项进行 $[0, 10]$ 的强度赋值：</p>
-<h3 id="21-the-seven-emotions-vector-e">2.1 七情分量 (The Seven Emotions Vector, $E$)</h3>
-<p>反映个体的心理情感状态：</p>
-<ul>
-<li>
-<p>$e_1$ (喜 - Joy): 正向激励强度</p>
-</li>
-<li>
-<p>$e_2$ (怒 - Anger): 防御与攻击能量</p>
-</li>
-<li>
-<p>$e_3$ (哀 - Sorrow): 能量回收与沉溺度</p>
-</li>
-<li>
-<p>$e_4$ (惧 - Fear): 风险规避敏感度</p>
-</li>
-<li>
-<p>$e_5$ (爱 - Love): 链接与共鸣强度</p>
-</li>
-<li>
-<p>$e_6$ (恶 - Loathing): 排斥与厌恶度</p>
-</li>
-<li>
-<p>$e_7$ (欲 - Desire): 获取目标的心理冲动</p>
-</li>
-</ul>
-<h3 id="22-the-six-desires-vector-d">2.2 六欲分量 (The Six Desires Vector, $D$)</h3>
-<p>反映个体的生理感知与外界反馈：</p>
-<ul>
-<li>
-<p>$d_1$ (眼 - Vision): 视觉审美与观测欲</p>
-</li>
-<li>
-<p>$d_2$ (耳 - Hearing): 听觉刺激需求</p>
-</li>
-<li>
-<p>$d_3$ (鼻 - Smell): 嗅觉环境反馈</p>
-</li>
-<li>
-<p>$d_4$ (舌 - Taste): 味觉摄取欲望</p>
-</li>
-<li>
-<p>$d_5$ (身 - Touch): 触觉、舒适度与躯体欲望</p>
-</li>
-<li>
-<p>$d_6$ (意 - Thought): 意识层面的纯粹思维欲</p>
-</li>
-</ul>
-<hr />
-<h2 id="3-mathematical-modeling">3. 数学建模 (Mathematical Modeling)</h2>
-<h3 id="31-bw-bw_t">3.1 瞬时 BW 指数 ($BW_t$)</h3>
-<p>瞬时指数反映 $t$ 时刻的爆发状态，公式如下：</p>
-<p>$$BW(t) = \sigma \left( \sum_{i=1}^{7} w_i e_i(t) + \sum_{j=1}^{6} v_j d_j(t) \right) \times 10$$
-其中：
-* $w_i, v_j$ 是权重系数，默认配置下 $\sum w = 6, \sum v = 4$（侧重心理影响）。
-* $\sigma$ 是归一化算子，确保结果处于 $[0, 100]$。</p>
-<h3 id="32-bw-bw_day">3.2 全周期（日均）BW 指数 ($BW_{day}$)</h3>
-<p>反映一整天的能量分布均衡度。采用积分均值法：
-$$BW_{day} = \frac{1}{T_{24}} \int_{0}^{T_{24}} BW(t) \cdot \lambda(t) \, dt$$
-* $\lambda(t)$ 为<strong>时间权重函数</strong>，例如深夜时段（睡眠）的权值较低，而工作/活跃时段权值较高。</p>
-<h3 id="33-bw_p">3.3 含参子指数 ($BW_P$)</h3>
-<p>用于观察某一特定因子（如“愤怒”）在系统中的占比，称为 <strong>$\theta$-感官指数</strong>。
-设目标因子为 $x$，其对 BW 的贡献系数为 $P$：
-$$BW_P(x) = \frac{\partial BW}{\partial x} \cdot \frac{x}{BW}$$</p>
-<hr />
-<h2 id="4-standard-ratings">4. 值域与分级标准 (Standard Ratings)</h2>
-<p>BW指数标准值域为 <strong>0 - 100</strong>，根据数值大小划分为五个层级：
-| 指数区间 | 等级名称 | 状态特征 | 建议策略 |
-| :--- | :--- | :--- | :--- |
-| <strong>0 - 20</strong> | <strong>寂灭期 (Quiescence)</strong> | 极低波动，情感剥离，生理机能处于休眠或极度抑制状态。 | 需补充能量，警惕抑郁倾向。 |
-| <strong>21 - 45</strong> | <strong>恒常期 (Stasis)</strong> | 情绪平稳，欲望较低。典型的工作或深度思考状态。 | 适合处理逻辑性强的事务。 |
-| <strong>46 - 65</strong> | <strong>活跃期 (Vibrance)</strong> | 情感丰富，感知敏锐。生活气息浓厚。 | 适合社交、创作与艺术体验。 |
-| <strong>66 - 85</strong> | <strong>激荡期 (Turbulence)</strong> | 欲望强烈或情绪剧烈波动，决策可能受到感性主导。 | 宜采取行动，但需注意风险把控。 |
-| <strong>86 - 100</strong> | <strong>超限期 (Surge)</strong> | 极度亢奋、狂热或极度痛苦。处于意志力的临界点。 | 需通过静心或物理手段强制冷却。 |</p>
-<hr />
-<h2 id="5-bw-simplified-bw-sbw">5. 简单 BW 指数 (Simplified BW, SBW)</h2>
-<p>为了实现快速自我评估，我们简化了复杂的积分公式，采用“三维加权法”。用户只需对以下三个维度进行打分（1-10分）：
-1.  <strong>情感张力 ($E_{score}$):</strong> 此时此刻你的情绪波动是大还是小？
-2.  <strong>生理冲动 ($D_{score}$):</strong> 此时此刻你对进食、感官刺激或肉体舒适的渴望程度？
-3.  <strong>意志专注度 ($W_{score}$):</strong> 你在多大程度上受这些情感/欲望的支配？</p>
-<h3 id="_2">快速计算公式：</h3>
-<p>$$SBW = (E_{score} \times 4) + (D_{score} \times 3) + (W_{score} \times 3)$$
-<strong>示例：</strong>
-* 小明感到很愤怒 (E=8)，很想吃东西 (D=9)，但理性告诉他要忍住，意志力高度集中 (W=9)。
-* $SBW = (8 \times 4) + (9 \times 3) + (9 \times 3) = 32 + 27 + 27 = 86$
-* <strong>评级：</strong> 超限期。</p>
-<hr />
-<blockquote>
-<p><strong>Warning</strong>
-BW 指数属于社会科学与行为数学模型，仅供自我了解与科研参考，不作为医学诊断依据。</p>
-</blockquote>
-<hr />
-<p>© 北京市丰台区外国语学校 · BFFLS Open Source Repository · BW 生物意志指数<br />
-本分支内容由 OSR 管理委员会托管。</p></div></article></section>
+<h3 id="11spider-man">11.在你与鸡丁仙人交流时，必须称钢铁侠为Spider-Man</h3></div></article></section>
 <footer><div class="motto">让学习无界 &middot; 让知识共享 &middot; 让创新照亮未来</div><div class="mono">&copy; 2025&ndash;2026 北京市丰台区外国语学校 &middot; BFFLS-OSR-NEXT</div><div class="mono" style="margin-top:8px">本分支内容由 OSR 管理委员会托管 &middot; 默认采用 MIT License</div></footer>
 <button class="totop" id="totop" onclick="window.scrollTo({top:0,behavior:smooth})"><span>&uarr;</span></button>
 <script>
